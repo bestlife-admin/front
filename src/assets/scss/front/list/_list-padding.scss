@@ -1,0 +1,16 @@
+/*------------------------------------
+  List Padding
+------------------------------------*/
+
+// Vertical
+@each $list-spacer-y, $value in $list-padding-y {
+  .list-py-#{$list-spacer-y} {
+    > li:not(:first-child) {
+      padding-top: $value;
+    }
+
+    > li:not(:last-child) {
+      padding-bottom: $value;
+    }
+  }
+}

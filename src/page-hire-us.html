@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hire Us | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "main",
+    "category": "company",
+    "subcategory": "",
+    "link": "page-hire-us.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="bg-img-start" style="background-image: url(@@autopath/assets/svg/components/card-11.svg);">
+      <div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2">
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+          <h1>Got a project for us?</h1>
+          <p>We help brands and platforms turn big ideas into beautiful digital products and experiences.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Form -->
+    <div class="container content-space-2 content-space-lg-3">
+      <!-- Form -->
+      <div class="mx-auto" style="max-width: 35rem;">
+        <!-- Form -->
+        <form>
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label class="form-label" for="hireUsFormFirstName">First name</label>
+                <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name">
+              </div>
+              <!-- End Form -->
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label class="form-label" for="hireUsFormLasttName">Last name</label>
+                <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name">
+              </div>
+              <!-- End Form -->
+            </div>
+          </div>
+          <!-- End Form -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+            <input type="email" class="form-control form-control-lg" name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
+          </div>
+          <!-- End Form -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <label class="form-label" for="hireUsFormCompanyName">Company name <span class="form-label-secondary">(Optional)</span></label>
+            <input type="text" class="form-control form-control-lg" name="hireUsFormNameCompanyName" id="hireUsFormCompanyName" placeholder="Htmlstream" aria-label="Htmlstream">
+          </div>
+          <!-- End Form -->
+
+          <!-- Select -->
+          <div class="mb-4">
+            <label class="form-label" for="hireUsFormBudget">Budget</label>
+            <select name="hireUsFormNameBudget" id="hireUsFormBudget" class="form-select form-select-lg" aria-label="Tell us about your budget">
+              <option selected>Tell us about your budget</option>
+              <option value="1">$1,000 - $10,000</option>
+              <option value="2">$10,000 - $20,000</option>
+              <option value="3">$20,000 - $30,000</option>
+              <option value="4">$30,000 - $40,000</option>
+              <option value="5">$40,000 - $50,000</option>
+              <option value="6">$50,000 - and more</option>
+            </select>
+          </div>
+          <!-- End Select -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <label class="form-label" for="hireUsFormDetails">Details</label>
+            <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your project" aria-label="Tell us about your project" rows="4"></textarea>
+          </div>
+          <!-- End Form -->
+
+          <div class="d-grid mb-2">
+            <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+          </div>
+
+          <div class="text-center">
+            <span class="form-text">We'll get back to you in 1-2 business days.</span>
+          </div>
+        </form>
+        <!-- End Form -->
+      </div>
+      <!-- End Form -->
+    </div>
+    <!-- End Form -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

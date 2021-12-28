@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Input Group - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "input-group.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Input Group</h1>
+            <p class="docs-page-header-text">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/forms/input-group/" target="_blank">Bootstrap Input group documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="basic-examples" class="hs-docs-heading">
+        Basic examples <a class="anchorjs-link" href="#basic-examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.input-group-prepend</code> and <code>.input-group-append</code> in <code>.input-group</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">With textarea</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="input-group mb-3"&gt;
+                  &lt;span class="input-group-text" id="basic-addon1"&gt;@&lt;/span&gt;
+                  &lt;input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="input-group mb-3"&gt;
+                  &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"&gt;
+                  &lt;span class="input-group-text" id="basic-addon2"&gt;@example.com&lt;/span&gt;
+                &lt;/div&gt;
+
+                &lt;label for="basic-url" class="form-label"&gt;Your vanity URL&lt;/label&gt;
+                &lt;div class="input-group mb-3"&gt;
+                  &lt;span class="input-group-text" id="basic-addon3"&gt;https://example.com/users/&lt;/span&gt;
+                  &lt;input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="input-group mb-3"&gt;
+                  &lt;span class="input-group-text"&gt;$&lt;/span&gt;
+                  &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
+                  &lt;span class="input-group-text"&gt;.00&lt;/span&gt;
+                &lt;/div&gt;
+
+                &lt;div class="input-group mb-3"&gt;
+                  &lt;input type="text" class="form-control" placeholder="Username" aria-label="Username"&gt;
+                  &lt;span class="input-group-text"&gt;@&lt;/span&gt;
+                  &lt;input type="text" class="form-control" placeholder="Server" aria-label="Server"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="input-group"&gt;
+                  &lt;span class="input-group-text"&gt;With textarea&lt;/span&gt;
+                  &lt;textarea class="form-control" aria-label="With textarea"&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="input-group-merge" class="hs-docs-heading">
+        Input group merge <a class="anchorjs-link" href="#input-group-merge" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.input-group-merge</code> to place one add-on on either side of an input that keeps icons as a part of the form control. You may also place one on both sides of an input.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Input Group -->
+            <div class="mb-3">
+              <label for="inputGroupMergeFullName" class="form-label">Full name</label>
+
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend input-group-text" id="inputGroupMergeFullNameAddOn">
+                  <i class="bi-person"></i>
+                </div>
+                <input type="text" class="form-control" id="inputGroupMergeFullName" placeholder="Mark Williams" aria-label="Mark Williams" aria-describedby="inputGroupMergeFullNameAddOn">
+              </div>
+            </div>
+            <!-- End Input Group -->
+
+            <!-- Input Group -->
+            <div class="mb-3">
+              <label for="inputGroupMergeEmail" class="form-label">Email</label>
+
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend input-group-text" id="inputGroupMergeEmailAddOn">
+                  <i class="bi-envelope-open"></i>
+                </div>
+                <input type="text" class="form-control" id="inputGroupMergeEmail" placeholder="mark@example.com" aria-label="mark@example.com" aria-describedby="inputGroupMergeEmailAddOn">
+              </div>
+            </div>
+            <!-- End Input Group -->
+
+            <!-- Input Group -->
+            <div class="mb-3">
+              <label for="inputGroupMergeEmailOptional" class="form-label">Email <span class="form-label-secondary">(Optional)</span></label>
+
+              <div class="input-group input-group-merge">
+                <input type="text" class="form-control" id="inputGroupMergeEmailOptional" placeholder="mark@example.com" aria-label="mark@example.com" aria-describedby="inputGroupMergeEmailOptionalAddOn">
+                <div class="input-group-append input-group-text" id="inputGroupMergeEmailOptionalAddOn">
+                  <i class="bi-envelope-open"></i>
+                </div>
+              </div>
+            </div>
+            <!-- End Input Group -->
+
+            <!-- Input Group -->
+            <div class="mb-3">
+              <label for="inputGroupMergeGenderSelect" class="form-label">Gender</label>
+
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend input-group-text">
+                  <i class="bi-person"></i>
+                </div>
+                <select id="inputGroupMergeGenderSelect" class="form-select">
+                  <option>Choose a gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <!-- End Input Group -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Input Group --&gt;
+                &lt;div class="mb-3"&gt;
+                  &lt;label for="inputGroupMergeFullName" class="form-label"&gt;Full name&lt;/label&gt;
+
+                  &lt;div class="input-group input-group-merge"&gt;
+                    &lt;div class="input-group-prepend input-group-text" id="inputGroupMergeFullNameAddOn"&gt;
+                      &lt;i class="bi-person"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;input type="text" class="form-control" id="inputGroupMergeFullName" placeholder="Mark Williams" aria-label="Mark Williams" aria-describedby="inputGroupMergeFullNameAddOn"&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Input Group --&gt;
+
+                &lt;!-- Input Group --&gt;
+                &lt;div class="mb-3"&gt;
+                  &lt;label for="inputGroupMergeEmail" class="form-label"&gt;Email&lt;/label&gt;
+
+                  &lt;div class="input-group input-group-merge"&gt;
+                    &lt;div class="input-group-prepend input-group-text" id="inputGroupMergeEmailAddOn"&gt;
+                      &lt;i class="bi-envelope-open"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;input type="text" class="form-control" id="inputGroupMergeEmail" placeholder="mark@example.com" aria-label="mark@example.com" aria-describedby="inputGroupMergeEmailAddOn"&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Input Group --&gt;
+
+                &lt;!-- Input Group --&gt;
+                &lt;div class="mb-3"&gt;
+                  &lt;label for="inputGroupMergeEmailOptional" class="form-label"&gt;Email &lt;span class="form-label-secondary"&gt;(Optional)&lt;/span&gt;&lt;/label&gt;
+
+                  &lt;div class="input-group input-group-merge"&gt;
+                    &lt;input type="text" class="form-control" id="inputGroupMergeEmailOptional" placeholder="mark@example.com" aria-label="mark@example.com" aria-describedby="inputGroupMergeEmailOptionalAddOn"&gt;
+                    &lt;div class="input-group-append input-group-text" id="inputGroupMergeEmailOptionalAddOn"&gt;
+                      &lt;i class="bi-envelope-open"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Input Group --&gt;
+
+                &lt;!-- Input Group --&gt;
+                &lt;div class="mb-3"&gt;
+                  &lt;label for="inputGroupMergeGenderSelect" class="form-label"&gt;Gender&lt;/label&gt;
+
+                  &lt;div class="input-group input-group-merge"&gt;
+                    &lt;div class="input-group-prepend input-group-text"&gt;
+                      &lt;i class="bi-person"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;select id="inputGroupMergeGenderSelect" class="form-select"&gt;
+                      &lt;option&gt;Choose a gender&lt;/option&gt;
+                      &lt;option&gt;Male&lt;/option&gt;
+                      &lt;option&gt;Female&lt;/option&gt;
+                      &lt;option&gt;Other&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Input Group --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="input-card" class="hs-docs-heading">
+        Input card <a class="anchorjs-link" href="#input-card" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <div class="w-md-50">
+              <div class="input-card input-card-sm">
+                <div class="input-card-form">
+                  <input type="text" class="form-control form-control-lg" placeholder="Your business email" aria-label="Your business email">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">Get started</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="input-card input-card-sm"&gt;
+                  &lt;div class="input-card-form"&gt;
+                    &lt;input type="text" class="form-control form-control-lg" placeholder="Your business email" aria-label="Your business email"&gt;
+                  &lt;/div&gt;
+                  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Get started&lt;/button&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

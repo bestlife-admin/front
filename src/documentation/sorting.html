@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Sorting (Shuffle.js) - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "sorting.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Sorting (Shuffle.js)</h1>
+            <p class="docs-page-header-text">Categorize, sort, and filter a responsive grid of items.</p>
+            <a class="link" href="https://vestride.github.io/Shuffle/" target="_blank">Shuffle documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./node_modules/shufflejs/dist/shuffle.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF SHUFFLE
+              // =======================================================
+              class ShufflePorfolio {
+                constructor(element) {
+                  this.element = element;
+                  this.shuffle = new Shuffle(element, {
+                    itemSelector: '.js-shuffle-item',
+                    speed: 500
+                  })
+
+                  this.addFilterButtons()
+                }
+
+                addFilterButtons() {
+                  const options = document.querySelector('.js-filter-options')
+                  if (!options) {
+                    return
+                  }
+
+                  const filterButtons = Array.from(options.children)
+                  const onClick = this._handleFilterClick.bind(this)
+                  filterButtons.forEach((button) => {
+                    button.addEventListener('click', onClick, false)
+                  });
+                }
+
+                _handleFilterClick(evt) {
+                  const btn = evt.currentTarget.firstElementChild
+                  const isActive = btn.classList.contains('active')
+                  const btnGroup = btn.getAttribute('data-group')
+
+                  this._removeActiveClassFromChildren(btn.parentNode.parentNode)
+
+                  let filterGroup
+                  if (isActive) {
+                    btn.classList.remove('active')
+                    filterGroup = Shuffle.ALL_ITEMS
+                  } else {
+                    btn.classList.add('active')
+                    filterGroup = btnGroup
+                  }
+
+                  this.shuffle.filter(filterGroup)
+                }
+
+                _removeActiveClassFromChildren(parent) {
+                  const { children } = parent
+                  for (let i = children.length - 1; i >= 0; i--) {
+                    children[i].firstElementChild.classList.remove('active')
+                  }
+                }
+              }
+
+              new ShufflePorfolio(document.querySelector('.js-shuffle'))
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="text-center mb-7">
+              <!-- Nav -->
+              <ul class="js-filter-options nav nav-segment nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:;" data-group="all">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="branding">Branding</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="product">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="design">Design</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;" data-group="illustration">Illustration</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+
+            <div class="js-shuffle row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="js-shuffle-item col mb-5" data-groups='["product"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img12.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Product</span>
+                    <h3 class="card-title">Canva Schedule</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["branding"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img11.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Branding</span>
+                    <h3 class="card-title">Electro bike</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["branding"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img21.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Branding</span>
+                    <h3 class="card-title">Larq</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["product"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img24.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Product</span>
+                    <h3 class="card-title">Zibbet</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["illustration"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img19.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Illustration</span>
+                    <h3 class="card-title">Adobe Ai</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["branding"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img20.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Branding</span>
+                    <h3 class="card-title">Goby</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["branding"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img22.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Branding</span>
+                    <h3 class="card-title">OK</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["design"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img23.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Design</span>
+                    <h3 class="card-title">Flaunter</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="js-shuffle-item col mb-5" data-groups='["design"]'>
+                <!-- Card -->
+                <a class="card card-flush card-transition" href="#">
+                  <img class="card-img-top" src="@@autopath/assets/img/400x500/img10.jpg" alt="Image Description">
+                  <div class="card-body">
+                    <span class="card-subtitle text-body">Design</span>
+                    <h3 class="card-title">Inside weather</h3>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="text-center mb-7"&gt;
+                  &lt;!-- Nav --&gt;
+                  &lt;ul class="js-filter-options nav nav-segment nav-pills"&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link active" href="javascript:;" data-group="all"&gt;All&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="javascript:;" data-group="branding"&gt;Branding&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="javascript:;" data-group="product"&gt;Product&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="javascript:;" data-group="design"&gt;Design&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="javascript:;" data-group="illustration"&gt;Illustration&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;!-- End Nav --&gt;
+                &lt;/div&gt;
+
+                &lt;div class="js-shuffle row row-cols-1 row-cols-sm-2 row-cols-md-3"&gt;
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["product"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img12.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Product&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Canva Schedule&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["branding"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img11.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Branding&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Electro bike&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["branding"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img21.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Branding&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Larq&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["product"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img24.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Product&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Zibbet&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["illustration"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img19.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Illustration&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Adobe Ai&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["branding"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img20.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Branding&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Goby&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["branding"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img22.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Branding&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;OK&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["design"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img23.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Design&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Flaunter&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+
+                  &lt;div class="js-shuffle-item col mb-5" data-groups='["design"]'&gt;
+                    &lt;!-- Card --&gt;
+                    &lt;a class="card card-flush card-transition" href="#"&gt;
+                      &lt;img class="card-img-top" src="@@autopath/assets/img/400x500/img10.jpg" alt="Image Description"&gt;
+                      &lt;div class="card-body"&gt;
+                        &lt;span class="card-subtitle text-body"&gt;Design&lt;/span&gt;
+                        &lt;h3 class="card-title"&gt;Inside weather&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Card --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Col --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/node_modules/shufflejs/dist/shuffle.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF SHUFFLE
+      // =======================================================
+      class ShufflePorfolio {
+        constructor(element) {
+          this.element = element;
+          this.shuffle = new Shuffle(element, {
+            itemSelector: '.js-shuffle-item',
+            speed: 500
+          })
+
+          this.addFilterButtons()
+        }
+
+        addFilterButtons() {
+          const options = document.querySelector('.js-filter-options')
+          if (!options) {
+            return
+          }
+
+          const filterButtons = Array.from(options.children)
+          const onClick = this._handleFilterClick.bind(this)
+          filterButtons.forEach((button) => {
+            button.addEventListener('click', onClick, false)
+          });
+        }
+
+        _handleFilterClick(evt) {
+          const btn = evt.currentTarget.firstElementChild
+          const isActive = btn.classList.contains('active')
+          const btnGroup = btn.getAttribute('data-group')
+
+          this._removeActiveClassFromChildren(btn.parentNode.parentNode)
+
+          let filterGroup
+          if (isActive) {
+            btn.classList.remove('active')
+            filterGroup = Shuffle.ALL_ITEMS
+          } else {
+            btn.classList.add('active')
+            filterGroup = btnGroup
+          }
+
+          this.shuffle.filter(filterGroup)
+        }
+
+        _removeActiveClassFromChildren(parent) {
+          const { children } = parent
+          for (let i = children.length - 1; i >= 0; i--) {
+            children[i].firstElementChild.classList.remove('active')
+          }
+        }
+      }
+
+      new ShufflePorfolio(document.querySelector('.js-shuffle'))
+    })()
+  </script>
+</body>
+</html>

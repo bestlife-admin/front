@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Chart.js - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/chart.js/dist/Chart.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "circles.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Chart.js</h1>
+            <p class="docs-page-header-text">Simple yet flexible JavaScript charting for designers &amp; developers.</p>
+            <a class="link" href="https://www.chartjs.org/" target="_blank">Chart.js documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> to load the CSS.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;link rel="stylesheet" href="./node_modules/chart.js/dist/Chart.min.css"&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./node_modules/chart.js/dist/Chart.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./assets/js/hs.chartjs.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF CHARTJS
+              // =======================================================
+              document.querySelectorAll('.js-chart').forEach(item => {
+                HSCore.components.HSChartJS.init(item)
+              })
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" data-bs-toggle="pill" href="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" data-bs-toggle="pill" href="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Chart -->
+            <div class="position-relative">
+              <canvas class="js-chart"
+                      data-hs-chartjs-options='{
+                        "type": "bar",
+                        "data": {
+                          "labels": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+                          "datasets": [{
+                            "data": [10, 8, 5, 7, 6, 6, 10, 10, 8, 5, 7, 6, 6, 10, 6, 6, 10, 10, 8, 5, 7, 6, 6, 10, 6, 6, 10, 10, 8],
+                            "backgroundColor": "#19a0ff",
+                            "borderColor": "#19a0ff"
+                          }]
+                        },
+                        "options": {
+                          "scales": {
+                            "yAxes": [{
+                              "display": false,
+                              "gridLines": {
+                                "display": false,
+                                "drawBorder": false
+                              },
+                              "ticks": {
+                                "beginAtZero": true
+                              }
+                            }],
+                            "xAxes": [{
+                              "display": false,
+                              "gridLines": {
+                                "display": false,
+                                "drawBorder": false
+                              }
+                            }]
+                          },
+                          "tooltips": false
+                        }
+                      }'
+                      height="80"></canvas>
+            </div>
+            <!-- Chart -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Chart --&gt;
+                &lt;div class="position-relative"&gt;
+                  &lt;canvas class="js-chart"
+                          data-hs-chartjs-options='{
+                            "type": "bar",
+                            "data": {
+                              "labels": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+                              "datasets": [{
+                                "data": [10, 8, 5, 7, 6, 6, 10, 10, 8, 5, 7, 6, 6, 10, 6, 6, 10, 10, 8, 5, 7, 6, 6, 10, 6, 6, 10, 10, 8],
+                                "backgroundColor": "#19a0ff",
+                                "borderColor": "#19a0ff"
+                              }]
+                            },
+                            "options": {
+                              "scales": {
+                                "yAxes": [{
+                                  "display": false,
+                                  "gridLines": {
+                                    "display": false,
+                                    "drawBorder": false
+                                  },
+                                  "ticks": {
+                                    "beginAtZero": true
+                                  }
+                                }],
+                                "xAxes": [{
+                                  "display": false,
+                                  "gridLines": {
+                                    "display": false,
+                                    "drawBorder": false
+                                  }
+                                }]
+                              },
+                              "tooltips": false
+                            }
+                          }'
+                          height="80"&gt;&lt;/canvas&gt;
+                &lt;/div&gt;
+                &lt;!-- Chart --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card overflow-hidden">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table table-thead-bordered card-table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>options.scales.yAxes.ticks.prefix</code></td>
+                <td>Preffix for yAxes.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.scales.yAxes.ticks.postfix</code></td>
+                <td>Postfix for yAxes.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.scales.yAxes.ticks.metric</code></td>
+                <td>Metric output for axes <code>(1k, 1kk, etc..)</code>.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.responsive</code></td>
+                <td>Responsive chart.</td>
+                <td><code>true</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.maintainAspectRatio</code></td>
+                <td>Maintain the original canvas aspect ratio <code>(width / height)</code> when resizing.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.legend.display</code></td>
+                <td>Legend for chart.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.tooltips.enabled</code></td>
+                <td>Enable or disable tooltips.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.tooltips.prefix</code></td>
+                <td>Prefix for tooltip text.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.tooltips.postfix</code></td>
+                <td>Postfix for tooltip text.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td><code>options.tooltips.hasIndicator</code></td>
+                <td>Add indicator for tooltip.</td>
+                <td><code>false</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
+  <script src="@@autopath/node_modules/chart.js/dist/Chart.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+  <script src="@@autopath/assets/js/hs.chartjs.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF CHARTJS
+      // =======================================================
+      document.querySelectorAll('.js-chart').forEach(item => {
+        HSCore.components.HSChartJS.init(item)
+      })
+    })()
+  </script>
+</body>
+</html>

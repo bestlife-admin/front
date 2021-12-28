@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Sizing - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "sizing.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Sizing</h1>
+            <p class="docs-page-header-text">Easily make an element as wide or as tall with our width and height utilities.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/utilities/sizing/" target="_blank">Bootstrap Sizing documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="relative-to-the-parent" class="hs-docs-heading">
+        Relative to the parent <a class="anchorjs-link" href="#relative-to-the-parent" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Width and height utilities are generated from the <code>$sizes</code> Sass map in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="w-25"&gt;Width 25%&lt;/div&gt;
+          &lt;div class="w-35"&gt;Width 35%&lt;/div&gt;
+          &lt;div class="w-50"&gt;Width 50%&lt;/div&gt;
+          &lt;div class="w-65"&gt;Width 65%&lt;/div&gt;
+          &lt;div class="w-75"&gt;Width 75%&lt;/div&gt;
+          &lt;div class="w-85"&gt;Width 85%&lt;/div&gt;
+          &lt;div class="w-100"&gt;Width 100%&lt;/div&gt;
+          &lt;div class="w-auto"&gt;Width auto&lt;/div&gt;
+        </code>
+      </pre>
+
+      <pre class="rounded mb-7">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="h-25"&gt;Height 25%&lt;/div&gt;
+          &lt;div class="h-50"&gt;Height 50%&lt;/div&gt;
+          &lt;div class="h-75"&gt;Height 75%&lt;/div&gt;
+          &lt;div class="h-100"&gt;Height 100%&lt;/div&gt;
+          &lt;div class="h-auto"&gt;Height auto&lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>You can also use <code>max-width: 100%;</code>, <code>min-height: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="mw-100"&gt;Max-width: 100%&lt;/div&gt;
+        </code>
+      </pre>
+
+      <pre class="rounded mb-3">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="mh-100"&gt;Max-height: 100%&lt;/div&gt;
+        </code>
+      </pre>
+
+      <pre class="rounded">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="min-h-100"&gt;Min-height: 100%&lt;/div&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="relative-to-the-viewport" class="hs-docs-heading">
+        Relative to the viewport <a class="anchorjs-link" href="#relative-to-the-viewport" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <pre class="rounded mb-7">
+        <code class="language-markup" data-lang="html">
+          &lt;div class="min-vw-100"&gt;Min-width 100vh&lt;/div&gt;
+          &lt;div class="min-vh-100"&gt;Min-height 100vh&lt;/div&gt;
+
+          &lt;div class="min-vw-sm-100"&gt;Min-width 100vh&lt;/div&gt;
+          &lt;div class="min-vh-sm-100"&gt;Min-height 100vh&lt;/div&gt;
+
+          &lt;div class="min-vw-md-100"&gt;Min-width 100vh&lt;/div&gt;
+          &lt;div class="min-vh-md-100"&gt;Min-height 100vh&lt;/div&gt;
+
+          &lt;div class="min-vw-lg-100"&gt;Min-width 100vh&lt;/div&gt;
+          &lt;div class="min-vh-lg-100"&gt;Min-height 100vh&lt;/div&gt;
+
+          &lt;div class="min-vw-xl-100"&gt;Min-width 100vh&lt;/div&gt;
+          &lt;div class="min-vh-xl-100"&gt;Min-height 100vh&lt;/div&gt;
+
+          &lt;div class="vw-100"&gt;Width 100vh&lt;/div&gt;
+
+          &lt;div class="vh-30"&gt;Height 30vh&lt;/div&gt;
+          &lt;div class="vh-50"&gt;Height 50vh&lt;/div&gt;
+          &lt;div class="vh-70"&gt;Height 70vh&lt;/div&gt;
+          &lt;div class="vh-100"&gt;Height 100vh&lt;/div&gt;
+
+          &lt;div class="vh-sm-30"&gt;Height 30vh&lt;/div&gt;
+          &lt;div class="vh-sm-50"&gt;Height 50vh&lt;/div&gt;
+          &lt;div class="vh-sm-70"&gt;Height 70vh&lt;/div&gt;
+          &lt;div class="vh-sm-100"&gt;Height 100vh&lt;/div&gt;
+
+          &lt;div class="vh-md-30"&gt;Height 30vh&lt;/div&gt;
+          &lt;div class="vh-md-50"&gt;Height 50vh&lt;/div&gt;
+          &lt;div class="vh-md-70"&gt;Height 70vh&lt;/div&gt;
+          &lt;div class="vh-md-100"&gt;Height 100vh&lt;/div&gt;
+
+          &lt;div class="vh-lg-30"&gt;Height 30vh&lt;/div&gt;
+          &lt;div class="vh-lg-50"&gt;Height 50vh&lt;/div&gt;
+          &lt;div class="vh-lg-70"&gt;Height 70vh&lt;/div&gt;
+          &lt;div class="vh-lg-100"&gt;Height 100vh&lt;/div&gt;
+
+          &lt;div class="vh-xl-30"&gt;Height 30vh&lt;/div&gt;
+          &lt;div class="vh-xl-50"&gt;Height 50vh&lt;/div&gt;
+          &lt;div class="vh-xl-70"&gt;Height 70vh&lt;/div&gt;
+          &lt;div class="vh-xl-100"&gt;Height 100vh&lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

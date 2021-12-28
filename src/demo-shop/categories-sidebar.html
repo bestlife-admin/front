@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Shop: Categories Sidebar | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-shop.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "shop",
+    "category": "pages",
+    "subcategory": "",
+    "link": "categories-sidebar.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Breadcrumb -->
+    <div class="bg-light">
+      <div class="container py-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="@@autopath/demo-shop/index.html">Shop</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Categories</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Categories Section -->
+    <div class="container content-space-t-1 content-space-t-md-2 content-space-b-2">
+      <div class="row">
+        <div class="col-lg-3 mb-5 mb-lg-0">
+          <!-- Navbar -->
+          <div class="navbar-expand-lg">
+            <!-- Navbar Toggle -->
+            <div class="d-grid">
+              <button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+                <span class="d-flex justify-content-between align-items-center">
+                  <span class="text-dark">Menu</span>
+
+                  <span class="navbar-toggler-default">
+                    <i class="bi-list"></i>
+                  </span>
+
+                  <span class="navbar-toggler-toggled">
+                    <i class="bi-x"></i>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <!-- End Navbar Toggle -->
+
+            <!-- Navbar Collapse -->
+            <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+              <div id="shopNavCategories" class="nav nav-pills nav-vertical">
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwo" aria-expanded="true" aria-controls="shopCategoriesTwo">
+                  <i class="bi-tv nav-icon"></i> TV &amp; home appliances
+                </a>
+
+                <div id="shopCategoriesTwo" class="nav-collapse collapse show" data-bs-parent="#shopNavCategories">
+                  <div id="shopNavCategoriesTwo">
+                    <!-- Collapse -->
+                    <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwoSubOne" aria-expanded="true" aria-controls="shopCategoriesTwoSubOne">
+                      TV &amp; video devices
+                    </a>
+
+                    <div id="shopCategoriesTwoSubOne" class="nav-collapse collapse show" data-bs-parent="#shopNavCategoriesTwo">
+                      <a class="nav-link active" href="#">Accessories</a>
+                      <a class="nav-link" href="#">Kitchen</a>
+                      <a class="nav-link" href="#">Living room</a>
+                    </div>
+                    <!-- End Collapse -->
+                    
+                    <a class="nav-link" href="#">Cooling &amp; air treatment</a>
+                    <a class="nav-link" href="#">Vacuums &amp; floor care</a>
+                  </div>
+                </div>
+                <!-- End Collapse -->
+
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOne" aria-expanded="false" aria-controls="shopCategoriesOne">
+                  <i class="bi-display nav-icon"></i> Electronic devices
+                </a>
+
+                <div id="shopCategoriesOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+                  <div id="shopNavCategoriesOne">
+                    <!-- Collapse -->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOneSubOne" aria-expanded="false" aria-controls="shopCategoriesOneSubOne">
+                      Electronic accessories
+                    </a>
+
+                    <div id="shopCategoriesOneSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesOne">
+                      <a class="nav-link" href="#">Mobile accessories</a>
+                      <a class="nav-link" href="#">Portable audio</a>
+                      <a class="nav-link" href="#">Wearable</a>
+                      <a class="nav-link" href="#">Console accessories</a>
+                      <a class="nav-link" href="#">Camera accessories</a>
+                      <a class="nav-link" href="#">Computer accessories</a>
+                      <a class="nav-link" href="#">Storage</a>
+                      <a class="nav-link" href="#">Printers</a>
+                      <a class="nav-link" href="#">Computer components</a>
+                    </div>
+                    <!-- End Collapse -->
+
+                    <a class="nav-link" href="#">Mobiles</a>
+                    <a class="nav-link" href="#">Tablets</a>
+                    <a class="nav-link" href="#">Laptops</a>
+                    <a class="nav-link" href="#">Desktops</a>
+                    <a class="nav-link" href="#">Gaming consoles</a>
+                    <a class="nav-link" href="#">Car cameras</a>
+                    <a class="nav-link" href="#">Security cameras</a>
+                    <a class="nav-link" href="#">Digital cameras</a>
+                    <a class="nav-link" href="#">Gadgets</a>
+                  </div>
+                </div>
+                <!-- End Collapse -->
+                
+                <a class="nav-link" href="#">
+                  <i class="bi-shop nav-icon"></i> Clothing
+                </a>
+                
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThree" aria-expanded="false" aria-controls="shopCategoriesThree">
+                  <i class="bi-heart nav-icon"></i> Health &amp; beauty
+                </a>
+
+                <div id="shopCategoriesThree" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+                  <div id="shopNavCategoriesThree">
+                    <a class="nav-link" href="#">Food supplements</a>
+                    <a class="nav-link" href="#">Skincare</a>
+                    <a class="nav-link" href="#">Makeup</a>
+
+                    <!-- Collapse -->
+                    <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThreeSubOne" aria-expanded="false" aria-controls="shopCategoriesThreeSubOne">
+                      Beauty tools
+                    </a>
+
+                    <div id="shopCategoriesThreeSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesThree">
+                      <a class="nav-link" href="#">Men</a>
+                      <a class="nav-link" href="#">Women</a>
+                    </div>
+                    <!-- End Collapse -->
+                    
+                    <!-- Collapse -->
+                    <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThreeSubTwo" aria-expanded="false" aria-controls="shopCategoriesThreeSubTwo">
+                      Medical supplies
+                    </a>
+
+                    <div id="shopCategoriesThreeSubTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesThree">
+                      <a class="nav-link" href="#">Men</a>
+                      <a class="nav-link" href="#">Women</a>
+                    </div>
+                    <!-- End Collapse -->
+                  </div>
+                </div>
+                <!-- End Collapse -->
+
+                <a class="nav-link" href="#">
+                  <i class="bi-earbuds nav-icon"></i> Accessories
+                </a>
+
+                <a class="nav-link" href="#">
+                  <i class="bi-speaker-fill nav-icon"></i> Sound System
+                </a>
+
+                <a class="nav-link" href="#">
+                  <i class="bi-smartwatch nav-icon"></i> Smartwatch
+                </a>
+
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFour" aria-expanded="false" aria-controls="shopCategoriesFour">
+                  <i class="bi-piggy-bank nav-icon"></i> Babies &amp; toys
+                </a>
+
+                <div id="shopCategoriesFour" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+                  <div id="shopNavCategoriesFour">
+                    <!-- Collapse -->
+                    <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFourSubOne" aria-expanded="false" aria-controls="shopCategoriesFourSubOne">
+                      Foods
+                    </a>
+
+                    <div id="shopCategoriesFourSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFour">
+                      <a class="nav-link" href="#">Feeding</a>
+                      <a class="nav-link" href="#">Milk formula</a>
+                    </div>
+                    <!-- End Collapse -->
+                    
+                    <a class="nav-link" href="#">Diapering &amp; potty</a>
+                    <a class="nav-link" href="#">Nursery</a>
+                    <a class="nav-link" href="#">Baby personal care</a>
+                    <a class="nav-link" href="#">Clothing &amp; accessories</a>
+                    <a class="nav-link" href="#">Baby and &amp; toys</a>
+                  </div>
+                </div>
+                <!-- End Collapse -->
+
+                <a class="nav-link" href="#">
+                  <i class="bi-tools nav-icon"></i> Tools
+                </a>
+
+                <a class="nav-link" href="#">
+                  <i class="bi-eyeglasses nav-icon"></i> Glasses
+                </a>
+
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFive" aria-expanded="false" aria-controls="shopCategoriesFive">
+                  <i class="bi-truck nav-icon"></i> Automotive &amp; motorcycles
+                </a>
+
+                <div id="shopCategoriesFive" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+                  <!-- Collapse -->
+                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFiveSubOne" aria-expanded="false" aria-controls="shopCategoriesFiveSubOne">
+                    Automotive
+                  </a>
+
+                  <div id="shopCategoriesFiveSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFour">
+                    <a class="nav-link" href="#">Services &amp; installations</a>
+                    <a class="nav-link" href="#">Auto oils &amp; fluids</a>
+                  </div>
+                  <!-- End Collapse -->
+                  
+                  <a class="nav-link" href="#">Interior accessories</a>
+                  <a class="nav-link" href="#">Exterior accessories</a>
+                  <a class="nav-link" href="#">Car audio</a>
+                  <a class="nav-link" href="#">Auto care</a>
+                  <a class="nav-link" href="#">Riding gear</a>
+                </div>
+                <!-- End Collapse -->
+              </div>
+            </div>
+            <!-- End Navbar Collapse -->
+          </div>
+          <!-- End Navbar -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-9">
+          <!-- Banner -->
+          <div class="bg-img-start rounded-2 p-5 mb-5" style="background-image: url(@@autopath/assets/img/1920x800/img9.jpg);">
+            <div class="row align-items-md-center">
+              <div class="col-sm mb-3 mb-md-0">
+                <h1 class="h4 mb-0">Save up to 30% with orders above $50</h1>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-auto">
+                <a class="btn btn-primary btn-sm btn-transition rounded-pill" href="#">Shop now</a>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Banner -->
+
+          <div class="row">
+            <div class="col-sm-6 mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none overflow-hidden">
+                <div class="card-body d-flex align-items-center border-bottom p-0">
+                  <div class="w-65 border-end">
+                    <img class="img-fluid" src="@@autopath/assets/img/380x400/img3.jpg" alt="Image Description">
+                  </div>
+                  <div class="w-35">
+                    <div class="border-bottom">
+                      <img class="img-fluid" src="@@autopath/assets/img/380x360/img8.jpg" alt="Image Description">
+                    </div>
+                    <img class="img-fluid" src="@@autopath/assets/img/380x360/img7.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+                  <h3 class="card-title">T-shirts</h3>
+                  <p class="card-text text-muted small">Starting from $29.99</p>
+                  <a class="btn btn-outline-primary btn-sm btn-transition rounded-pill px-6" href="#">View all</a>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none overflow-hidden">
+                <div class="card-body d-flex align-items-center border-bottom p-0">
+                  <div class="w-65 border-end">
+                    <img class="img-fluid" src="@@autopath/assets/img/380x400/img4.jpg" alt="Image Description">
+                  </div>
+                  <div class="w-35">
+                    <div class="border-bottom">
+                      <img class="img-fluid" src="@@autopath/assets/img/380x360/img6.jpg" alt="Image Description">
+                    </div>
+                    <img class="img-fluid" src="@@autopath/assets/img/380x360/img5.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+                  <h3 class="card-title">Tech covers</h3>
+                  <p class="card-text text-muted small">Starting from $399.99</p>
+                  <a class="btn btn-outline-primary btn-sm btn-transition rounded-pill px-6" href="#">View all</a>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+
+          <div class="row row-cols-sm-2 row-cols-md-3">
+            <div class="col mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none text-center h-100">
+                <div class="card-pinned">
+                  <img class="card-img-top" src="@@autopath/assets/img/300x180/img3.jpg" alt="Image Description">
+
+                  <div class="card-pinned-top-start">
+                    <span class="badge bg-success rounded-pill">New arrival</span>
+                  </div>
+
+                  <div class="card-pinned-top-end">
+                    <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                      <i class="bi-heart"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <div class="mb-1">
+                    <a class="link-sm link-secondary" href="#">Accessories</a>
+                  </div>
+                  <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Herschel backpack in dark blue</a>
+                  <p class="card-text text-dark">$56.99</p>
+                </div>
+
+                <div class="card-footer pt-0">
+                  <!-- Rating -->
+                  <a class="d-inline-flex align-items-center mb-3" href="#">
+                    <div class="d-flex gap-1 me-2">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                    </div>
+                    <span class="small">0</span>
+                  </a>
+                  <!-- End Rating -->
+
+                  <button type="button" class="btn btn-outline-primary btn-sm btn-transition">Add to cart</button>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none text-center h-100">
+                <div class="card-pinned">
+                  <img class="card-img-top" src="@@autopath/assets/img/300x180/img1.jpg" alt="Image Description">
+
+                  <div class="card-pinned-top-end">
+                    <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                      <i class="bi-heart"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <div class="mb-1">
+                    <a class="link-sm link-secondary" href="#">Clothing</a>
+                  </div>
+                  <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Front hoodie</a>
+                  <p class="card-text text-dark">$91.88</p>
+                </div>
+
+                <div class="card-footer pt-0">
+                  <!-- Rating -->
+                  <a class="d-inline-flex align-items-center mb-3" href="#">
+                    <div class="d-flex gap-1 me-2">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                    </div>
+                    <span class="small">40</span>
+                  </a>
+                  <!-- End Rating -->
+
+                  <button type="button" class="btn btn-outline-primary btn-sm btn-transition">Add to cart</button>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none text-center h-100">
+                <div class="card-pinned">
+                  <img class="card-img-top" src="@@autopath/assets/img/300x180/img4.jpg" alt="Image Description">
+
+                  <div class="card-pinned-top-start">
+                    <span class="badge bg-danger rounded-pill">Out of stock</span>
+                  </div>
+
+                  <div class="card-pinned-top-end">
+                    <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                      <i class="bi-heart"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <div class="mb-1">
+                    <a class="link-sm link-secondary" href="#">Accessories</a>
+                  </div>
+                  <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Herschel backpack in gray</a>
+                  <p class="card-text text-dark">$29.99 <span class="text-body ms-1"><del>$33.99</del></span></p>
+                </div>
+
+                <div class="card-footer pt-0">
+                  <!-- Rating -->
+                  <a class="d-inline-flex align-items-center mb-3" href="#">
+                    <div class="d-flex gap-1 me-2">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                      <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                    </div>
+                    <span class="small">125</span>
+                  </a>
+                  <!-- End Rating -->
+
+                  <button type="button" class="btn btn-outline-primary btn-sm btn-transition">Add to cart</button>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+
+          <div class="row">
+            <div class="col-sm-6 mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none overflow-hidden">
+                <div class="card-body d-flex align-items-center border-bottom p-0">
+                  <div class="w-65 border-end">
+                    <img class="img-fluid" src="@@autopath/assets/img/380x400/img2.jpg" alt="Image Description">
+                  </div>
+                  <div class="w-35">
+                    <div class="border-bottom">
+                      <img class="img-fluid" src="@@autopath/assets/img/380x360/img4.jpg" alt="Image Description">
+                    </div>
+                    <img class="img-fluid" src="@@autopath/assets/img/380x360/img3.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+                  <h3 class="card-title">Caps</h3>
+                  <p class="card-text text-muted small">Starting from $13.99</p>
+                  <a class="btn btn-outline-primary btn-sm btn-transition rounded-pill px-6" href="#">View all</a>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 mb-4">
+              <!-- Card -->
+              <div class="card card-bordered shadow-none overflow-hidden">
+                <div class="card-body d-flex align-items-center border-bottom p-0">
+                  <div class="w-65 border-end">
+                    <img class="img-fluid" src="@@autopath/assets/img/380x400/img1.jpg" alt="Image Description">
+                  </div>
+                  <div class="w-35">
+                    <div class="border-bottom">
+                      <img class="img-fluid" src="@@autopath/assets/img/380x360/img2.jpg" alt="Image Description">
+                    </div>
+                    <img class="img-fluid" src="@@autopath/assets/img/380x360/img1.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+                  <h3 class="card-title">Accessories</h3>
+                  <p class="card-text text-muted small">Starting from $4.44</p>
+                  <a class="btn btn-outline-primary btn-sm btn-transition rounded-pill px-6" href="#">View all</a>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Categories Section -->
+
+    <!-- CTA -->
+    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/1920x800/img8.jpg);">
+      <div class="container content-space-2 content-space-lg-3">
+        <div class="w-md-65 w-lg-35">
+          <div class="mb-4">
+            <h2 class="h1 text-white">Wear your pride</h2>
+            <p class="text-white">Outdo the sun and refresh your workout with greys, whites and dark brights.</p>
+          </div>
+          <a class="btn btn-light btn-transition rounded-pill" href="#">Shop the collection</a>
+        </div>
+      </div>
+    </div>
+    <!-- End CTA -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-3.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-search.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-empty-shopping-cart.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

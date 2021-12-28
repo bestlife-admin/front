@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Circles (Pie chart) - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "circles.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Circles (Pie chart)</h1>
+            <p class="docs-page-header-text">A lightweight JavaScript library that generates circular graphs in SVG.</p>
+            <a class="link" href="https://www.lugolabs.com/circles" target="_blank">Circles documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./node_modules/appear/dist/appear.min.js"&gt;&lt;/script&gt;
+          &lt;script src="./node_modules/circles.js/circles.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./assets/js/hs.circles.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF CIRCLES
+              // =======================================================
+              setTimeout(() => {
+                HSCore.components.HSCircles.init('.js-circle')
+              })
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" data-bs-toggle="pill" href="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" data-bs-toggle="pill" href="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Circle -->
+            <div class="js-circle"
+                 data-hs-circles-options='{
+                   "value": 54,
+                   "maxValue": 100,
+                   "duration": 2000,
+                   "isViewportInit": true,
+                   "colors": ["rgba(30, 32, 34, 0.1)", "#1e2022"],
+                   "radius": 50,
+                   "width": 4,
+                   "additionalText": "",
+                   "textFontSize": 26,
+                   "textClass": "circles-chart-content",
+                   "textColor": "#1e2022"
+                 }'></div>
+            <!-- End Circle -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(30, 32, 34, 0.1)", "#1e2022"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#1e2022"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="text-class" class="hs-docs-heading">
+        Text class <a class="anchorjs-link" href="#text-class" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>"secondaryText": ""</code> to add a secondary text.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" data-bs-toggle="pill" href="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" data-bs-toggle="pill" href="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Circle -->
+            <div class="js-circle"
+                 data-hs-circles-options='{
+                   "value": 10,
+                   "maxValue": 100,
+                   "duration": 2000,
+                   "isViewportInit": true,
+                   "fgStrokeLinecap": "round",
+                   "fgStrokeMiterlimit": "10",
+                   "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                   "radius": 50,
+                   "width": 6,
+                   "additionalText": "",
+                   "textClass": "circles-chart-content",
+                   "textColor": "@@vars.style.color",
+                   "textFontSize": 32,
+                   "secondaryText": "some text",
+                   "secondaryTextColor": "#77838f",
+                   "secondaryTextFontSize": "13",
+                   "secondaryTextFontWeight": "400",
+                   "dividerSpace": "10"
+                 }'></div>
+            <!-- End Circle -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "fgStrokeLinecap": "round",
+                       "fgStrokeMiterlimit": "10",
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 6,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color",
+                       "textFontSize": 32,
+                       "secondaryText": "some text",
+                       "secondaryTextColor": "#77838f",
+                       "secondaryTextFontSize": "13",
+                       "secondaryTextFontWeight": "400",
+                       "dividerSpace": "10"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="colors" class="hs-docs-heading">
+        Colors <a class="anchorjs-link" href="#colors" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>An array of colors. Add any color code <code>"colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"]</code> to change the appearance of a circle.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" data-bs-toggle="pill" href="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" data-bs-toggle="pill" href="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <div class="row">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(0, 201, 167, 0.1)", "#00c9a7"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#00c9a7"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(0, 223, 252, 0.1)", "#00dffc"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#00dffc"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(255, 193, 7, 0.1)", "#ffc107"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#ffc107"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(222, 68, 55, 0.1)", "#de4437"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#de4437"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(30, 32, 34, 0.1)", "#1e2022"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#1e2022"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(119, 131, 143, 0.1)", "#77838f"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#77838f"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(255, 255, 255, 0.1)", "#ffffff"],
+                     "radius": 50,
+                     "width": 4,
+                     "additionalText": "",
+                     "textFontSize": 26,
+                     "textClass": "circles-chart-content",
+                     "textColor": "#ffffff"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(0, 201, 167, 0.1)", "#00c9a7"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#00c9a7"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(0, 223, 252, 0.1)", "#00dffc"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#00dffc"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(255, 193, 7, 0.1)", "#ffc107"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#ffc107"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(222, 68, 55, 0.1)", "#de4437"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#de4437"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(30, 32, 34, 0.1)", "#1e2022"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#1e2022"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(119, 131, 143, 0.1)", "#77838f"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#77838f"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(255, 255, 255, 0.1)", "#ffffff"],
+                       "radius": 50,
+                       "width": 4,
+                       "additionalText": "",
+                       "textFontSize": 26,
+                       "textClass": "circles-chart-content",
+                       "textColor": "#ffffff"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="size" class="hs-docs-heading">
+        Size <a class="anchorjs-link" href="#size" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Fancy larger or smaller circles? Control them with <code>"radius":</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" data-bs-toggle="pill" href="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" data-bs-toggle="pill" href="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 4,
+                     "textFontSize": 40,
+                     "textFontWeight": 700,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+              <!-- End Circle -->
+
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 4,
+                     "textFontSize": 28,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+              <!-- End Circle -->
+
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 40,
+                     "width": 4,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+              <!-- End Circle -->
+
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 30,
+                     "width": 4,
+                     "textFontSize": 16,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+              <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 4,
+                       "textFontSize": 40,
+                       "textFontWeight": 700,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 4,
+                       "textFontSize": 28,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 40,
+                       "width": 4,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 30,
+                       "width": 4,
+                       "textFontSize": 16,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="stroke-width" class="hs-docs-heading">
+        Stroke width <a class="anchorjs-link" href="#stroke-width" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Adjusted with of a ring with <code>"width":</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" data-bs-toggle="pill" href="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" data-bs-toggle="pill" href="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 1,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 3,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 10,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 50,
+                     "width": 16,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 1,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 3,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 10,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 50,
+                       "width": 16,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="stroke-linecap" class="hs-docs-heading">
+        Stroke linecap <a class="anchorjs-link" href="#stroke-linecap" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>The <code>stroke-linecap</code> attribute is a presentation attribute defining the shape to be used at the end of open subpaths when they are stroked.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" data-bs-toggle="pill" href="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" data-bs-toggle="pill" href="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "fgStrokeLinecap": "square",
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "fgStrokeLinecap": "square",
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="max-value" class="hs-docs-heading">
+        Max value <a class="anchorjs-link" href="#max-value" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Returns the max value of a circle.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab7" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab7" data-bs-toggle="pill" href="#nav-result7" role="tab" aria-controls="nav-result7" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab7" data-bs-toggle="pill" href="#nav-html7" role="tab" aria-controls="nav-html7" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent7">
+          <div class="tab-pane fade p-4 show active" id="nav-result7" role="tabpanel" aria-labelledby="nav-resultTab7">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 17,
+                     "maxValue": 25,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 29,
+                     "maxValue": 50,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html7" role="tabpanel" aria-labelledby="nav-htmlTab7">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 17,
+                       "maxValue": 25,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 29,
+                       "maxValue": 50,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="type" class="hs-docs-heading">
+        Type <a class="anchorjs-link" href="#type" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Any unit measurements or icons can be used to demonstrate the stats. Use <code>"type": ""</code> to show texts or numbers, or use <code>"type": "iconic", "icon": "&lt;i class=\"far fa-bell\"&gt;&lt;/i&gt;",</code> for icons.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab8" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab8" data-bs-toggle="pill" href="#nav-result8" role="tab" aria-controls="nav-result8" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab8" data-bs-toggle="pill" href="#nav-html8" role="tab" aria-controls="nav-html8" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent8">
+          <div class="tab-pane fade p-4 show active" id="nav-result8" role="tabpanel" aria-labelledby="nav-resultTab8">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "type": "iconic",
+                     "icon": "<i class=\"bi-bell\"></i>",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "%",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "k",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html8" role="tabpanel" aria-labelledby="nav-htmlTab8">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "type": "iconic",
+                       "icon": "&lt;i class=\"tio-notifications-on-outlined\"&gt;&lt;/i&gt;",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "%",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "k",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="animation-speed" class="hs-docs-heading">
+        Animation speed <a class="anchorjs-link" href="#animation-speed" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Value in <code>ms</code> of animation's duration. For example, <code>"duration": 500</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab9" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab9" data-bs-toggle="pill" href="#nav-result9" role="tab" aria-controls="nav-result9" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab9" data-bs-toggle="pill" href="#nav-html9" role="tab" aria-controls="nav-html9" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent9">
+          <div class="tab-pane fade p-4 show active" id="nav-result9" role="tabpanel" aria-labelledby="nav-resultTab9">
+            <div class="row align-items-center">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 500,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 54,
+                     "maxValue": 100,
+                     "duration": 5000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 60,
+                     "width": 6,
+                     "textFontSize": 22,
+                     "additionalText": "",
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html9" role="tabpanel" aria-labelledby="nav-htmlTab9">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 500,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 54,
+                       "maxValue": 100,
+                       "duration": 5000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 60,
+                       "width": 6,
+                       "textFontSize": 22,
+                       "additionalText": "",
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="additional-text" class="hs-docs-heading">
+        Additional text <a class="anchorjs-link" href="#additional-text" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Additional texts are useful to describe/highlight the main values and they can be added to the value either after, like this:</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab10" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab10" data-bs-toggle="pill" href="#nav-result10" role="tab" aria-controls="nav-result10" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab10" data-bs-toggle="pill" href="#nav-html10" role="tab" aria-controls="nav-html10" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent10">
+          <div class="tab-pane fade p-4 show active" id="nav-result10" role="tabpanel" aria-labelledby="nav-resultTab10">
+            <!-- Circle -->
+            <div class="js-circle"
+                 data-hs-circles-options='{
+                   "value": 25,
+                   "maxValue": 100,
+                   "duration": 2000,
+                   "isViewportInit": true,
+                   "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                   "radius": 80,
+                   "width": 6,
+                   "fgStrokeLinecap": "round",
+                   "additionalText": " Top",
+                   "textFontSize": 24,
+                   "textClass": "circles-chart-content",
+                   "textColor": "@@vars.style.color"
+                 }'></div>
+            <!-- End Circle -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html10" role="tabpanel" aria-labelledby="nav-htmlTab10">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 25,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top",
+                       "textFontSize": 24,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Or before the value, like this: <code>"additionalTextType": "prefix"</code> should be added to put the additional text before the value.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab11" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab11" data-bs-toggle="pill" href="#nav-result11" role="tab" aria-controls="nav-result11" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab11" data-bs-toggle="pill" href="#nav-html11" role="tab" aria-controls="nav-html11" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent11">
+          <div class="tab-pane fade p-4 show active" id="nav-result11" role="tabpanel" aria-labelledby="nav-resultTab11">
+            <!-- Circle -->
+            <div class="js-circle"
+                 data-hs-circles-options='{
+                   "value": 70,
+                   "maxValue": 100,
+                   "duration": 2000,
+                   "isViewportInit": true,
+                   "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                   "radius": 80,
+                   "width": 6,
+                   "fgStrokeLinecap": "round",
+                   "additionalText": " Top ",
+                   "additionalTextType": "prefix",
+                   "textFontSize": 24,
+                   "textClass": "circles-chart-content",
+                   "textColor": "@@vars.style.color"
+                 }'></div>
+            <!-- End Circle -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html11" role="tabpanel" aria-labelledby="nav-htmlTab11">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 70,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 24,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Control additional text size with <code>"textFontSize":</code></p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab12" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab12" data-bs-toggle="pill" href="#nav-result12" role="tab" aria-controls="nav-result12" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab12" data-bs-toggle="pill" href="#nav-html12" role="tab" aria-controls="nav-html12" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent12">
+          <div class="tab-pane fade p-4 show active" id="nav-result12" role="tabpanel" aria-labelledby="nav-resultTab12">
+            <div class="row">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 10,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                    data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 16,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                    data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 22,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                    data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 32,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html12" role="tabpanel" aria-labelledby="nav-htmlTab12">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 10,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 16,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 22,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 32,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Control text font weight with <code>"textFontWeight":</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab13" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab13" data-bs-toggle="pill" href="#nav-result13" role="tab" aria-controls="nav-result13" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab13" data-bs-toggle="pill" href="#nav-html13" role="tab" aria-controls="nav-html13" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent13">
+          <div class="tab-pane fade p-4 show active" id="nav-result13" role="tabpanel" aria-labelledby="nav-resultTab13">
+            <div class="row">
+              <!-- Circle -->
+              <div class="js-circle col-auto mb-3"
+                   data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 32,
+                     "textFontWeight": 400,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+
+                <!-- Circle -->
+                <div class="js-circle col-auto mb-3"
+                    data-hs-circles-options='{
+                     "value": 10,
+                     "maxValue": 100,
+                     "duration": 2000,
+                     "isViewportInit": true,
+                     "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                     "radius": 80,
+                     "width": 6,
+                     "fgStrokeLinecap": "round",
+                     "additionalText": " Top ",
+                     "additionalTextType": "prefix",
+                     "textFontSize": 32,
+                     "textFontWeight": 600,
+                     "textClass": "circles-chart-content",
+                     "textColor": "@@vars.style.color"
+                   }'></div>
+                <!-- End Circle -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html13" role="tabpanel" aria-labelledby="nav-htmlTab13">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 32,
+                       "textFontWeight": 400,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+
+                  &lt;!-- Circle --&gt;
+                  &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "additionalText": " Top ",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 32,
+                       "textFontWeight": 600,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="hide-value" class="hs-docs-heading">
+        Hide value <a class="anchorjs-link" href="#hide-value" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Hide the value of a circle to make the additional text main value via <code>"isHideValue": true</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab14" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab14" data-bs-toggle="pill" href="#nav-result14" role="tab" aria-controls="nav-result14" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab14" data-bs-toggle="pill" href="#nav-html14" role="tab" aria-controls="nav-html14" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent14">
+          <div class="tab-pane fade p-4 show active" id="nav-result14" role="tabpanel" aria-labelledby="nav-resultTab14">
+            <!-- Circle -->
+            <div class="js-circle col-auto mb-3"
+                 data-hs-circles-options='{
+                   "value": 10,
+                   "maxValue": 100,
+                   "duration": 2000,
+                   "isViewportInit": true,
+                   "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                   "radius": 80,
+                   "width": 6,
+                   "fgStrokeLinecap": "round",
+                   "isHideValue": true,
+                   "additionalText": "Tripling",
+                   "additionalTextType": "prefix",
+                   "textFontSize": 22,
+                   "textFontWeight": 300,
+                   "textClass": "circles-chart-content",
+                   "textColor": "@@vars.style.color"
+                 }'></div>
+              <!-- End Circle -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html14" role="tabpanel" aria-labelledby="nav-htmlTab14">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Circle --&gt;
+                &lt;div class="js-circle"
+                     data-hs-circles-options='{
+                       "value": 10,
+                       "maxValue": 100,
+                       "duration": 2000,
+                       "isViewportInit": true,
+                       "colors": ["rgba(55, 125, 255, 0.1)", "@@vars.style.color"],
+                       "radius": 80,
+                       "width": 6,
+                       "fgStrokeLinecap": "round",
+                       "isHideValue": true,
+                       "additionalText": "Tripling",
+                       "additionalTextType": "prefix",
+                       "textFontSize": 22,
+                       "textFontWeight": 300,
+                       "textClass": "circles-chart-content",
+                       "textColor": "@@vars.style.color"
+                     }'&gt;&lt;/div&gt;
+                  &lt;!-- End Circle --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card overflow-hidden">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table table-thead-bordered card-table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <p><code>radius</code></p>
+                </td>
+                <td>The radius of the circles.</td>
+                <td><code>80</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>duration</code></p>
+                </td>
+                <td>Value in <code>ms</code> of animation's duration; defaults to 500; if 0 or null is passed, the animation will not run.</td>
+                <td><code>1000</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>wrpClass</code></p>
+                </td>
+                <td>Class name to apply on the generated element wrapping the whole circle.</td>
+                <td><code>'circles-wrap'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>colors</code></p>
+                </td>
+                <td>An array of colors, with the first item coloring the full circle (optional, it will be ['#EEE', '#F00'] if not specified).</td>
+                <td><code>["@@vars.style.color", "#e7eaf3"]</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>isHideValue</code></p>
+                </td>
+                <td>Hides the animated value of the graph.</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>dividerSpace</code></p>
+                </td>
+                <td>Distance between main and secondary texts.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>fgStrokeLinecap</code></p>
+                </td>
+                <td>
+                  The stroke-linecap attribute is a presentation attribute defining the shape to be used at the end of open subpaths when they are stroked. Available values:
+                  <ul>
+                    <li><code>square</code></li>
+                    <li><code>round</code></li>
+                    <li><code>butt</code></li>
+                  </ul>
+                </td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>fgStrokeMiterlimit</code></p>
+                </td>
+                <td>The <code>stroke-miterlimit</code> attribute is a presentation attribute defining a limit on the ratio of the miter length to the <a class="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-width">stroke-width</a> used to draw a miter join. When the limit is exceeded, the join is converted from a miter to a bevel.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>additionalTextType</code></p>
+                </td>
+                <td><code>additionalTextType</code> - if the value is "prefix", then the value of the <code>additionalText</code> parameter will be displayed before the numerical value of the chart, otherwise after that.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>additionalText</code></p>
+                </td>
+                <td>Postfix/prefix that is added to the numeric value of the graph.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>textFontSize</code></p>
+                </td>
+                <td>Font size of the numerical value of the graph.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>textFontWeight</code></p>
+                </td>
+                <td>Font weight of the numerical value of the graph.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>textColor</code></p>
+                </td>
+                <td>Graph numerical color.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>secondaryText</code></p>
+                </td>
+                <td>Text helper displayed below the numerical value of the graph.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>secondaryTextFontWeight</code></p>
+                </td>
+                <td>Font weight of the text helper.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>secondaryTextFontSize</code></p>
+                </td>
+                <td>Font size of the text helper.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>secondaryTextColor</code></p>
+                </td>
+                <td>Color of the text helper.</td>
+                <td><code>null</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
+  <script src="@@autopath/node_modules/circles.js/circles.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+  <script src="@@autopath/assets/js/hs.circles.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF CIRCLES
+      // =======================================================
+      setTimeout(() => {
+        HSCore.components.HSCircles.init('.js-circle')
+      })
+    })()
+  </script>
+</body>
+</html>

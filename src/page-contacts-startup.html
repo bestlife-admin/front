@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Contacts Startup | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/leaflet/dist/leaflet.css"/>
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "main",
+    "category": "company",
+    "subcategory": "",
+    "link": "page-contacts-startup.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Contact Form -->
+    <div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2">
+      <div class="row">
+        <div class="col-lg-6 mb-9 mb-lg-0">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h1>Get in touch</h1>
+            <p>We'd love to talk about how we can help you.</p>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Leaflet -->
+          <div class="overflow-hidden">
+            <div id="map" class="leaflet mb-5"
+                 data-hs-leaflet-options='{
+                 "map": {
+                   "scrollWheelZoom": false,
+                   "coords": [37.4040344, -122.0289704]
+                 },
+                 "marker": [
+                   {
+                     "coords": [37.4040344, -122.0289704],
+                     "icon": {
+                       "iconUrl": "@@autopath/assets/svg/components/map-pin.svg",
+                       "iconSize": [50, 45]
+                     },
+                     "popup": {
+                       "text": "153 Williamson Plaza, Maggieberg"
+                     }
+                   }
+                 ]
+                }'></div>
+          </div>
+          <!-- End Leaflet -->
+
+          <div class="row">
+            <div class="col-sm-6">
+              <h5 class="mb-1">Call us:</h5>
+              <p>+1 (062) 109-9222</p>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6">
+              <h5 class="mb-1">Email us:</h5>
+              <p>hello@example.com</p>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6">
+              <h5 class="mb-1">Address:</h5>
+              <p>153 Williamson Plaza, Maggieberg</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-6">
+          <div class="ps-lg-5">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header border-bottom text-center">
+                <h3 class="card-header-title">General inquiries</h3>
+              </div>
+
+              <div class="card-body">
+                <!-- Form -->
+                <form>
+                  <div class="row gx-3">
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormFirstName">First name</label>
+                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormLasttName">Last name</label>
+                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+
+                  <div class="row gx-3">
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+                        <input type="email" class="form-control form-control-lg" name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
+                        <input type="text" class="form-control form-control-lg" name="hireUsFormNamePhone" id="hireUsFormPhone" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+
+                  <!-- Form -->
+                  <div class="mb-3">
+                    <label class="form-label" for="hireUsFormDetails">Details</label>
+                    <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your ..." aria-label="Tell us about your ..." rows="4"></textarea>
+                  </div>
+                  <!-- End Form -->
+
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+                  </div>
+
+                  <div class="text-center">
+                    <p class="form-text">We'll get back to you in 1-2 business days.</p>
+                  </div>
+                </form>
+                <!-- End Form -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Contact Form -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/leaflet/dist/leaflet.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+  <script src="@@autopath/assets/js/hs.leaflet.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF LEAFLET
+      // =======================================================
+      const leaflet = HSCore.components.HSLeaflet.init(document.getElementById('map'))
+
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        id: 'mapbox/light-v9'
+      }).addTo(leaflet)
+    })()
+  </script>
+</body>
+</html>

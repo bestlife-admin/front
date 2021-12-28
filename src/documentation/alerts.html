@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Alerts - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "alerts.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Alerts</h1>
+            <p class="docs-page-header-text">See what's new added, changed, fixed, improved or updated in the latest Front versions.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank">Bootstrap Alerts documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="examples" class="hs-docs-heading">
+        Examples <a class="anchorjs-link" href="#examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.alert-*</code> classes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="alert alert-primary" role="alert">
+              This is a primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              This is a secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+              This is a success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              This is a danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              This is a light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              This is a dark alert—check it out!
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-primary" role="alert"&gt;
+                  This is a primary alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-secondary" role="alert"&gt;
+                  This is a secondary alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-success" role="alert"&gt;
+                  This is a success alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-danger" role="alert"&gt;
+                  This is a danger alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-warning" role="alert"&gt;
+                  This is a warning alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-info" role="alert"&gt;
+                  This is a info alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-light" role="alert"&gt;
+                  This is a light alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-dark" role="alert"&gt;
+                  This is a dark alert—check it out!
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="soft-style" class="hs-docs-heading">
+        Soft style <a class="anchorjs-link" href="#soft-style" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.alert-soft-*</code> classes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <div class="alert alert-soft-primary" role="alert">
+              This is a soft primary alert—check it out!
+            </div>
+            <div class="alert alert-soft-secondary" role="alert">
+              This is a soft secondary alert—check it out!
+            </div>
+            <div class="alert alert-soft-success" role="alert">
+              This is a soft success alert—check it out!
+            </div>
+            <div class="alert alert-soft-danger" role="alert">
+              This is a soft danger alert—check it out!
+            </div>
+            <div class="alert alert-soft-warning" role="alert">
+              This is a soft warning alert—check it out!
+            </div>
+            <div class="alert alert-soft-info" role="alert">
+              This is a soft info alert—check it out!
+            </div>
+            <div class="alert alert-soft-light" role="alert">
+              This is a soft light alert—check it out!
+            </div>
+            <div class="alert alert-soft-dark" role="alert">
+              This is a soft dark alert—check it out!
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-soft-primary" role="alert"&gt;
+                  This is a soft primary alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-secondary" role="alert"&gt;
+                  This is a soft secondary alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-success" role="alert"&gt;
+                  This is a soft success alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-danger" role="alert"&gt;
+                  This is a soft danger alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-warning" role="alert"&gt;
+                  This is a soft warning alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-info" role="alert"&gt;
+                  This is a soft info alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-light" role="alert"&gt;
+                  This is a soft light alert—check it out!
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-dark" role="alert"&gt;
+                  This is a soft dark alert—check it out!
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="link-color" class="hs-docs-heading">
+        Link color <a class="anchorjs-link" href="#link-color" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <div class="alert alert-primary" role="alert">
+              This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-soft-primary" role="alert">
+              This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-primary" role="alert"&gt;
+                  This is a primary alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;. Give it a click if you like.
+                &lt;/div&gt;
+                &lt;div class="alert alert-soft-primary" role="alert"&gt;
+                  This is a primary alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;. Give it a click if you like.
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="with-icon" class="hs-docs-heading">
+        With Icon <a class="anchorjs-link" href="#with-icon" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <div class="alert alert-primary" role="alert">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <i class="bi-exclamation-triangle-fill"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  Information: Alert with icon
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-primary" role="alert"&gt;
+                  &lt;div class="d-flex"&gt;
+                    &lt;div class="flex-shrink-0"&gt;
+                      &lt;i class="bi-exclamation-triangle-fill"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="flex-grow-1 ms-2"&gt;
+                      Information: Alert with icon
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="dismissing" class="hs-docs-heading">
+        Dismissing <a class="anchorjs-link" href="#dismissing" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.alert-dismissible</code> class for <code>.alert</code>.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <span class="fw-semi-bold">Holy guacamole!</span> You should check in on some of those fields below.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+                  &lt;span class="fw-semi-bold"&gt;Holy guacamole!&lt;/span&gt; You should check in on some of those fields below.
+                  &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="additional-content" class="hs-docs-heading">
+        Additional content <a class="anchorjs-link" href="#additional-content" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <div class="alert alert-success" role="alert">
+              <h3 class="alert-heading">Well done!</h3>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <hr />
+              <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="alert alert-success" role="alert"&gt;
+                  &lt;h3 class="alert-heading"&gt;Well done!&lt;/h3&gt;
+                  &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+                  &lt;hr /&gt;
+                  &lt;p class="mb-0"&gt;Whenever you need to, be sure to use margin utilities to keep things nice and tidy.&lt;/p&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

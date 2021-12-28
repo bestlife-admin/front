@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Toasts - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "toasts.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Toasts</h1>
+            <p class="docs-page-header-text">Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/toasts/" target="_blank">Bootstrap Toasts documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Toast -->
+            <div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mb-0">Bob Dean</h5>
+                    <small class="ms-auto">11 mins ago</small>
+                  </div>
+                  <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+            <!-- End Toast -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Toast --&gt;
+                &lt;div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                  &lt;div class="toast-header"&gt;
+                    &lt;div class="d-flex align-items-center flex-grow-1"&gt;
+                      &lt;div class="flex-shrink-0"&gt;
+                        &lt;img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="flex-grow-1 ms-3"&gt;
+                        &lt;h5 class="mb-0"&gt;Bob Dean&lt;/h5&gt;
+                        &lt;small class="ms-auto"&gt;11 mins ago&lt;/small&gt;
+                      &lt;/div&gt;
+                      &lt;div class="text-end"&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="toast-body"&gt;
+                    Hello, world! This is a toast message.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Toast --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="live" class="hs-docs-heading">
+        Live <a class="anchorjs-link" href="#live" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Click the button the below to show as toast (positioning with our utilities in the lower right corner) that has been hidden by default with <code>.hide</code>.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab2" href="#nav-js2" data-bs-toggle="pill" data-bs-target="#nav-js2" role="tab" aria-controls="nav-js2" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Toast Luncher -->
+            <button id="liveToastBtn" class="btn btn-primary">Toast</button>
+
+            <!-- Toast -->
+            <div id="liveToast" class="position-fixed toast hide" role="alert" aria-live="assertive" aria-atomic="true" style="top: 20px; right: 20px; z-index: 1000;">
+              <div class="toast-header">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mb-0">Bob Dean</h5>
+                    <small class="ms-auto">11 mins ago</small>
+                  </div>
+                  <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+            <!-- End Toast -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Toast Luncher --&gt;
+                &lt;button id="liveToastBtn" class="btn btn-primary"&gt;Toast&lt;/button&gt;
+
+                &lt;!-- Toast --&gt;
+                &lt;div id="liveToast" class="position-fixed toast hide" role="alert" aria-live="assertive" aria-atomic="true" style="top: 20px; right: 20px; z-index: 1000;"&gt;
+                  &lt;div class="toast-header"&gt;
+                    &lt;div class="d-flex align-items-center flex-grow-1"&gt;
+                      &lt;div class="flex-shrink-0"&gt;
+                        &lt;img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="flex-grow-1 ms-3"&gt;
+                        &lt;h5 class="mb-0"&gt;Bob Dean&lt;/h5&gt;
+                        &lt;small class="ms-auto"&gt;11 mins ago&lt;/small&gt;
+                      &lt;/div&gt;
+                      &lt;div class="text-end"&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="toast-body"&gt;
+                    Hello, world! This is a toast message.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Toast --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js2" role="tabpanel" aria-labelledby="nav-jsTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;script&gt;
+                    // INITIALIZATION OF LIVE TOAST
+                    // =======================================================
+                    const liveToast = new bootstrap.Toast(document.querySelector('#liveToast'))
+                    document.querySelector('#liveToastBtn').addEventListener('click', () => liveToast.show())
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="stacking" class="hs-docs-heading">
+        Stacking <a class="anchorjs-link" href="#stacking" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>When you have multiple toasts, we default to vertically stacking them in a readable manner.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <div class="toast-container">
+              <!-- Toast -->
+              <div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <div class="d-flex align-items-center flex-grow-1">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h5 class="mb-0">Bob Dean</h5>
+                      <small class="ms-auto">11 mins ago</small>
+                    </div>
+                    <div class="text-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-body">
+                  See? Just like this.
+                </div>
+              </div>
+              <!-- End Toast -->
+
+              <!-- Toast -->
+              <div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <div class="d-flex align-items-center flex-grow-1">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h5 class="mb-0">Ella Lauda</h5>
+                      <small class="ms-auto">20 mins ago</small>
+                    </div>
+                    <div class="text-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-body">
+                  Heads up, toasts will stack automatically
+                </div>
+              </div>
+              <!-- End Toast -->
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="toast-container"&gt;
+                  &lt;!-- Toast --&gt;
+                  &lt;div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                    &lt;div class="toast-header"&gt;
+                      &lt;div class="d-flex align-items-center flex-grow-1"&gt;
+                        &lt;div class="flex-shrink-0"&gt;
+                          &lt;img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-grow-1 ms-3"&gt;
+                          &lt;h5 class="mb-0"&gt;Bob Dean&lt;/h5&gt;
+                          &lt;small class="ms-auto"&gt;11 mins ago&lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;div class="text-end"&gt;
+                          &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="toast-body"&gt;
+                      See? Just like this.
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Toast --&gt;
+
+                  &lt;!-- Toast --&gt;
+                  &lt;div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                    &lt;div class="toast-header"&gt;
+                      &lt;div class="d-flex align-items-center flex-grow-1"&gt;
+                        &lt;div class="flex-shrink-0"&gt;
+                          &lt;img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image description"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-grow-1 ms-3"&gt;
+                          &lt;h5 class="mb-0"&gt;Ella Lauda&lt;/h5&gt;
+                          &lt;small class="ms-auto"&gt;20 mins ago&lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;div class="text-end"&gt;
+                          &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="toast-body"&gt;
+                      Heads up, toasts will stack automatically
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Toast --&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="placement" class="hs-docs-heading">
+        Placement <a class="anchorjs-link" href="#placement" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the <code>.toast</code>.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- Toast -->
+            <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+              <div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;">
+                <div class="toast-header">
+                  <div class="d-flex align-items-center flex-grow-1">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h5 class="mb-0">Bob Dean</h5>
+                      <small class="ms-auto">11 mins ago</small>
+                    </div>
+                    <div class="text-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <!-- End Toast -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Toast --&gt;
+                &lt;div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;"&gt;
+                  &lt;div class="toast toast-show fade show" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;"&gt;
+                    &lt;div class="toast-header"&gt;
+                      &lt;div class="d-flex align-items-center flex-grow-1"&gt;
+                        &lt;div class="flex-shrink-0"&gt;
+                          &lt;img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img4.jpg" alt="Image description"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-grow-1 ms-3"&gt;
+                          &lt;h5 class="mb-0"&gt;Bob Dean&lt;/h5&gt;
+                          &lt;small class="ms-auto"&gt;11 mins ago&lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;div class="text-end"&gt;
+                          &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="toast-body"&gt;
+                      Hello, world! This is a toast message.
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Toast --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF LIVE TOAST
+      // =======================================================
+      const liveToast = new bootstrap.Toast(document.querySelector('#liveToast'))
+      document.querySelector('#liveToastBtn').addEventListener('click', () => liveToast.show())
+    })()
+  </script>
+</body>
+</html>

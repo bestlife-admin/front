@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Badge - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "badge.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Badge</h1>
+            <p class="docs-page-header-text">See what's new added, changed, fixed, improved or updated in the latest Front versions.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/badge/" target="_blank">Bootstrap Badge documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="contextual-variations" class="hs-docs-heading">
+        Contextual variations <a class="anchorjs-link" href="#contextual-variations" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-secondary">Secondary</span>
+            <span class="badge bg-success">Success</span>
+            <span class="badge bg-danger">Danger</span>
+            <span class="badge bg-warning">Warning</span>
+            <span class="badge bg-info">Info</span>
+            <span class="badge bg-light">Light</span>
+            <span class="badge bg-dark">Dark</span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;
+                &lt;span class="badge bg-secondary"&gt;Secondary&lt;/span&gt;
+                &lt;span class="badge bg-success"&gt;Success&lt;/span&gt;
+                &lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;
+                &lt;span class="badge bg-warning"&gt;Warning&lt;/span&gt;
+                &lt;span class="badge bg-info"&gt;Info&lt;/span&gt;
+                &lt;span class="badge bg-light"&gt;Light&lt;/span&gt;
+                &lt;span class="badge bg-dark"&gt;Dark&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="soft" class="hs-docs-heading">
+        Soft <a class="anchorjs-link" href="#soft" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.badge-soft-*</code> classes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <span class="badge bg-soft-primary text-primary">Primary</span>
+            <span class="badge bg-soft-primary-light text-primary">Primary Light</span>
+            <span class="badge bg-soft-secondary text-secondary">Secondary</span>
+            <span class="badge bg-soft-success text-success">Success</span>
+            <span class="badge bg-soft-danger text-danger">Danger</span>
+            <span class="badge bg-soft-warning text-warning">Warning</span>
+            <span class="badge bg-soft-info text-info">Info</span>
+            <span class="badge bg-soft-light text-light">Light</span>
+            <span class="badge bg-soft-dark text-dark">Dark</span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="badge bg-soft-primary text-primary"&gt;Primary&lt;/span&gt;
+                &lt;span class="badge bg-soft-primary-light text-primary"&gt;Primary Light&lt;/span&gt;
+                &lt;span class="badge bg-soft-secondary text-secondary"&gt;Secondary&lt;/span&gt;
+                &lt;span class="badge bg-soft-success text-success"&gt;Success&lt;/span&gt;
+                &lt;span class="badge bg-soft-danger text-danger"&gt;Danger&lt;/span&gt;
+                &lt;span class="badge bg-soft-warning text-warning"&gt;Warning&lt;/span&gt;
+                &lt;span class="badge bg-soft-info text-info"&gt;Info&lt;/span&gt;
+                &lt;span class="badge bg-soft-light text-light"&gt;Light&lt;/span&gt;
+                &lt;span class="badge bg-soft-dark text-dark"&gt;Dark&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="pill-badges" class="hs-docs-heading">
+        Pill badges <a class="anchorjs-link" href="#pill-badges" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use the <code>.badge-pill</code> modifier class to make badges more rounded (with a larger <code>border-radius</code> and additional horizontal <code>padding</code>).</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <span class="badge bg-primary rounded-pill">Primary</span>
+            <span class="badge bg-secondary rounded-pill">Secondary</span>
+            <span class="badge bg-success rounded-pill">Success</span>
+            <span class="badge bg-danger rounded-pill">Danger</span>
+            <span class="badge bg-warning rounded-pill">Warning</span>
+            <span class="badge bg-info rounded-pill">Info</span>
+            <span class="badge bg-light rounded-pill">Light</span>
+            <span class="badge bg-dark rounded-pill">Dark</span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="badge bg-primary rounded-pill"&gt;Primary&lt;/span&gt;
+                &lt;span class="badge bg-secondary rounded-pill"&gt;Secondary&lt;/span&gt;
+                &lt;span class="badge bg-success rounded-pill"&gt;Success&lt;/span&gt;
+                &lt;span class="badge bg-danger rounded-pill"&gt;Danger&lt;/span&gt;
+                &lt;span class="badge bg-warning rounded-pill"&gt;Warning&lt;/span&gt;
+                &lt;span class="badge bg-info rounded-pill"&gt;Info&lt;/span&gt;
+                &lt;span class="badge bg-light rounded-pill"&gt;Light&lt;/span&gt;
+                &lt;span class="badge bg-dark rounded-pill"&gt;Dark&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="more-examples" class="hs-docs-heading">
+        More examples <a class="anchorjs-link" href="#more-examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Badges scale to match the size of the immediate parent element by using relative font sizing and <code>em</code> units.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <div class="h1">Example heading <span class="badge bg-secondary">New</span></div>
+            <div class="h2">Example heading <span class="badge bg-secondary">New</span></div>
+            <div class="h3">Example heading <span class="badge bg-secondary">New</span></div>
+            <div class="h4">Example heading <span class="badge bg-secondary">New</span></div>
+            <div class="h5">Example heading <span class="badge bg-secondary">New</span></div>
+            <div class="h6">Example heading <span class="badge bg-secondary">New</span></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="h1"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="h2"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="h3"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="h4"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="h5"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="h6"&gt;Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Badges can be used as part of links or buttons to provide a counter.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <button type="button" class="btn btn-primary">
+              Notifications <span class="badge bg-light text-dark ms-1">2</span>
+            </button>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;button type="button" class="btn btn-primary"&gt;
+                  Notifications &lt;span class="badge bg-light text-dark ms-1"&gt;2&lt;/span&gt;
+                &lt;/button&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

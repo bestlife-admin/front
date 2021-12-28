@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Shop: Checkout | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-shop.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "shop",
+    "category": "pages",
+    "subcategory": "",
+    "link": "checkout.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Content -->
+    <div class="container content-space-1 content-space-lg-2">
+      <div class="row">
+        <div class="col-lg-8 mb-7 mb-lg-0">
+          <h4 class="mb-3">Billing address</h4>
+            
+          <!-- Form -->
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstNameShopCheckout" class="form-label">First name</label>
+                <input type="text" class="form-control form-control-lg" id="firstNameShopCheckout" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6">
+                <label for="lastNameShopCheckout" class="form-label">Last name</label>
+                <input type="text" class="form-control form-control-lg" id="lastNameShopCheckout" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-12">
+                <label for="emailShopCheckout" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="emailShopCheckout" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-12">
+                <label for="addressShopCheckout" class="form-label">Address</label>
+                <input type="text" class="form-control form-control-lg" id="addressShopCheckout" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-12">
+                <label for="address2ShopCheckout" class="form-label">Address 2 <span class="form-label-secondary">(Optional)</span></label>
+                <input type="text" class="form-control form-control-lg" id="address2ShopCheckout" placeholder="Apartment or suite">
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-5">
+                <label for="countryShopCheckout" class="form-label">Country</label>
+                
+                <!-- Select -->
+                <select class="form-select" id="countryShopCheckout" required>
+                  <option value="">Choose...</option>
+                  <option value="">Select country</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua and Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia, Plurinational State of</option>
+                  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                  <option value="BA">Bosnia and Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Island</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">British Indian Ocean Territory</option>
+                  <option value="BN">Brunei Darussalam</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CA">Canada</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Central African Republic</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CX">Christmas Island</option>
+                  <option value="CC">Cocos (Keeling) Islands</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, the Democratic Republic of the</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="CI">Côte d'Ivoire</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CU">Cuba</option>
+                  <option value="CW">Curaçao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica</option>
+                  <option value="DO">Dominican Republic</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equatorial Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands (Malvinas)</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="PF">French Polynesia</option>
+                  <option value="TF">French Southern Territories</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="DE">Germany</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard Island and McDonald Islands</option>
+                  <option value="VA">Holy See (Vatican City State)</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IR">Iran, Islamic Republic of</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japan</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KP">Korea, Democratic People's Republic of</option>
+                  <option value="KR">Korea, Republic of</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Lao People's Democratic Republic</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macao</option>
+                  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="MD">Moldova, Republic of</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Territory, Occupied</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="RE">Réunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russian Federation</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthélemy</option>
+                  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KN">Saint Kitts and Nevis</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin (French part)</option>
+                  <option value="PM">Saint Pierre and Miquelon</option>
+                  <option value="VC">Saint Vincent and the Grenadines</option>
+                  <option value="WS">Samoa</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome and Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SX">Sint Maarten (Dutch part)</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="GS">South Georgia and the South Sandwich Islands</option>
+                  <option value="SS">South Sudan</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="SD">Sudan</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard and Jan Mayen</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="SY">Syrian Arab Republic</option>
+                  <option value="TW">Taiwan, Province of China</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TL">Timor-Leste</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad and Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos Islands</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US">United States</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela, Bolivarian Republic of</option>
+                  <option value="VN">Viet Nam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, U.S.</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+                </select>
+                <!-- End Select -->
+
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-4">
+                <label for="stateShopCheckout" class="form-label">State</label>
+
+                <!-- Select -->
+                <select class="form-select" id="stateShopCheckout" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <!-- End Select -->
+
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-3">
+                <label for="zipShopCheckout" class="form-label">Zip</label>
+                <input type="text" class="form-control form-control-lg" id="zipShopCheckout" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-grid gap-2">
+              <!-- Check -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="sameAddressShopCheckout">
+                <label class="form-check-label" for="sameAddressShopCheckout">Shipping address is the same as my billing address</label>
+              </div>
+              <!-- End Check -->
+
+              <!-- Check -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="saveInfoShopCheckout">
+                <label class="form-check-label" for="saveInfoShopCheckout">Save this information for next time</label>
+              </div>
+              <!-- End Check -->
+            </div>
+
+            <hr class="my-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="my-3">
+              <!-- Check -->
+              <div class="form-check">
+                <input id="creditShopCheckout" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="creditShopCheckout">Credit card</label>
+              </div>
+              <!-- End Check -->
+
+              <!-- Check -->
+              <div class="form-check">
+                <input id="debitShopCheckout" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debitShopCheckout">Debit card</label>
+              </div>
+              <!-- End Check -->
+
+              <!-- Check -->
+              <div class="form-check">
+                <input id="paypalShopCheckout" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypalShopCheckout">PayPal</label>
+              </div>
+              <!-- End Check -->
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="ccNameShopCheckout" class="form-label">Name on card</label>
+                <input type="text" class="form-control form-control-lg" id="ccNameShopCheckout" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-6">
+                <label for="ccNumberShopCheckout" class="form-label">Credit card number</label>
+                <input type="text" class="form-control form-control-lg" id="ccNumberShopCheckout" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-3">
+                <label for="ccExpirationShopCheckout" class="form-label">Expiration</label>
+                <input type="text" class="form-control form-control-lg" id="ccExpirationShopCheckout" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-3">
+                <label for="ccCvvShopCheckout" class="form-label">CVV</label>
+                <input type="text" class="form-control form-control-lg" id="ccCvvShopCheckout" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <hr class="my-4">
+
+            <div class="row align-items-center">
+              <div class="col-sm-6 order-sm-1 mb-3 mb-sm-0">
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">Place order</button>
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm text-center text-sm-start">
+                <a class="link" href="@@autopath/demo-shop/cart.html">
+                  <i class="bi-chevron-left small ms-1"></i> Return to cart
+                </a>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </form>
+          <!-- End Form -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-4">
+          <div class="ps-lg-4">
+            <!-- Card -->
+            <div class="card card-sm shadow-sm mb-4">
+              <div class="card-body">
+                <div class="border-bottom pb-4 mb-4">
+                  <h3 class="card-header-title">Order summary</h3>
+                </div>
+
+                <form>
+                  <!-- Product -->
+                  <div class="border-bottom pb-4 mb-4">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <div class="avatar avatar-lg me-3">
+                          <img class="avatar-img" src="@@autopath/assets/img/320x320/img2.jpg" alt="Image Description">
+                          <sup class="avatar-status avatar-status-primary">1</sup>
+                        </div>
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <h6>Originals national backpack</h6>
+                        
+                        <div class="d-grid">
+                          <div class="text-body">
+                            <span class="small">Gender:</span>
+                            <span class="small">Men</span>
+                          </div>
+
+                          <div class="text-body">
+                            <span class="small">Color:</span>
+                            <span class="small">Grey</span>
+                          </div>
+                          
+                          <div class="text-body">
+                            <span class="small">Size:</span>
+                            <span class="small">One size</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Product -->
+
+                  <!-- Product -->
+                  <div class="border-bottom pb-4 mb-4">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <div class="avatar avatar-lg me-3">
+                          <img class="avatar-img" src="@@autopath/assets/img/320x320/img3.jpg" alt="Image Description">
+                          <sup class="avatar-status avatar-status-primary">1</sup>
+                        </div>
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <h6>Vans large image t-shirt</h6>
+                        
+                        <div class="d-grid">
+                          <div class="text-body">
+                            <span class="small">Gender:</span>
+                            <span class="small">Women</span>
+                          </div>
+
+                          <div class="text-body">
+                            <span class="small">Color:</span>
+                            <span class="small">Core Black / Carbon</span>
+                          </div>
+                          
+                          <div class="text-body">
+                            <span class="small">Size:</span>
+                            <span class="small">S</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Product -->
+
+                  <div class="border-bottom pb-4 mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Enter promo code" aria-label="Enter promo code">
+                  </div>
+
+                  <div class="border-bottom pb-4 mb-4">
+                    <div class="d-grid gap-3">
+                      <dl class="row">
+                        <dt class="col-sm-6">Item subtotal (2)</dt>
+                        <dd class="col-sm-6 text-sm-end mb-0">$73.98</dd>
+                      </dl>
+                      <!-- End Row -->
+
+                      <dl class="row">
+                        <dt class="col-sm-6">Delivery</dt>
+                        <dd class="col-sm-6 text-sm-end mb-0">Free</dd>
+                      </dl>
+                      <!-- End Row -->
+                    </div>
+                  </div>
+
+                  <div class="border-bottom pb-4 mb-4">
+                    <div class="d-grid gap-3">
+                      <!-- Check -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="deliveryRadioName" id="deliveryRadio1" checked>
+                        <label class="form-check-label text-dark" for="deliveryRadio1">
+                          Free - Standard delivery
+                          <span class="d-block text-muted small">Shipment may take 5-6 business days</span>
+                        </label>
+                      </div>
+                      <!-- End Check -->
+
+                      <!-- Check -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="deliveryRadioName" id="deliveryRadio2">
+                        <label class="form-check-label text-dark" for="deliveryRadio2">
+                          $7.99 - Express delivery
+                          <span class="d-block text-muted small">Shipment may take 2-3 business days</span>
+                        </label>
+                      </div>
+                      <!-- End Check -->
+                    </div>
+                  </div>
+
+                  <div class="d-grid gap-3 mb-4">
+                    <dl class="row">
+                      <dt class="col-sm-6">Estimated tax</dt>
+                      <dd class="col-sm-6 text-sm-end mb-0">$0.00</dd>
+                    </dl>
+                    <!-- End Row -->
+
+                    <dl class="row">
+                      <dt class="col-sm-6">Total</dt>
+                      <dd class="col-sm-6 text-sm-end mb-0">$73.98</dd>
+                    </dl>
+                    <!-- End Row -->
+                  </div>
+
+                  <div class="d-grid">
+                    <a class="btn btn-primary btn-lg" href="@@autopath/demo-shop/checkout.html">Checkout</a>
+                  </div>
+                </form>
+              </div>
+              <!-- End Card -->
+            </div>
+
+            <!-- Media -->
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0">
+                <div class="svg-icon svg-icon-sm text-primary">
+                  @@include("@@autopath/assets/vendor/duotone-icons/com/com012.svg")
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-2">
+                <span class="small me-1">Need Help?</span>
+                <a class="link small" href="#">Chat now</a>
+              </div>
+            </div>
+            <!-- End Media -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-3.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-search.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-empty-shopping-cart.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

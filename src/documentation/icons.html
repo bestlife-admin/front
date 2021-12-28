@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Icons - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "icons.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Icons</h1>
+            <p class="docs-page-header-text">Static icon styles.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/collapse/" target="_blank">Bootstrap Buttons documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="icon-types" class="hs-docs-heading">
+        Types <a class="anchorjs-link" href="#icon-types" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.icon-*</code> or <code>.icon-soft-*</code> classes to change the visual style of the icon.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <span class="icon icon-primary">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-primary">
+              <i class="bi-house"></i>
+            </span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="icon icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="color-variants" class="hs-docs-heading">
+        Color variants <a class="anchorjs-link" href="#color-variants" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Predefined solid color button styles.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <span class="icon icon-primary mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-secondary mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-success mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-danger mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-warning mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-info mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-light mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-dark mb-1">
+              <i class="bi-house"></i>
+            </span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="icon icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-secondary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-success"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-danger"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-warning"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-info"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-light"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-dark"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="soft-icons" class="hs-docs-heading">
+        Soft icons <a class="anchorjs-link" href="#soft-icons" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.icon-soft-*</code></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <span class="icon icon-soft-primary mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-secondary mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-success mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-danger mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-warning mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-info mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-light mb-1">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-soft-dark mb-1">
+              <i class="bi-house"></i>
+            </span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="icon icon-soft-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-secondary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-success"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-danger"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-warning"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-info"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-light"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-soft-dark"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="sizes" class="hs-docs-heading">
+        Sizes <a class="anchorjs-link" href="#sizes" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Fancy larger or smaller buttons? Add <code>.icon-lg</code>, <code>.icon-sm</code> or <code>.icon-xs</code> for additional sizes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <span class="icon icon-lg icon-primary">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-primary">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-sm icon-primary">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-xs icon-primary">
+              <i class="bi-house"></i>
+            </span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="icon icon-lg icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-sm icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-xs icon-primary"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="circle" class="hs-docs-heading">
+        Circle <a class="anchorjs-link" href="#circle" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use the <code>.icon-circle</code> modifier class to make icons circled.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <span class="icon icon-lg icon-primary icon-circle">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-primary icon-circle">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-sm icon-primary icon-circle">
+              <i class="bi-house"></i>
+            </span>
+            <span class="icon icon-xs icon-primary icon-circle">
+              <i class="bi-house"></i>
+            </span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="icon icon-lg icon-primary icon-circle"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-primary icon-circle"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-sm icon-primary icon-circle"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class="icon icon-xs icon-primary icon-circle"&gt;
+                  &lt;i class="bi-house"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

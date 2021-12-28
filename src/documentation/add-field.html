@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Add Field - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "add-field.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Add Field</h1>
+            <p class="docs-page-header-text">Add Field dynamic fields creation.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./assets/vendor/hs-add-field/dist/hs-add-field.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF ADD FIELD
+              // =======================================================
+              new HSAddField('.js-add-field')
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Form -->
+            <div class="js-add-field row mb-4"
+                 data-hs-add-field-options='{
+                    "template": "#addEmailFieldTemplate",
+                    "container": "#addEmailFieldContainer",
+                    "defaultCreated": 0
+                  }'>
+              <label for="phoneLabelEg1" class="col-sm-3 col-form-label form-label">Email</label>
+
+              <div class="col-sm-9">
+                <input type="email" class="js-input-mask form-control" name="email" id="phoneLabelEg1" placeholder="Enter email" aria-label="Enter email">
+
+                <!-- Container For Input Field -->
+                <div id="addEmailFieldContainer"></div>
+
+                <a href="javascript:;" class="js-create-field form-link">
+                  <i class="bi-plus-circle me-1"></i> Add field
+                </a>
+              </div>
+            </div>
+            <!-- End Form -->
+
+            <!-- Add Phone Input Field -->
+            <div id="addEmailFieldTemplate" style="display: none;">
+              <div class="input-group-add-field">
+                <input type="email" class="js-input-mask form-control" data-name="email" placeholder="Enter email" aria-label="Enter email">
+              </div>
+
+              <a class="js-delete-field input-group-add-field-delete" href="javascript:;">
+                <i class="bi-x-lg"></i>
+              </a>
+            </div>
+            <!-- End Add Phone Input Field -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Form --&gt;
+                &lt;div class="js-add-field row mb-4"
+                     data-hs-add-field-options='{
+                        "template": "#addEmailFieldTemplate",
+                        "container": "#addEmailFieldContainer",
+                        "defaultCreated": 0
+                      }'&gt;
+                  &lt;label for="phoneLabelEg1" class="col-sm-3 col-form-label form-label"&gt;Email&lt;/label&gt;
+
+                  &lt;div class="col-sm-9"&gt;
+                    &lt;input type="email" class="js-input-mask form-control" name="email" id="phoneLabelEg1" placeholder="Enter email" aria-label="Enter email"&gt;
+
+                    &lt;!-- Container For Input Field --&gt;
+                    &lt;div id="addEmailFieldContainer"&gt;&lt;/div&gt;
+
+                    &lt;a href="javascript:;" class="js-create-field form-link"&gt;
+                      &lt;i class="bi-plus-circle me-1"&gt;&lt;/i&gt; Add field
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Form --&gt;
+
+                &lt;!-- Add Phone Input Field --&gt;
+                &lt;div id="addEmailFieldTemplate" style="display: none;"&gt;
+                  &lt;div class="input-group-add-field"&gt;
+                    &lt;input type="email" class="js-input-mask form-control" data-name="email" placeholder="Enter email" aria-label="Enter email"&gt;
+                  &lt;/div&gt;
+
+                  &lt;a class="js-delete-field input-group-add-field-delete" href="javascript:;"&gt;
+                    &lt;i class="bi-x-lg"&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;!-- End Add Phone Input Field --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="modal-example" class="hs-docs-heading">
+        Modal example <a class="anchorjs-link" href="#modal-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File attachment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form>
+                      <!-- Form -->
+                      <div class="js-add-field row mb-4"
+                           data-hs-add-field-options='{
+                              "template": "#addEmailFieldTemplateModal",
+                              "container": "#addEmailFieldContainerModal",
+                              "defaultCreated": 0
+                            }'>
+                        <label for="phoneLabelEg2" class="col-sm-3 col-form-label form-label">Email</label>
+
+                        <div class="col-sm-9">
+                          <input type="email" class="js-input-mask form-control" name="email" id="phoneLabelEg2" placeholder="Enter email" aria-label="Enter email">
+
+                          <!-- Container For Input Field -->
+                          <div id="addEmailFieldContainerModal"></div>
+
+                          <a href="javascript:;" class="js-create-field form-link">
+                            <i class="bi-plus-circle me-1"></i> Add field
+                          </a>
+                        </div>
+                      </div>
+                      <!-- End Form -->
+
+                      <!-- Add Phone Input Field -->
+                      <div id="addEmailFieldTemplateModal" style="display: none;">
+                        <div class="input-group-add-field">
+                          <input type="email" class="js-input-mask form-control" data-name="email" placeholder="Enter email" aria-label="Enter email">
+                        </div>
+
+                        <a class="js-delete-field input-group-add-field-delete" href="javascript:;">
+                          <i class="bi-x-lg"></i>
+                        </a>
+                      </div>
+                      <!-- End Add Phone Input Field -->
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;Open modal&lt;/button&gt;
+
+                &lt;!-- Modal --&gt;
+                &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                  &lt;div class="modal-dialog"&gt;
+                    &lt;div class="modal-content"&gt;
+                      &lt;div class="modal-header"&gt;
+                        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;File attachment&lt;/h5&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="modal-body"&gt;
+                        &lt;form&gt;
+                          &lt;!-- Form --&gt;
+                          &lt;div class="js-add-field row mb-4"
+                               data-hs-add-field-options='{
+                                  "template": "#addEmailFieldTemplateModal",
+                                  "container": "#addEmailFieldContainerModal",
+                                  "defaultCreated": 0
+                                }'&gt;
+                            &lt;label for="phoneLabelEg2" class="col-sm-3 col-form-label form-label"&gt;Email&lt;/label&gt;
+
+                            &lt;div class="col-sm-9"&gt;
+                              &lt;input type="email" class="js-input-mask form-control" name="email" id="phoneLabelEg2" placeholder="Enter email" aria-label="Enter email"&gt;
+
+                              &lt;!-- Container For Input Field --&gt;
+                              &lt;div id="addEmailFieldContainerModal"&gt;&lt;/div&gt;
+
+                              &lt;a href="javascript:;" class="js-create-field form-link"&gt;
+                                &lt;i class="bi-plus-circle me-1"&gt;&lt;/i&gt; Add field
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Form --&gt;
+
+                          &lt;!-- Add Phone Input Field --&gt;
+                          &lt;div id="addEmailFieldTemplateModal" style="display: none;"&gt;
+                            &lt;div class="input-group-add-field"&gt;
+                              &lt;input type="email" class="js-input-mask form-control" data-name="email" placeholder="Enter email" aria-label="Enter email"&gt;
+                            &lt;/div&gt;
+
+                            &lt;a class="js-delete-field input-group-add-field-delete" href="javascript:;"&gt;
+                              &lt;i class="bi-x-lg"&gt;&lt;/i&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Add Phone Input Field --&gt;
+                        &lt;/form&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="modal-footer"&gt;
+                        &lt;button type="button" class="btn btn-white" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Modal --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>createTrigger</code></td>
+                <td>Trigger for add fields.</td>
+                <td><code>.js-create-field</code></td>
+              </tr>
+
+              <tr>
+                <td><code>deleteTrigger</code></td>
+                <td>Trigger for delete field.</td>
+                <td><code>.js-delete-field</code></td>
+              </tr>
+
+              <tr>
+                <td><code>limit</code></td>
+                <td>Limit of the fields.</td>
+                <td><code>10</code></td>
+              </tr>
+
+              <tr>
+                <td><code>defaultCreated</code></td>
+                <td>Count created by default fields.</td>
+                <td><code>1</code></td>
+              </tr>
+
+              <tr>
+                <td><code>nameSeparator</code></td>
+                <td>Separator for name attribute.</td>
+                <td><code>_</code></td>
+              </tr>
+
+              <tr>
+                <td><code>addedField</code></td>
+                <td>Call when field is added.</td>
+                <td><code>function() {}</code></td>
+              </tr>
+
+              <tr>
+                <td><code>deletedField</code></td>
+                <td>Call when field is removed.</td>
+                <td><code>function() {}</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/assets/vendor/hs-add-field/dist/hs-add-field.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF ADD FIELD
+      // =======================================================
+      new HSAddField('.js-add-field')
+    })()
+  </script>
+</body>
+</html>

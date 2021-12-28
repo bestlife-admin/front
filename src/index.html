@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "main",
+    "category": "landings",
+    "subcategory": "",
+    "link": "index.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="container overflow-hidden content-space-t-4">
+      <div class="w-lg-75 text-center mx-lg-auto mb-9">
+        <h1 class="display-3 mb-4">Build as frameworks from the ground up</h1>
+        <p class="lead">Bring your idea to life in no time. The website solution for all your needs. For UX designers, entrepreneurs, product managers, marketers, and anyone.</p>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Hero Image -->
+    <div class="container-fluid content-space-b-2 content-space-b-lg-4">
+      <div class="d-md-none">
+        <img class="img-fluid" src="@@autopath/assets/img/mockups/img3.png" alt="Image Description">
+      </div>
+
+      <div class="d-none d-md-block">
+        <img class="img-fluid" src="@@autopath/assets/img/mockups/img2.png" alt="Image Description">
+      </div>
+    </div>
+    <!-- End Hero Image -->
+
+    <!-- Card Grid -->
+    <div class="container d-none">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2>Learn to develop sites with components and design systems</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up">
+          <!-- Card -->
+          <a class="js-go-to card card-transition h-100" href="#!"
+             data-hs-go-to-options='{
+              "targetSelector": "#docsSection",
+              "offsetTop": 0,
+              "position": null,
+              "animationIn": false,
+              "animationOut": false
+             }'>
+            <div class="p-2">
+              <img class="card-img" src="@@autopath/assets/svg/illustrations/docs-frame.svg" alt="Image Description">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-inherit">Documentation</h3>
+              <p class="card-text text-body">Discover how to build and maintain coding systems using our documentation.</p>
+            </div>
+            <div class="card-footer pt-0">
+              <span class="card-link">Learn more <i class="bi-chevron-right small"></i></span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
+          <!-- Card -->
+          <a class="js-go-to card card-transition h-100" href="#!"
+             data-hs-go-to-options='{
+              "targetSelector": "#snippetsSection",
+              "offsetTop": 0,
+              "position": null,
+              "animationIn": false,
+              "animationOut": false
+             }'>
+            <div class="p-2">
+              <img class="card-img" src="@@autopath/assets/svg/illustrations/snippets-frame.svg" alt="Image Description">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-inherit">Snippets</h3>
+              <p class="card-text text-body">Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.</p>
+            </div>
+            <div class="card-footer pt-0">
+              <span class="card-link">Start building <i class="bi-chevron-right small"></i></span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- Card -->
+          <a class="js-go-to card card-transition h-100" href="#!"
+             data-hs-go-to-options='{
+              "targetSelector": "#pageLayoutsSection",
+              "offsetTop": 0,
+              "position": null,
+              "animationIn": false,
+              "animationOut": false
+             }'>
+            <div class="p-2">
+              <img class="card-img" src="@@autopath/assets/svg/illustrations/layouts-frame.svg" alt="Image Description">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-inherit">Page layouts</h3>
+              <p class="card-text text-body">Apart from 70+ HTML-pages, the theme comes with 6 ready-to-use and stand-alone demo options.</p>
+            </div>
+            <div class="card-footer pt-0">
+              <span class="card-link">View examples <i class="bi-chevron-right small"></i></span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Card Grid -->
+
+    <!-- Front Demos -->
+    <div class="container">
+      <!-- Heading -->
+      <div class="w-lg-75 text-center mx-md-auto mb-md-5">
+        <h2 class="h1 lh-sm">Made for everyone, build anything with multiple pre-built demos</h2>
+      </div>
+      <!-- End Heading -->
+
+      <!-- Main Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img7.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-primary zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">59 Pages</span>
+              </div>
+
+              <h2 class="mb-3">Main Demo</h2>
+              <p class="fs-4">Front's main demo comes with 16 landing pages, including over 40 commonly used pages that can be combined with another 6 pre-built demos.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/landing-classic-corporate.html">Preview Main Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Main Demo -->
+
+      <!-- E-Commerce Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img9.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-danger zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">10 Pages</span>
+              </div>
+
+              <h2 class="mb-3">E-Commerce Demo</h2>
+              <p class="fs-4">Customize the appearance of products, lists, components, and snippets, but also cart, checkout, and other E-commerce pages.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-shop/index.html">Preview Shop Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End E-Commerce Demo -->
+
+      <!-- Jobs Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img6.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-success zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">9 Pages</span>
+              </div>
+
+              <h2 class="mb-3">Jobs Demo</h2>
+              <p class="fs-4">Demonstrate your job positions with more dynamic and interactive elements of Front to quickly put together a more professional looking page.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-jobs/index.html">Preview Jobs Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Jobs Demo -->
+
+      <!-- Real Estate Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img8.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-primary zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">5 Pages</span>
+              </div>
+
+              <h2 class="mb-3">Real Estate Demo</h2>
+              <p class="fs-4">Please your visitors with eye-catching and exciting real estate listings. Different options and settings to manage your site.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-real-estate/index.html">Preview Real Estate Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Real Estate Demo -->
+
+      <!-- Courses Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img1.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-info zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">4 Pages</span>
+              </div>
+
+              <h2 class="mb-3">Courses Demo</h2>
+              <p class="fs-4">Build a deep, solid understanding in education platform with Front Course demo. An online learning and teaching demo.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-course/index.html">Preview Courses Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Courses Demo -->
+
+      <!-- App Marketplace Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img2.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-warning zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">4 Pages</span>
+              </div>
+
+              <h2 class="mb-3">App Marketplace Demo</h2>
+              <p class="fs-4">Create and run your online business with Front's App Marketplace demo. Easy to expand and designed to work together.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-app-marketplace/index.html">Preview App Marketplace Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End App Marketplace Demo -->
+
+      <!-- Help Desk Demo -->
+      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
+        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-header">
+              <div class="device-browser-header-btn-list">
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+                <span class="device-browser-header-btn-list-btn"></span>
+              </div>
+              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+            </div>
+
+            <div class="device-browser-frame">
+              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img3.jpg" alt="Image Description">
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-secondary zi-n1 mb-n6 ms-n6"></div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="pe-md-7">
+            <div class="mb-5">
+              <div class="mb-5">
+                <span class="badge border border-dark text-dark">3 Pages</span>
+              </div>
+
+              <h2 class="mb-3">Help Desk</h2>
+              <p class="fs-4">Find all the answers you are looking for in our extensive knowledge base demo option.</p>
+            </div>
+            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-help-desk/index.html">Preview Help Desk Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Help Desk Demo -->
+    </div>
+    <!-- End Front Demos -->
+
+    <!-- Documentation -->
+    <div class="content-space-t-2">
+      <div class="container">
+        <div class="bg-light p-4 p-sm-10">
+          <!-- Heading -->
+          <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
+            <h2>Documentation</h2>
+            <p class="fs-4">Get started with Front - Multipurpose Responsive Template for building responsive, mobile-first sites, with Bootstrap and a template starter page.</p>
+            <a href="@@autopath/documentation/index.html" class="btn btn-primary">Browse Documentation</a>
+          </div>
+          <!-- End Heading -->
+
+          <img class="img-fluid rounded-2 shadow-xl" src="@@autopath/assets/svg/illustrations/docs-main-page.svg" alt="Image Description">
+        </div>
+      </div>
+    </div>
+    <!-- End Documentation -->
+
+    <!-- Snippets -->
+    <div class="container content-space-t-2">
+      <div class="p-4 p-sm-10">
+        <!-- Heading -->
+        <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
+          <h2>Snippets</h2>
+          <p class="fs-4">Mix and match content and features from different demos. Copy-paste components that suit you the best. Combine features from different demos!</p>
+          <a class="btn btn-primary" href="@@autopath/snippets/index.html">Browse Snippets</a>
+        </div>
+        <!-- End Heading -->
+
+        <img class="img-fluid rounded-2 shadow-xl" src="@@autopath/assets/svg/illustrations/snippets-main-page.svg" alt="Image Description">
+      </div>
+    </div>
+    <!-- End Snippets -->
+
+    <!-- Tools -->
+    <div class="position-relative gradient-y-gray">
+      <div class="container content-space-2 content-space-b-sm-3 content-space-b-lg-4">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <h2>Build tools and full documention</h2>
+          <p>Components, plugins, and build tools are all thoroughly documented with live examples and markup for easier use and customization.</p>
+        </div>
+        <!-- End Heading -->
+
+        <div class="w-md-75 w-lg-50 mx-md-auto mb-5 mb-md-9">
+          <!-- Code Sample -->
+          <div class="card bg-dark mb-5">
+            <div class="card-body font-monospace">
+              <div class="d-grid gap-6">
+                <span class="d-grid gap-1">
+                  <span class="d-block text-white-70">&gt; $ npm install</span>
+                  <span class="d-block text-success">Everything installed!</span>
+                </span>
+                <span class="d-grid gap-1">
+                  <span class="d-block text-white-70">&gt; $ gulp</span>
+                  <span class="d-block text-success">scss watching</span>
+                  <span class="d-block text-success">LiveReload started</span>
+                  <span class="d-block text-success">Opening localhost:3000</span>
+                </span>
+                <span class="d-grid gap-1">
+                  <span class="d-block text-white-70">&gt; $ that's it?!</span>
+                  <span class="d-block text-success">Yup, that's it.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- End Code Sample -->
+
+          <div class="text-center mb-7">
+            <p>Not comfortable diving that deep? No worries, you just use the compiled CSS and examples pages! <a class="link" href="@@autopath/documentation/gulp.html">Learn more <i class="bi-chevron-right small"></i></a></p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-auto col-sm-3 col-sm py-3">
+              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/bootstrap-gray.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col-auto col-sm-3 col-sm py-3">
+              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/sass-gray.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col-auto col-sm-3 col-sm py-3">
+              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/gulp-gray.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col-auto col-sm-3 col-sm py-3">
+              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/npm-gray.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="d-grid mx-auto" style="max-width: 15rem;">
+          <a class="btn btn-primary btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Get a license for $49</a>
+        </div>
+      </div>
+
+      <!-- Shape -->
+      <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+        </svg>
+      </div>
+      <!-- End Shape -->
+    </div>
+    <!-- End Tools -->
+
+    <!-- Feature Stats -->
+    <div class="container content-space-t-1 content-space-t-md-2 content-space-b-2 content-space-b-lg-3">
+      <div class="row col-md-divider col-divider-rotated">
+        <div class="col-md-4">
+          <div data-aos="fade-up" data-aos-delay="100">
+            <!-- Stats -->
+            <div class="text-center px-md-3 px-lg-8">
+              <span class="svg-icon svg-icon-lg mb-3">
+                @@include("@@autopath/assets/svg/illustrations/stars.svg")
+              </span>
+              <p class="mb-0"><span class="text-dark fw-semi-bold">4.80 out of 5 starts</span> from 81 reviews</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-4">
+          <div data-aos="fade-up">
+            <!-- Stats -->
+            <div class="text-center px-md-3 px-lg-8">
+              <span class="svg-icon svg-icon-lg mb-3">
+                @@include("@@autopath/assets/svg/illustrations/avatar-group.svg")
+              </span>
+              <p class="mb-0">Over <span class="text-dark fw-semi-bold">1k+</span> support questions have been closed</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-4">
+          <div data-aos="fade-up" data-aos-delay="100">
+            <!-- Stats -->
+            <div class="text-center px-md-3 px-lg-8">
+              <span class="svg-icon svg-icon-lg mb-3">
+                @@include("@@autopath/assets/svg/illustrations/document-sheet.svg")
+              </span>
+              <p class="mb-0"><span class="text-dark fw-semi-bold">5k+</span> Front copies have been purchased</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Feature Stats -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+    })()
+  </script>
+</body>
+</html>

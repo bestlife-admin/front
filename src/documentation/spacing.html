@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Spacing - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "spacing.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Spacing</h1>
+            <p class="docs-page-header-text">Front includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="margin-and-padding" class="hs-docs-heading">
+        Margin and padding <a class="anchorjs-link" href="#margin-and-padding" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.</p>
+      
+      <p>Using the CSS Grid layout module? Consider using <a class="link" href="#gap">the gap utility</a>.</p>
+
+      <!-- Heading -->
+      <h2 id="notation" class="hs-docs-heading">
+        Notation <a class="anchorjs-link" href="#notation" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+      
+      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
+      
+      <p>Where <em>property</em> is one of:</p>
+      
+      <ul>
+        <li><code>m</code> - for classes that set <code>margin</code></li>
+        <li><code>p</code> - for classes that set <code>padding</code></li>
+      </ul>
+      
+      <p>Where <em>sides</em> is one of:</p>
+      
+      <ul>
+        <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+        <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+        <li><code>s</code> - for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+        <li><code>e</code> - for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+        <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+        <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+        <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+      </ul>
+      
+      <p>Where <em>size</em> is one of:</p>
+      
+      <ul>
+        <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
+        <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>
+        <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .5</code></li>
+        <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer</code></li>
+        <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 1.5</code></li>
+        <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 3</code></li>
+        <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+      </ul>
+      
+      <p>(You can add more sizes by adding entries to the <code>$spacers</code> Sass map variable.)</p>
+
+      <!-- Heading -->
+      <h2 id="content-space-notation" class="hs-docs-heading">
+        Content-space notation <a class="anchorjs-link" href="#content-space-notation" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
+      
+      <p>Where <em>property</em> is one of:</p>
+      
+      <ul>
+        <li><code>content-space</code> - for classes that set <code>padding-top</code> and <code>padding-bottom</code></li>
+      </ul>
+      
+      <p>Where <em>sides</em> is one of:</p>
+      
+      <ul>
+        <li><code>content-space-t</code> - for classes that set <code>padding-top</code> or <code>padding-top</code></li>
+        <li><code>content-space-b</code> - for classes that set <code>padding-bottom</code> or <code>padding-bottom</code></li>
+      </ul>
+      
+      <p>Where <em>size</em> is one of:</p>
+      
+      <ul>
+        <li><code>0</code> - for classes that eliminate the <code>padding</code> by setting it to <code>0</code></li>
+        <li><code>1</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 4</code></li>
+        <li><code>2</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 5</code></li>
+        <li><code>3</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 7.5</code></li>
+        <li><code>4</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 10</code></li>
+        <li><code>auto</code> - for classes that set the <code>padding</code> to auto</li>
+      </ul>
+      
+      <p>(You can add more sizes by adding entries to the <code>$content-spacers</code> Sass map variable.)</p>
+
+      <!-- Heading -->
+      <h2 id="examples" class="hs-docs-heading">
+        Examples <a class="anchorjs-link" href="#examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Here are some representative examples of these classes:</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          .mt-0 {
+            margin-top: 0 !important;
+          }
+
+          .ms-1 {
+            margin-left: ($spacer * .25) !important;
+          }
+
+          .px-2 {
+            padding-left: ($spacer * .5) !important;
+            padding-right: ($spacer * .5) !important;
+          }
+
+          .p-3 {
+            padding: $spacer !important;
+          }
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="horizontal-centering" class="hs-docs-heading">
+        Horizontal centering <a class="anchorjs-link" href="#horizontal-centering" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="bg-dark text-white mx-auto" style="width: 200px;">
+              Centered element
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="mx-auto" style="width: 200px;"&gt;
+                  Centered element
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="negative-margin" class="hs-docs-heading">
+        Negative margin <a class="anchorjs-link" href="#negative-margin" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting <code>$enable-negative-margins: true</code>.</p>
+      
+      <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of <code>n</code> before the requested size. Here&rsquo;s an example class that&rsquo;s the opposite of <code>.mt-1</code>:</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          .mt-n1 {
+            margin-top: -0.25rem !important;
+          }
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="gap" class="hs-docs-heading">
+        Gap <a class="anchorjs-link" href="#gap" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>When using <code>display: grid</code>, you can make use of <code>gap</code> utilities on the parent grid container. This can save on having to add margin utilities to individual grid items (children of a <code>display: grid</code> container). Gap utilities are responsive by default, and are generated via our utilities API, based on the <code>$spacers</code> Sass map.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <div class="d-grid gap-3">
+              <div class="p-2 bg-light border">Grid item 1</div>
+              <div class="p-2 bg-light border">Grid item 2</div>
+              <div class="p-2 bg-light border">Grid item 3</div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="d-grid gap-3"&gt;
+                  &lt;div class="p-2 bg-light border"&gt;Grid item 1&lt;/div&gt;
+                  &lt;div class="p-2 bg-light border"&gt;Grid item 2&lt;/div&gt;
+                  &lt;div class="p-2 bg-light border"&gt;Grid item 3&lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Support includes responsive options for all of Bootstrap&rsquo;s grid breakpoints, as well as six sizes from the <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class as it&rsquo;s effectively the same as <code>.gap-0</code>.</p>
+
+      <!-- Heading -->
+      <h2 id="sass" class="hs-docs-heading">
+        Sass <a class="anchorjs-link" href="#sass" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Heading -->
+      <h2 id="maps" class="hs-docs-heading">
+        Maps <a class="anchorjs-link" href="#maps" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Spacing utilities are declared via Sass map and then generated with our utilities API.</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          $spacer: 1rem;
+          $spacers: (
+            0: 0,
+            1: $spacer / 4,
+            2: $spacer / 2,
+            3: $spacer,
+            4: $spacer * 1.5,
+            5: $spacer * 3,
+          );
+
+          $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="utilities-api" class="hs-docs-heading">
+        Utilities API <a class="anchorjs-link" href="#utilities-api" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Spacing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a class="link" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          "margin": (
+            responsive: true,
+            property: margin,
+            class: m,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-x": (
+            responsive: true,
+            property: margin-right margin-left,
+            class: mx,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-y": (
+            responsive: true,
+            property: margin-top margin-bottom,
+            class: my,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-top": (
+            responsive: true,
+            property: margin-top,
+            class: mt,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-end": (
+            responsive: true,
+            property: margin-right,
+            class: me,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-bottom": (
+            responsive: true,
+            property: margin-bottom,
+            class: mb,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          "margin-start": (
+            responsive: true,
+            property: margin-left,
+            class: ms,
+            values: map-merge($spacers, (auto: auto))
+          ),
+          // Negative margin utilities
+          "negative-margin": (
+            responsive: true,
+            property: margin,
+            class: m,
+            values: $negative-spacers
+          ),
+          "negative-margin-x": (
+            responsive: true,
+            property: margin-right margin-left,
+            class: mx,
+            values: $negative-spacers
+          ),
+          "negative-margin-y": (
+            responsive: true,
+            property: margin-top margin-bottom,
+            class: my,
+            values: $negative-spacers
+          ),
+          "negative-margin-top": (
+            responsive: true,
+            property: margin-top,
+            class: mt,
+            values: $negative-spacers
+          ),
+          "negative-margin-end": (
+            responsive: true,
+            property: margin-right,
+            class: me,
+            values: $negative-spacers
+          ),
+          "negative-margin-bottom": (
+            responsive: true,
+            property: margin-bottom,
+            class: mb,
+            values: $negative-spacers
+          ),
+          "negative-margin-start": (
+            responsive: true,
+            property: margin-left,
+            class: ms,
+            values: $negative-spacers
+          ),
+          // Padding utilities
+          "padding": (
+            responsive: true,
+            property: padding,
+            class: p,
+            values: $spacers
+          ),
+          "padding-x": (
+            responsive: true,
+            property: padding-right padding-left,
+            class: px,
+            values: $spacers
+          ),
+          "padding-y": (
+            responsive: true,
+            property: padding-top padding-bottom,
+            class: py,
+            values: $spacers
+          ),
+          "padding-top": (
+            responsive: true,
+            property: padding-top,
+            class: pt,
+            values: $spacers
+          ),
+          "padding-end": (
+            responsive: true,
+            property: padding-right,
+            class: pe,
+            values: $spacers
+          ),
+          "padding-bottom": (
+            responsive: true,
+            property: padding-bottom,
+            class: pb,
+            values: $spacers
+          ),
+          "padding-start": (
+            responsive: true,
+            property: padding-left,
+            class: ps,
+            values: $spacers
+          ),
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="content-space-examples" class="hs-docs-heading">
+        Content-space examples <a class="anchorjs-link" href="#content-space-examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Here are some representative examples of these classes:</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          .content-space-t-0 {
+            padding-top: 0 !important;
+          }
+
+          .content-space-b-1 {
+            padding-bottom: ($content-spacer * 4) !important;
+          }
+
+          .content-space-2 {
+            padding-top: ($content-spacer * 5) !important;
+            padding-bottom: ($content-spacer * 5) !important;
+          }
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="content-space-sass" class="hs-docs-heading">
+        Content-space sass <a class="anchorjs-link" href="#content-space-sass" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Heading -->
+      <h2 id="content-space-maps" class="hs-docs-heading">
+        Content-space maps <a class="anchorjs-link" href="#content-space-maps" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Spacing utilities are declared via Sass map and then generated with our utilities API.</p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          $content-spacer: 1rem !default;
+          $content-spacers: (
+            0: 0,
+            1: ($content-spacer * 4),
+            2: ($content-spacer * 5),
+            3: ($content-spacer * 7.5),
+            4: ($content-spacer * 10)
+          ) !default;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="content-space-utilities-api" class="hs-docs-heading">
+        Content-space utilities API <a class="anchorjs-link" href="#content-space-utilities-api" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Spacing utilities are declared in our utilities API in <code>scss/front/_utilities.scss</code>. <a class="link" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
+
+      <pre class="rounded mb-3">
+        <code class="language-scss" data-lang="html">
+          "vertical-content-spacer-top": (
+            property: padding-top,
+            class: content-space-t,
+            responsive: true,
+            values: map-merge($content-spacers, (auto: auto))
+          ),
+          "vertical-content-spacer-bottom": (
+            property: padding-bottom,
+            class: content-space-b,
+            responsive: true,
+            values: map-merge($content-spacers, (auto: auto))
+          ),
+          "vertical-content-spacer": (
+            property: padding-top padding-bottom,
+            class: content-space,
+            responsive: true,
+            values: map-merge($content-spacers, (auto: auto))
+          )
+        </code>
+      </pre>
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

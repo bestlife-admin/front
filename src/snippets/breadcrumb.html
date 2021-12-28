@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Breadcrumb - Snippets | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/snippets.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/snippets-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/snippets-sidebar.html", {
+      "category": "",
+      "link": "breadcrumb.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Breadcrumb</h1>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="component-1" class="hs-docs-heading">
+        Component #1 <a class="anchorjs-link" href="#component-1" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Breadcrumb -->
+            <div class="navbar-dark bg-dark" style="background-image: url(@@autopath/assets/svg/components/wave-pattern-light.svg);">
+              <div class="container content-space-1 content-space-b-lg-3">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="d-none d-lg-block">
+                      <h1 class="h2 text-white">Personal info</h1>
+                    </div>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb breadcrumb-light mb-0">
+                        <li class="breadcrumb-item">Account</li>
+                        <li class="breadcrumb-item active" aria-current="page">Personal Info</li>
+                      </ol>
+                    </nav>
+                    <!-- End Breadcrumb -->
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-auto">
+                    <div class="d-none d-lg-block">
+                      <a class="btn btn-soft-light btn-sm" href="#">Log out</a>
+                    </div>
+                  </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+              </div>
+            </div>
+            <!-- End Breadcrumb -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Breadcrumb --&gt;
+                &lt;div class="navbar-dark bg-dark" style="background-image: url(@@autopath/assets/svg/components/wave-pattern-light.svg);"&gt;
+                  &lt;div class="container content-space-1 content-space-b-lg-3"&gt;
+                    &lt;div class="row align-items-center"&gt;
+                      &lt;div class="col"&gt;
+                        &lt;div class="d-none d-lg-block"&gt;
+                          &lt;h1 class="h2 text-white"&gt;Personal info&lt;/h1&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Breadcrumb --&gt;
+                        &lt;nav aria-label="breadcrumb"&gt;
+                          &lt;ol class="breadcrumb breadcrumb-light mb-0"&gt;
+                            &lt;li class="breadcrumb-item"&gt;Account&lt;/li&gt;
+                            &lt;li class="breadcrumb-item active" aria-current="page"&gt;Personal Info&lt;/li&gt;
+                          &lt;/ol&gt;
+                        &lt;/nav&gt;
+                        &lt;!-- End Breadcrumb --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+
+                      &lt;div class="col-auto"&gt;
+                        &lt;div class="d-none d-lg-block"&gt;
+                          &lt;a class="btn btn-soft-light btn-sm" href="#"&gt;Log out&lt;/a&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Row --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Breadcrumb --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="component-2" class="hs-docs-heading">
+        Component #2 <a class="anchorjs-link" href="#component-2" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Breadcrumb -->
+            <div class="container">
+              <div class="row align-items-lg-center">
+                <div class="col-lg mb-2 mb-lg-0">
+                  <!-- Breadcrumb -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#">For Sale</a></li>
+                      <li class="breadcrumb-item"><a href="#">England</a></li>
+                      <li class="breadcrumb-item"><a href="#">London</a></li>
+                      <li class="breadcrumb-item"><a href="#">Studio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">470 Lucy Forks, Patriciafurt, YC7B</li>
+                    </ol>
+                  </nav>
+                  <!-- End Breadcrumb -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-lg-auto">
+                  <a class="btn btn-sm btn-ghost-secondary" href="javascript:;">
+                    <i class="bi-heart me-2"></i> Save
+                  </a>
+
+                  <a class="btn btn-sm btn-ghost-secondary" href="javascript:;">
+                    <i class="bi-share-fill me-2"></i> Share
+                  </a>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Breadcrumb -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Breadcrumb --&gt;
+                &lt;div class="container"&gt;
+                  &lt;div class="row align-items-lg-center"&gt;
+                    &lt;div class="col-lg mb-2 mb-lg-0"&gt;
+                      &lt;!-- Breadcrumb --&gt;
+                      &lt;nav aria-label="breadcrumb"&gt;
+                        &lt;ol class="breadcrumb mb-0"&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;For Sale&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;England&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;London&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Studio&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item active" aria-current="page"&gt;470 Lucy Forks, Patriciafurt, YC7B&lt;/li&gt;
+                        &lt;/ol&gt;
+                      &lt;/nav&gt;
+                      &lt;!-- End Breadcrumb --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Col --&gt;
+
+                    &lt;div class="col-lg-auto"&gt;
+                      &lt;a class="btn btn-sm btn-ghost-secondary" href="javascript:;"&gt;
+                        &lt;i class="bi-heart me-2"&gt;&lt;/i&gt; Save
+                      &lt;/a&gt;
+
+                      &lt;a class="btn btn-sm btn-ghost-secondary" href="javascript:;"&gt;
+                        &lt;i class="bi-share-fill me-2"&gt;&lt;/i&gt; Share
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Col --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Row --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Breadcrumb --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="component-3" class="hs-docs-heading">
+        Component #3 <a class="anchorjs-link" href="#component-3" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- Breadcrumb -->
+            <div class="bg-light">
+              <div class="container py-4">
+                <div class="row">
+                  <div class="col-sm">
+                    <h4 class="mb-0">Products Grid</h4>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-sm-auto">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                          <a href="@@autopath/demo-shop/index.html">Shop</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                          <a href="@@autopath/demo-shop/products-grid.html">Products</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Grid</li>
+                      </ol>
+                    </nav>
+                    <!-- End Breadcrumb -->
+                  </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+              </div>
+            </div>
+            <!-- End Breadcrumb -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Breadcrumb --&gt;
+                &lt;div class="bg-light"&gt;
+                  &lt;div class="container py-4"&gt;
+                    &lt;div class="row"&gt;
+                      &lt;div class="col-sm"&gt;
+                        &lt;h4 class="mb-0"&gt;Products Grid&lt;/h4&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+
+                      &lt;div class="col-sm-auto"&gt;
+                        &lt;!-- Breadcrumb --&gt;
+                        &lt;nav aria-label="breadcrumb"&gt;
+                          &lt;ol class="breadcrumb mb-0"&gt;
+                            &lt;li class="breadcrumb-item"&gt;
+                              &lt;a href="@@autopath/demo-shop/index.html"&gt;Shop&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="breadcrumb-item"&gt;
+                              &lt;a href="@@autopath/demo-shop/products-grid.html"&gt;Products&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="breadcrumb-item active" aria-current="page"&gt;Grid&lt;/li&gt;
+                          &lt;/ol&gt;
+                        &lt;/nav&gt;
+                        &lt;!-- End Breadcrumb --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Row --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Breadcrumb --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      HSCore.components.HSList.init('#snippetsSearch')
+      const snippetsSearch = HSCore.components.HSList.getItem('snippetsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/snippets-search.json')
+      .then(response => response.json())
+      .then(data => {
+        snippetsSearch.add(data)
+      })
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

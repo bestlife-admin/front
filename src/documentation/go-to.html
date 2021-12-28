@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Go To - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "go-to.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Go To</h1>
+            <p class="docs-page-header-text">Smooth scroll back to the top of the page.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF GO TO
+              // =======================================================
+              new HSGoTo('.js-go-to')
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="example" class="hs-docs-heading">
+        Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Below is a <em>static</em> Go to (meaning its <code>position</code> have been overridden for demonstration purposes. However the HTML markups in the clipboard are not).</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <a class="go-to position-relative d-inline-flex" href="javascript:;">
+              <i class="bi-chevron-up"></i>
+            </a>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Go to --&gt;
+                &lt;a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+                   data-hs-go-to-options='{
+                     "offsetTop": 700,
+                     "position": {
+                       "init": {
+                         "right": 32
+                       },
+                       "show": {
+                         "bottom": 32
+                       },
+                       "hide": {
+                         "bottom": -32
+                       }
+                     }
+                   }'&gt;
+                  &lt;i class="bi-chevron-up"&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;!-- End Go to --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="referenced-to-a-page" class="hs-docs-heading">
+        Referenced to a page <a class="anchorjs-link" href="#referenced-to-a-page" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <a class="go-to position-relative d-inline-flex" href="../index.html"
+               data-hs-go-to-options='{
+                 "isReferencedToOtherPage": 700
+               }'>
+              <i class="bi-chevron-up"></i>
+            </a>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Go to --&gt;
+                &lt;a class="js-go-to go-to position-fixed" href="../index.html" style="visibility: hidden;"
+                   data-hs-go-to-options='{
+                     "isReferencedToOtherPage": 700
+                     "offsetTop": 700,
+                     "position": {
+                       "init": {
+                         "right": 32
+                       },
+                       "show": {
+                         "bottom": 32
+                       },
+                       "hide": {
+                         "bottom": -32
+                       }
+                     }
+                   }'&gt;
+                  &lt;i class="bi-chevron-up"&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;!-- End Go to --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>targetSelector</code></td>
+                <td>An element to which the browser window will scroll, by clicking on the element to be initialized</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td><code>compensationSelector</code></td>
+                <td>An element whose height will be taken into account when calculating the point, upon reaching which the scroll will end</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td><code>animationInit</code></td>
+                <td>Name of the class that is responsible for the activation of css animation</td>
+                <td><code>'animated'</code></td>
+              </tr>
+
+              <tr>
+                <td><code>animationIn</code></td>
+                <td>Name of the class, css-animation, which is given when the initialized element</td>
+                <td><code>'fadeIn'</code></td>
+              </tr>
+
+              <tr>
+                <td><code>animationOut</code></td>
+                <td>Name of the class, css-animation, which is given when the initialized element disappears</td>
+                <td><code>'fadeOut'</code></td>
+              </tr>
+
+              <tr>
+                <td><code>duration</code></td>
+                <td>Animation duration</td>
+                <td><code>400</code></td>
+              </tr>
+
+              <tr>
+                <td><code>offsetTop</code></td>
+                <td>Distance that must be scrolled for the initialized object to appear</td>
+                <td><code>0</code></td>
+              </tr>
+
+              <tr>
+                <td><code>position.init</code></td>
+                <td>CSS properties <code>top</code> || <code>bottom</code> || <code>left</code> || <code>right</code>, which are added when the element is initialized</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td><code>position.hide</code></td>
+                <td>CSS properties <code>top</code> || <code>bottom</code> || <code>left</code> || <code>right</code>, which are added when the element is disappears</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td><code>position.show</code></td>
+                <td>CSS properties <code>top</code> || <code>bottom</code> || <code>left</code> || <code>right</code>, which are added when an element appears</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td><code>isReferencedToOtherPage</code></td>
+                <td>if <code>true</code>, then allows you to go to another page, disabling the scroll function to the element specified in <code>targetSelector</code></td>
+                <td><code>null</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

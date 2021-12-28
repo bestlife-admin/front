@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Real Estate | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-real-estate.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "real-estate",
+    "category": "",
+    "subcategory": "",
+    "link": "index.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="position-relative overflow-hidden content-space-t-md-4">
+      <div class="container">
+        <div class="position-relative content-space-t-3 content-space-t-md-0 content-space-t-lg-3 content-space-b-2 content-space-b-md-3 content-space-b-xl-5">
+          <div class="row position-relative zi-2 mt-md-n5">
+            <div class="col-md-8 mb-7 mb-md-0">
+              <!-- Heading -->
+              <div class="w-md-75 mb-7">
+                <h1 class="display-4">Discover a place you'll
+                  <span class="text-primary text-highlight-warning">
+                    <span class="js-typedjs"
+                          data-hs-typed-options='{
+                            "strings": ["love to live", "enjoy living"],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'></span>
+                  </span>
+                </h1>
+              </div>
+              <!-- End Heading -->
+
+              <form>
+                <!-- Input Card -->
+                <div class="input-card">
+                  <div class="input-card-form">
+                    <label for="searchLocationForm" class="form-label visually-hidden">Search location</label>
+                    <div class="input-group input-group-merge">
+                      <span class="input-group-prepend input-group-text">
+                        <i class="bi-search"></i>
+                      </span>
+                      <input type="text" class="form-control form-control-lg" id="searchLocationForm" placeholder="Enter location" aria-label="Enter location">
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg">Search</button>
+                </div>
+                <!-- End Input Card -->
+              </form>
+
+              <p class="form-text small">Search through over 125,000 listings</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+
+          <div class="col-md-6 position-md-absolute top-0 end-0">
+            <img class="img-fluid" src="@@autopath/assets/img/900x900/img20.jpg" alt="Image Description">
+
+            <!-- SVG Shape -->
+            <div class="position-absolute bottom-0 end-0 zi-n1 mb-n10 me-n7" style="width: 12rem;">
+              <img class="img-fluid" src="@@autopath/assets/svg/components/dots-lg.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Shape -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 position-absolute top-0 start-0 zi-n1 gradient-y-three-sm-primary h-100" style="background-size: calc(1000px + (100vw - 1000px) / 2);"></div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-2 content-space-b-lg-3">
+      <!-- Title -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+        <h2>New properties on Front</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img23.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-start">
+                <span class="badge bg-success">New</span>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For sale</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">Borrett Close, London</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;689,000</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  3 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  2 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 1,428 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img19.jpg" alt="Image Description">
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For sale</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">The Drive, Ilford</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;999,000</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  2 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  1 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 2,123 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img20.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-start">
+                <span class="badge bg-primary">New build</span>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For sale</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">Alderney House, Enfield</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;725,000</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  1 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  1 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 1,791 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img22.jpg" alt="Image Description">
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For rent</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">Burns Way, Hounslow</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;2,500</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  3 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  2 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 2,182 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img21.jpg" alt="Image Description">
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For rent</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">14 Oakridge, Dr Unit</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;999</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  1 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  1 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 1,254 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3">
+          <!-- Card -->
+          <a class="card card-flush shadow-none h-100" href="@@autopath/demo-real-estate/property-overview.html">
+            <div class="card-pinned">
+              <img class="card-img" src="@@autopath/assets/img/480x320/img24.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-start">
+                <span class="badge bg-success">New</span>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="card-subtitle text-body">For rent</span>
+
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <h4 class="card-title text-inherit">6 Milne Avenue, Matraville</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <h3 class="card-title text-primary">&#163;1,257</h3>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <ul class="list-inline list-separator text-body small">
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512"><path d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"/></svg>
+                  </span>
+                  1 bed
+                </li>
+                <li class="list-inline-item">
+                  <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"/></svg>
+                  </span>
+                  1 bath
+                </li>
+                <li class="list-inline-item">
+                  <i class="bi-rulers text-muted me-1"></i> 937 sqft
+                </li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="text-center">
+        <a class="btn btn-outline-primary" href="@@autopath/demo-real-estate/property-grid.html">View all properties for sale <i class="bi-chevron-right small ms-1"></i></a>
+      </div>
+    </div>
+    <!-- End Card Grid -->
+
+    <!-- Features -->
+    <div class="position-relative">
+      <div class="container content-space-lg-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-9 mb-7 mb-md-0">
+            <!-- Heading -->
+            <div class="w-md-65 mb-7">
+              <h2 class="h1">Front helps you make better property decisions</h2>
+              <p>Front has England's largest collection of street and suburb reviews, empowering you to find the right area for you to move to. With tens of thousands of local community topics and discussions, find the answers to all your questions about an area, or ask the locals.</p>
+            </div>
+            <!-- End Heading -->
+
+            <div class="row">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <!-- Card -->
+                <div class="card h-100">
+                  <div class="card-body">
+                    <span class="svg-icon text-primary mb-3">
+                      @@include("@@autopath/assets/vendor/duotone-icons/hom/hom005.svg")
+                    </span>
+                    <h4 class="card-title">Find homes for sale</h4>
+                    <p class="card-text">Over 1 million+ homes for sale available on the website.</p>
+                    <a class="card-link" href="#">Properties for sale <i class="bi-chevron-right small ms-1"></i></a>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-4 mb-3 mb-md-0">
+                <!-- Card -->
+                <div class="card h-100">
+                  <div class="card-body">
+                    <span class="svg-icon text-primary mb-3">
+                      @@include("@@autopath/assets/vendor/duotone-icons/gen/gen004.svg")
+                    </span>
+                    <h4 class="card-title">Find rental properties</h4>
+                    <p class="card-text">Fina a home or apartment with 35+ filters and custom keyword search.</p>
+                    <a class="card-link" href="#">Properties for rent <i class="bi-chevron-right small ms-1"></i></a>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-md-4">
+                <!-- Card -->
+                <div class="card h-100">
+                  <div class="card-body">
+                    <span class="svg-icon text-primary mb-3">
+                      @@include("@@autopath/assets/vendor/duotone-icons/ecm/ecm003.svg")
+                    </span>
+                    <h4 class="card-title">Sell properties</h4>
+                    <p class="card-text">Wanting to find a sold property price or see what sold on the weekend?</p>
+                    <a class="card-link" href="#">Sell properties <i class="fas bi-chevron-right small ms-1"></i></a>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+
+      <div class="banner-half-middle-x bg-img-start d-none d-md-block" style="background-image: url(@@autopath/assets/img/900x900/img22.jpg);"></div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Features Stats -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="text-center">
+            <small class="text-cap text-primary">&mdash; Valuation methods </small>
+            <h4 class="display-4">500,000</h4>
+            <p>Our valuation methods are based on more than 500,000 real transactions.</p>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="text-center">
+            <small class="text-cap text-primary">&mdash; Coverage</small>
+            <h4 class="display-4">75%</h4>
+            <p>This represents over 75% of the UK property sales over the past 10 years.</p>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-4">
+          <div class="text-center">
+            <small class="text-cap text-primary">&mdash; Advanced algorithm</small>
+            <h4 class="display-4">125,000</h4>
+            <p>Our algorithms are updated by data from over 125,000 property sales every year.</p>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Features Stats -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-b-2 content-space-b-lg-3">
+      <!-- Title -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2>Browse properties by city in the UK</h2>
+        <p>Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you.</p>
+      </div>
+      <!-- End Title -->
+
+      <div class="text-center">
+        <!-- Nav -->
+        <ul class="nav nav-segment mb-7" id="featuresTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" href="#forSale" id="forSale-tab" data-bs-toggle="tab" data-bs-target="#forSale" role="tab" aria-controls="forSale" aria-selected="true">For sale</a>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#forRent" id="forRent-tab" data-bs-toggle="tab" data-bs-target="#forRent" role="tab" aria-controls="forRent" aria-selected="false">For rent</a>
+          </li>
+        </ul>
+        <!-- End Nav -->
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="houseHeroTabContent">
+        <div class="tab-pane fade show active" id="forSale" role="tabpanel" aria-labelledby="forSale-tab">
+          <div class="row gx-3">
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img28.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">3521 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">London</h3>
+                    <span class="d-block text-white">Prices from &#163;5,490,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img29.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">4659 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Oxford</h3>
+                    <span class="d-block text-white">Prices from &#163;3,820,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img11.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">2471 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Edinburgh</h3>
+                    <span class="d-block text-white">Prices from &#163;3,371,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img10.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">5523 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Newcastle</h3>
+                    <span class="d-block text-white">Prices from &#163;2,588,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img9.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">939 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Liverpool</h3>
+                    <span class="d-block text-white">Prices from &#163;1,318,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img8.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">364 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Bristol</h3>
+                    <span class="d-block text-white">Prices from &#163;1,457,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="tab-pane fade" id="forRent" role="tabpanel" aria-labelledby="forRent-tab">
+          <div class="row gx-3">
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img11.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">2471 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Edinburgh</h3>
+                    <span class="d-block text-white">Prices from &#163;1,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img28.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">3521 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">London</h3>
+                    <span class="d-block text-white">Prices from &#163;5,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img29.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">4659 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Oxford</h3>
+                    <span class="d-block text-white">Prices from &#163;7,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img9.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">939 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Liverpool</h3>
+                    <span class="d-block text-white">Prices from &#163;8,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img8.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">364 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Bristol</h3>
+                    <span class="d-block text-white">Prices from &#163;7,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3">
+              <!-- Card -->
+              <a class="card card-stretched-vertical card-transition shadow-none bg-img-start gradient-y-overlay-lg-dark" href="@@autopath/demo-real-estate/property-grid.html" style="background-image: url(@@autopath/assets/img/480x320/img10.jpg); min-height: 15rem;">
+                <div class="card-body">
+                  <div class="mb-1">
+                    <span class="badge bg-light text-dark">5523 offers</span>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <h3 class="text-white mb-0">Newcastle</h3>
+                    <span class="d-block text-white">Prices from &#163;5,000</span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </div>
+      <!-- End Tab Content -->
+    </div>
+    <!-- End Card Grid -->
+
+    <!-- Testimonials -->
+    <div class="overflow-hidden content-space-b-2 content-space-b-lg-3">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+        <h2>Reviews</h2>
+        <p>Over 40,000 happy customers. Be the next one.</p>
+      </div>
+      <!-- End Heading -->
+
+      <div class="container">
+        <div class="row justify-content-center align-items-md-center mb-7">
+          <div class="col-11 col-md-6 col-lg-4 mb-5 mb-md-0 me-md-n9">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <span class="svg-icon text-primary mb-3">
+                  @@include("@@autopath/assets/svg/components/quote.svg")
+                </span>
+
+                <!-- Blockquote -->
+                <figure>
+                  <blockquote class="blockquote blockquote-sm blockquote-left-border">" With Front Real Estate we can be self-reliant, like cooking for ourselves rather than eating out every night. You feel like part of the community rather than a visitor. "</blockquote>
+                  
+                  <figcaption class="blockquote-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-circle" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        Christina Kray
+                        <span class="blockquote-footer-source">Happy customer</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <!-- End Blockquote -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+
+          <div class="col-md-6 mt-n9 mt-md-0">
+            <img class="img-fluid" src="@@autopath/assets/img/900x900/img21.jpg" alt="Image Description">
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h3>See what other people are saying</h3>
+
+          <!-- Rating -->
+          <div class="d-flex justify-content-center align-items-center gap-1 mb-4">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <h4 class="ms-2 mb-0">4.85 / 5.0 <span class="text-body small">(2,594)</span></h4>
+          </div>
+          <!-- End Rating -->
+
+          <a class="btn btn-primary px-5" href="#">Read more reviews <i class="bi-chevron-right small ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+  <script src="@@autopath/assets/js/hs.typed.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      HSCore.components.HSTyped.init('.js-typedjs')
+    })()
+  </script>
+</body>
+</html>

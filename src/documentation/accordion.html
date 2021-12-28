@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Accordion - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "accordion.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Accordion</h1>
+            <p class="docs-page-header-text">Vertically collapsing accordions.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/accordion/" target="_blank">Bootstrap Accordion documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="example" class="hs-docs-heading">
+        Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Accordion -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingOne">
+                  <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingThree">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Accordion --&gt;
+                &lt;div class="accordion" id="accordionExample"&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="headingOne"&gt;
+                      &lt;a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+                        Accordion Item #1
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"&gt;
+                      &lt;div class="accordion-body"&gt;
+                        &lt;strong&gt;This is the first item's accordion body.&lt;/strong&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="headingTwo"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+                        Accordion Item #2
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"&gt;
+                      &lt;div class="accordion-body"&gt;
+                        &lt;strong&gt;This is the second item's accordion body.&lt;/strong&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="headingThree"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;
+                        Accordion Item #3
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample"&gt;
+                      &lt;div class="accordion-body"&gt;
+                        &lt;strong&gt;This is the third item's accordion body.&lt;/strong&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Accordion --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="flush" class="hs-docs-heading">
+        Flush <a class="anchorjs-link" href="#flush" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Add <code>.accordion-flush</code> to remove the default <code>background-color</code>, some borders, and some rounded corners to render accordions edge-to-edge with their parent container.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingOne">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                  </a>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingTwo">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                  </a>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingThree">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </a>
+                </div>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Accordion --&gt;
+                &lt;div class="accordion accordion-flush" id="accordionFlushExample"&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="flush-headingOne"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"&gt;
+                        Accordion Item #1
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-flush&lt;/code&gt; class. This is the first item's accordion body.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="flush-headingTwo"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"&gt;
+                        Accordion Item #2
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-flush&lt;/code&gt; class. This is the second item's accordion body. Let's imagine this being filled with some actual content.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="flush-headingThree"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"&gt;
+                        Accordion Item #3
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-flush&lt;/code&gt; class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Accordion --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="btn-icon-start" class="hs-docs-heading">
+        Button icon start <a class="anchorjs-link" href="#btn-icon-start" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Add <code>.accordion-btn-icon-start</code> to replace the collapse icons from end point to the start.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- Accordion -->
+            <div class="accordion accordion-btn-icon-start" id="accordionBtnIconStartExample">
+              <div class="accordion-item">
+                <div class="accordion-header" id="btn-icon-start-headingOne">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseOne" aria-expanded="false" aria-controls="btn-icon-start-collapseOne">
+                    <span class="ps-2">Accordion Item #1</span>
+                  </a>
+                </div>
+                <div id="btn-icon-start-collapseOne" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingOne" data-bs-parent="#accordionBtnIconStartExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-btn-icon-start</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="btn-icon-start-headingTwo">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseTwo" aria-expanded="false" aria-controls="btn-icon-start-collapseTwo">
+                    <span class="ps-2">Accordion Item #2</span>
+                  </a>
+                </div>
+                <div id="btn-icon-start-collapseTwo" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingTwo" data-bs-parent="#accordionBtnIconStartExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-btn-icon-start</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="btn-icon-start-headingThree">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseThree" aria-expanded="false" aria-controls="btn-icon-start-collapseThree">
+                    <span class="ps-2">Accordion Item #3</span>
+                  </a>
+                </div>
+                <div id="btn-icon-start-collapseThree" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingThree" data-bs-parent="#accordionBtnIconStartExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-btn-icon-start</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Accordion --&gt;
+                &lt;div class="accordion accordion-btn-icon-start" id="accordionBtnIconStartExample"&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="btn-icon-start-headingOne"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseOne" aria-expanded="false" aria-controls="btn-icon-start-collapseOne"&gt;
+                        &lt;span class="ps-2"&gt;Accordion Item #1&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="btn-icon-start-collapseOne" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingOne" data-bs-parent="#accordionBtnIconStartExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-btn-icon-start&lt;/code&gt; class. This is the first item's accordion body.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="btn-icon-start-headingTwo"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseTwo" aria-expanded="false" aria-controls="btn-icon-start-collapseTwo"&gt;
+                        &lt;span class="ps-2"&gt;Accordion Item #2&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="btn-icon-start-collapseTwo" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingTwo" data-bs-parent="#accordionBtnIconStartExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-btn-icon-start&lt;/code&gt; class. This is the second item's accordion body. Let's imagine this being filled with some actual content.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="btn-icon-start-headingThree"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#btn-icon-start-collapseThree" aria-expanded="false" aria-controls="btn-icon-start-collapseThree"&gt;
+                        &lt;span class="ps-2"&gt;Accordion Item #3&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="btn-icon-start-collapseThree" class="accordion-collapse collapse" aria-labelledby="btn-icon-start-headingThree" data-bs-parent="#accordionBtnIconStartExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-btn-icon-start&lt;/code&gt; class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Accordion --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="size" class="hs-docs-heading">
+        Size <a class="anchorjs-link" href="#size" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.accordion-lg</code> for large size.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- Accordion -->
+            <div class="accordion accordion-lg accordion-flush" id="accordionLGExample">
+              <div class="accordion-item">
+                <div class="accordion-header" id="accordion-lg-headingOne">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseOne" aria-expanded="false" aria-controls="accordion-lg-collapseOne">
+                    Accordion Item #1
+                  </a>
+                </div>
+                <div id="accordion-lg-collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingOne" data-bs-parent="#accordionLGExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-lg</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="accordion-lg-headingTwo">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseTwo" aria-expanded="false" aria-controls="accordion-lg-collapseTwo">
+                    Accordion Item #2
+                  </a>
+                </div>
+                <div id="accordion-lg-collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingTwo" data-bs-parent="#accordionLGExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-lg</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="accordion-lg-headingThree">
+                  <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseThree" aria-expanded="false" aria-controls="accordion-lg-collapseThree">
+                    Accordion Item #3
+                  </a>
+                </div>
+                <div id="accordion-lg-collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingThree" data-bs-parent="#accordionLGExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-lg</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Accordion --&gt;
+                &lt;div class="accordion accordion-lg" id="accordionLGExample"&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="accordion-lg-headingOne"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseOne" aria-expanded="false" aria-controls="accordion-lg-collapseOne"&gt;
+                        Accordion Item #1
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="accordion-lg-collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingOne" data-bs-parent="#accordionLGExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-lg&lt;/code&gt; class. This is the first item's accordion body.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="accordion-lg-headingTwo"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseTwo" aria-expanded="false" aria-controls="accordion-lg-collapseTwo"&gt;
+                        Accordion Item #2
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="accordion-lg-collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingTwo" data-bs-parent="#accordionLGExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-lg&lt;/code&gt; class. This is the second item's accordion body. Let's imagine this being filled with some actual content.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="accordion-item"&gt;
+                    &lt;div class="accordion-header" id="accordion-lg-headingThree"&gt;
+                      &lt;a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#accordion-lg-collapseThree" aria-expanded="false" aria-controls="accordion-lg-collapseThree"&gt;
+                        Accordion Item #3
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id="accordion-lg-collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion-lg-headingThree" data-bs-parent="#accordionLGExample"&gt;
+                      &lt;div class="accordion-body"&gt;Placeholder content for this accordion, which is intended to demonstrate the &lt;code&gt;.accordion-lg&lt;/code&gt; class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Accordion --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

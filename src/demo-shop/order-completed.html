@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Shop: Order Completed | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-shop.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "shop",
+    "category": "pages",
+    "subcategory": "",
+    "link": "order-completed.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Content -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+        <div class="mb-5">
+          <img class="img-fluid" src="@@autopath/assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="width: 15rem;">
+        </div>
+
+        <div class="mb-5">
+          <h1 class="h2">Your order is completed!</h1>
+          <p>Thank you for your order! Your order is being processed and will be completed within 3-6 hours. You will receive an email confirmation when your order is completed.</p>
+        </div>
+        
+        <a class="btn btn-primary btn-transition rounded-pill px-6" href="@@autopath/demo-shop/index.html">Continue shopping</a>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Subscribe -->
+    <div class="bg-light">
+      <div class="container content-space-2">
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+          <div class="row justify-content-lg-between">
+            <!-- Heading -->
+            <div class="mb-5">
+              <span class="text-cap">Subscribe</span>
+              <h2>Get the latest from Front</h2>
+            </div>
+            <!-- End Heading -->
+
+            <form>
+              <!-- Input Card -->
+              <div class="input-card input-card-pill input-card-sm border mb-3">
+                <div class="input-card-form">
+                  <label for="subscribeForm" class="form-label visually-hidden">Enter email</label>
+                  <input type="text" class="form-control form-control-lg" id="subscribeForm" placeholder="Enter email" aria-label="Enter email">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill">Subscribe</button>
+              </div>
+              <!-- End Input Card -->
+            </form>
+
+            <p class="small">You can unsubscribe at any time. Read our <a href="#">privacy policy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Subscribe -->
+
+    <!-- Clients -->
+    <div class="container content-space-2">
+      <div class="row">
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/hollister-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/levis-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/new-balance-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/puma-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/nike-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+
+        <div class="col text-center py-3">
+          <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/tnf-dark.svg" alt="Logo">
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Clients -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-3.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-search.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-empty-shopping-cart.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

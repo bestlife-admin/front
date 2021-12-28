@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Maintenance Mode | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-light navbar-absolute-top">
+    <div class="container">
+      <nav class="navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="@@autopath/index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+        </a>
+        <!-- End Default Logo -->
+
+        <div class="ms-auto">
+          <a class="btn btn-primary btn-transition" href="@@autopath/page-status.html">Check for updates</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="d-flex">
+      <div class="container d-flex align-items-center vh-100">
+        <div class="w-sm-75 w-lg-50 text-center mx-sm-auto">
+          <div class="mb-7">
+            <img class="img-fluid" src="@@autopath/assets/svg/illustrations/oc-maintenance.svg" alt="SVG Illustration">
+          </div>
+
+          <h1 class="h2">We're just tuning up a few things.</h1>
+          <p>We apologize for the inconvenience but Front is currently undergoing planned maintenance. Stay tuned!</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-2.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+</body>
+</html>

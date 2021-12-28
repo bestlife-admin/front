@@ -1,0 +1,264 @@
+<nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end"
+      data-hs-nav-scroller-options='{
+        "type": "vertical",
+        "target": ".navbar-nav .active",
+        "offset": 80
+       }'>
+  <!-- Navbar Toggle -->
+  <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+    <span class="d-flex justify-content-between align-items-center">
+      <span class="h6 mb-0">Nav menu</span>
+
+      <span class="navbar-toggler-default">
+        <i class="bi-list"></i>
+      </span>
+
+      <span class="navbar-toggler-toggled">
+        <i class="bi-x"></i>
+      </span>
+    </span>
+  </button>
+  <!-- End Navbar Toggle -->
+
+  <!-- Navbar Collapse -->
+  <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+    <div class="navbar-brand-wrapper border-end" style="height: auto;">
+      <!-- Default Logo -->
+      <div class="d-flex align-items-center mb-3">
+        <a class="navbar-brand" href="@@autopath/snippets/index.html" aria-label="Space">
+          <img class="navbar-brand-logo" src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+        </a>
+        <a class="navbar-brand-badge" href="@@autopath/documentation/changelog.html">
+          <span class="badge bg-soft-primary text-primary ms-2">v4.1</span>
+        </a>
+      </div>
+      <!-- End Default Logo -->
+      
+      <!-- Nav -->
+      <ul class="nav nav-segment nav-fill nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" href="@@autopath/documentation/index.html">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="@@autopath/snippets/index.html">Snippets</a>
+        </li>
+      </ul>
+      <!-- End Nav -->
+    </div>
+
+    <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+      <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+        <li class="nav-item">
+          <span class="nav-subtitle">Snippets</span>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='index.html'){active}" href="@@autopath/snippets/index.html">Introduction</a>
+        </li>
+
+        <li class="nav-item my-2 my-lg-5"></li>
+        
+        <li class="nav-item">
+          <span class="nav-subtitle">Navbar / Heroes</span>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='navbar.html'){active}" href="@@autopath/snippets/navbar.html">Headers (Navbar)</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='hero-sections.html'){active}" href="@@autopath/snippets/hero-sections.html">Hero Sections</a>
+        </li>
+
+        <li class="nav-item my-2 my-lg-5"></li>
+
+        <li class="nav-item">
+          <span class="nav-subtitle">Content</span>
+        </li>
+
+        <li class="nav-item @@if(category=='features'){active}">
+          <a class="nav-link dropdown-toggle" href="#snippetsSidebarNavFeaturesCollapse" role="button" data-bs-toggle="collapse" aria-expanded="@@if(category=='features'){true}@@if(category!=='features'){false}" aria-controls="snippetsSidebarNavFeaturesCollapse">Features</a>
+
+          <div id="snippetsSidebarNavFeaturesCollapse" class="nav-collapse collapse @@if(category=='features'){show}">
+            <a class="nav-link @@if(link=='features-general.html'){active}" href="features-general.html">General</a>
+            <a class="nav-link @@if(link=='features-stats.html'){active}" href="features-stats.html">Stats</a>
+            <a class="nav-link @@if(link=='features-step.html'){active}" href="features-step.html">Step</a>
+            <a class="nav-link @@if(link=='features-navs.html'){active}" href="features-navs.html">Navs (Tabs)</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='icon-blocks.html'){active}" href="@@autopath/snippets/icon-blocks.html">Icon Blocks</a>
+        </li>
+
+        <li class="nav-item @@if(category=='cards'){active}">
+          <a class="nav-link dropdown-toggle" href="#snippetsSidebarNavCardsCollapse" role="button" data-bs-toggle="collapse" aria-expanded="@@if(category=='cards'){true}@@if(category!=='cards'){false}" aria-controls="snippetsSidebarNavCardsCollapse">Cards</a>
+
+          <div id="snippetsSidebarNavCardsCollapse" class="nav-collapse collapse @@if(category=='cards'){show}">
+            <a class="nav-link @@if(link=='cards-grid.html'){active}" href="cards-grid.html">Grid</a>
+            <a class="nav-link @@if(link=='cards-list.html'){active}" href="cards-list.html">List</a>
+          </div>
+        </li>
+
+        <li class="nav-item @@if(category=='directory'){active}">
+          <a class="nav-link dropdown-toggle" href="#snippetsSidebarNavDirectoryCollapse" role="button" data-bs-toggle="collapse" aria-expanded="@@if(category=='directory'){true}@@if(category!=='directory'){false}" aria-controls="snippetsSidebarNavDirectoryCollapse">Directory</a>
+
+          <div id="snippetsSidebarNavDirectoryCollapse" class="nav-collapse collapse @@if(category=='directory'){show}">
+            <a class="nav-link @@if(link=='directory-grid.html'){active}" href="directory-grid.html">Grid</a>
+            <a class="nav-link @@if(link=='directory-list.html'){active}" href="directory-list.html">List</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='testimonials.html'){active}" href="@@autopath/snippets/testimonials.html">Testimonials</a>
+        </li>
+
+        <li class="nav-item @@if(category=='blogs'){active}">
+          <a class="nav-link dropdown-toggle" href="#snippetsSidebarNavBlogsCollapse" role="button" data-bs-toggle="collapse" aria-expanded="@@if(category=='blogs'){true}@@if(category!=='blogs'){false}" aria-controls="snippetsSidebarNavBlogsCollapse">Blogs</a>
+
+          <div id="snippetsSidebarNavBlogsCollapse" class="nav-collapse collapse @@if(category=='blogs'){show}">
+            <a class="nav-link @@if(link=='blogs-grid.html'){active}" href="blogs-grid.html">Grid</a>
+            <a class="nav-link @@if(link=='blogs-list.html'){active}" href="blogs-list.html">List</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='tables.html'){active}" href="@@autopath/snippets/tables.html">Tables</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='ecommerce.html'){active}" href="@@autopath/snippets/ecommerce.html">E-commerce</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='pricing.html'){active}" href="@@autopath/snippets/pricing.html">Pricing</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='team-sections.html'){active}" href="@@autopath/snippets/team-sections.html">Team Sections</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='breadcrumb.html'){active}" href="@@autopath/snippets/breadcrumb.html">Breadcrumb</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='cta.html'){active}" href="@@autopath/snippets/cta.html">Call-to-Action (CTA)</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='modals.html'){active}" href="@@autopath/snippets/modals.html">Modals</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='portfolio.html'){active}" href="@@autopath/snippets/portfolio.html">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='gallery.html'){active}" href="@@autopath/snippets/gallery.html">Gallery</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='clients.html'){active}" href="@@autopath/snippets/clients.html">Clients</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='countdown.html'){active}" href="@@autopath/snippets/countdown.html">Countdown</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='faq.html'){active}" href="@@autopath/snippets/faq.html">FAQ</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='lists.html'){active}" href="@@autopath/snippets/lists.html">Lists</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='collapse-accordion.html'){active}" href="@@autopath/snippets/collapse-accordion.html">Collapse/Accordion</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='comments.html'){active}" href="@@autopath/snippets/comments.html">Comments</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='feedback-and-reviews.html'){active}" href="@@autopath/snippets/feedback-and-reviews.html">Feedback &amp; Reviews</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='user-profile.html'){active}" href="@@autopath/snippets/user-profile.html">User Profile</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='sidebar-examples.html'){active}" href="sidebar-examples.html">Sidebar Examples</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='calendar-view.html'){active}" href="calendar-view.html">Calendar View</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='notification.html'){active}" href="notification.html">Notification</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='content-sections.html'){active}" href="content-sections.html">Content Sections</a>
+        </li>
+
+        <li class="nav-item my-2 my-lg-5"></li>
+
+        <li class="nav-item">
+          <small class="nav-subtitle">Forms</small>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-authentication.html'){active}" href="forms-authentication.html">Authentication</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-feedback.html'){active}" href="forms-feedback.html">Feedback</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-filters.html'){active}" href="forms-filters.html">Filters</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-search.html'){active}" href="forms-search.html">Search</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-directory.html'){active}" href="forms-directory.html">Directory</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-subscribe.html'){active}" href="forms-subscribe.html">Subscribe</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-account.html'){active}" href="forms-account.html">Account</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='forms-wizard-and-steps.html'){active}" href="forms-wizard-and-steps.html">Wizard &amp; Steps</a>
+        </li>
+
+        <li class="nav-item my-2 my-lg-5"></li>
+
+        <li class="nav-item">
+          <small class="nav-subtitle">Contact / Footer</small>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='contact-sections.html'){active}" href="@@autopath/snippets/contact-sections.html">Contact Sections</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(link=='footer.html'){active}" href="@@autopath/snippets/footer.html">Footer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Navbar Collapse -->
+</nav>

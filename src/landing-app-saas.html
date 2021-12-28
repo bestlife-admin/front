@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>App SaaS | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/swiper/swiper-bundle.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "main",
+    "category": "landings",
+    "subcategory": "",
+    "link": "landing-app-saas.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="container content-space-t-4 content-space-t-lg-5 content-space-b-2 content-space-b-lg-3">
+      <div class="row justify-content-lg-between align-items-lg-center mb-10">
+        <div class="col-md-6 col-lg-5">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h1>Build awesome apps with your web skills</h1>
+            <p>Built on standard web technology, teams use Front to build beautiful cross-platform hybrid apps in a fraction of the time.</p>
+          </div>
+          <!-- End Title & Description -->
+
+          <div class="d-grid d-sm-flex gap-3">
+            <a class="btn btn-primary btn-transition" href="#">Get started</a>
+            <a class="btn btn-link" href="#">Let's Talk <i class="bi-chevron-right small ms-1"></i></a>
+          </div>
+
+          <p class="form-text small">Start free trial. * No credit card required.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-7 col-md-6 d-none d-md-block">
+          <img class="img-fluid" src="@@autopath/assets/svg/illustrations/oc-relaxing.svg" alt="Image Description">
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <!-- Swiper Slider -->
+      <div class="js-swiper-hero-clients swiper text-center">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/fitbit-dark.svg" alt="Logo">
+          </div>
+          <!-- End Slide -->
+
+          <div class="swiper-slide">
+            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/forbes-dark.svg" alt="Logo">
+          </div>
+          <!-- End Slide -->
+
+          <div class="swiper-slide">
+            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/mailchimp-dark.svg" alt="Logo">
+          </div>
+          <!-- End Slide -->
+
+          <div class="swiper-slide">
+            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/layar-dark.svg" alt="Logo">
+          </div>
+          <!-- End Slide -->
+
+          <div class="swiper-slide">
+            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/hubspot-dark.svg" alt="Logo">
+          </div>
+          <!-- End Slide -->
+        </div>
+      </div>
+      <!-- End Swiper Slider -->
+    </div>
+    <!-- End Hero -->
+
+    <!-- Feature Nav -->
+    <div class="container content-space-1">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="text-cap">What's Front?</span>
+        <h2>The quickest and easiest theme for every team</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+          <!-- Nav Scroller -->
+          <div class="js-nav-scroller hs-nav-scroller-horizontal">
+            <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+              <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                <i class="bi-chevron-left"></i>
+              </a>
+            </span>
+
+            <span class="hs-nav-scroller-arrow-next" style="display: none;">
+              <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                <i class="bi-chevron-right"></i>
+              </a>
+            </span>
+            
+            <!-- Nav Pills -->
+            <ul class="nav nav-lg nav-pills nav-pills-shadow flex-lg-column gap-lg-1 p-3" id="featuresTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true" style="min-width: 20rem;">
+                  <!-- Media -->
+                  <div class="d-flex align-items-center align-items-lg-start">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      @@include("@@autopath/assets/vendor/duotone-icons/art/art006.svg")
+                    </span>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Easy &amp; fast designing</h4>
+                      <p class="text-body text-wrap mb-0">You can work with your existing website.</p>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false" style="min-width: 20rem;">
+                  <!-- Media -->
+                  <div class="d-flex align-items-center align-items-lg-start">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      @@include("@@autopath/assets/vendor/duotone-icons/gen/gen022.svg")
+                    </span>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Powerful features</h4>
+                      <p class="text-body text-wrap mb-0">Easily draft, change, customize and launch.</p>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false" style="min-width: 20rem;">
+                  <!-- Media -->
+                  <div class="d-flex align-items-center align-items-lg-start">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      @@include("@@autopath/assets/vendor/duotone-icons/cod/cod011.svg")
+                    </span>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Advanced HTML/CSS editing</h4>
+                      <p class="text-body text-wrap mb-0">You can modify any aspect of your website.</p>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </a>
+              </li>
+            </ul>
+            <!-- End Nav Pills -->
+          </div>
+          <!-- End Nav Scroller -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-7 order-lg-1">
+          <!-- Tab Content -->
+          <div class="tab-content" id="featuresTabContent">
+            <div class="tab-pane fade show active" id="featuresOne" role="tabpanel" aria-labelledby="featuresOne-tab">
+              <!-- Browser Device -->
+              <figure class="device-browser">
+                <div class="device-browser-header">
+                  <div class="device-browser-header-btn-list">
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                  </div>
+                  <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+                </div>
+
+                <div class="device-browser-frame">
+                  <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img1.jpg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Browser Device -->
+            </div>
+
+            <div class="tab-pane fade" id="featuresTwo" role="tabpanel" aria-labelledby="featuresTwo-tab">
+              <!-- Browser Device -->
+              <figure class="device-browser">
+                <div class="device-browser-header">
+                  <div class="device-browser-header-btn-list">
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                  </div>
+                  <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+                </div>
+
+                <div class="device-browser-frame">
+                  <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img2.jpg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Browser Device -->
+            </div>
+
+            <div class="tab-pane fade" id="featuresThree" role="tabpanel" aria-labelledby="featuresThree-tab">
+              <!-- Browser Device -->
+              <figure class="device-browser">
+                <div class="device-browser-header">
+                  <div class="device-browser-header-btn-list">
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                  </div>
+                  <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+                </div>
+
+                <div class="device-browser-frame">
+                  <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img4.jpg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Browser Device -->
+            </div>
+          </div>
+          <!-- End Tab Content -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Feature Nav -->
+
+    <!-- Features Nav -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 mb-7 mb-lg-0">
+          <!-- Heading -->
+          <div class="mb-5">
+            <h2>Dedicated app development platform</h2>
+            <p>From open source to premium services, Front makes app creation lightning fast.</p>
+          </div>
+          <!-- End Heading -->
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <!-- List Checked -->
+              <ul class="list-checked list-checked-success mb-0">
+                <li class="list-checked-item">Mobile devs</li>
+                <li class="list-checked-item">App builder</li>
+                <li class="list-checked-item">Subscriptions <span class="badge bg-primary rounded-pill ms-1">Beta</span></li>
+                <li class="list-checked-item">Integrations</li>
+              </ul>
+              <!-- End List Checked -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-6">
+              <!-- List Checked -->
+              <ul class="list-checked list-checked-success mb-0">
+                <li class="list-checked-item">Reporting</li>
+                <li class="list-checked-item">Dashboard</li>
+                <li class="list-checked-item">Feedback</li>
+              </ul>
+              <!-- End List Checked -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+
+          <a class="link" href="#">Full API reference <i class="bi-chevron-right small ms-1"></i></a>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-7">
+          <!-- Card -->
+          <div class="card bg-dark" style="min-height: 27rem;">
+            <div class="card-body">
+              <!-- Nav Scroller -->
+              <div class="js-nav-scroller hs-nav-scroller-horizontal hs-nav-scroller-light">
+                <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+                  <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                    <i class="bi-chevron-left"></i>
+                  </a>
+                </span>
+
+                <span class="hs-nav-scroller-arrow-next" style="display: none;">
+                  <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                    <i class="bi-chevron-right"></i>
+                  </a>
+                </span>
+                
+                <div class="text-center">
+                  <!-- Nav Pills -->
+                  <ul class="nav nav-sm nav-pills nav-light nav-justified mb-5" id="featuresCodingTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" href="#featuresCodingOne" id="featuresCodingOne-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingOne" role="tab" aria-controls="featuresCodingOne" aria-selected="true">JS</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" href="#featuresCodingTwo" id="featuresCodingTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingTwo" role="tab" aria-controls="featuresCodingTwo" aria-selected="false">PHP</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" href="#featuresCodingThree" id="featuresCodingThree-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingThree" role="tab" aria-controls="featuresCodingThree" aria-selected="false">Ruby</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" href="#featuresCodingFour" id="featuresCodingFour-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingFour" role="tab" aria-controls="featuresCodingFour" aria-selected="false">C++</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" href="#featuresCodingFive" id="featuresCodingFive-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingFive" role="tab" aria-controls="featuresCodingFive" aria-selected="false">Python</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" href="#featuresCodingSix" id="featuresCodingSix-tab" data-bs-toggle="tab" data-bs-target="#featuresCodingSix" role="tab" aria-controls="featuresCodingSix" aria-selected="false">Java</a>
+                    </li>
+                  </ul>
+                  <!-- End Nav Pills -->
+                </div>
+              </div>
+              <!-- End Nav Scroller -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="featuresCodingTabContent">
+                <div class="tab-pane fade show active" id="featuresCodingOne" role="tabpanel" aria-labelledby="featuresCodingOne-tab">
+                  <!-- Code -->
+                  <div class="text-monospace">
+                    <div class="mb-4">
+                      <span class="text-danger pe-2">public class</span>
+                      <span class="text-white-70">AppInheritanceTest {</span>
+                    </div>
+                    <div class="ps-3 mb-1">
+                      <span class="text-danger pe-2">public static void</span>
+                      <span class="text-white-70">main(String[] args) {</span>
+                    </div>
+                    <div class="ps-6 mb-4">
+                      <span class="text-white-70">Front</span>
+                      <span class="text-danger">front</span>
+                      <span class="text-white-70">=</span>
+                      <span class="text-danger">new</span>
+                      <span class="text-white-70">Front(</span><span class="text-danger">true</span><span class="text-white-70">,</span>
+                      <span class="text-primary">"theme"</span><span class="text-white-70">,</span> <span class="text-danger">4</span><span class="text-white-70">);</span>
+                    </div>
+                    <div class="ps-6 mb-1">
+                      <span class="text-white-70">System.</span><span class="text-primary"><em>out</em></span><span class="text-white-70">.println(</span><span class="text-primary">"Is Front Responsive?"</span>
+                      <span class="text-white-70">+</span>
+                      <span class="text-danger">front</span><span class="text-white-70">.isResponsive());</span>
+                    </div>
+                    <div class="ps-6 mb-1">
+                      <span class="text-white-70">System.</span><span class="text-primary"><em>out</em></span><span class="text-white-70">.println(</span><span class="text-primary">"Front HTML "</span>
+                      <span class="text-white-70">+</span>
+                      <span class="text-danger">front</span><span class="text-white-70">.getHTML());</span>
+                    </div>
+                    <div class="ps-6 mb-1">
+                      <span class="text-white-70">System.</span><span class="text-primary"><em>out</em></span><span class="text-white-70">.println(</span><span class="text-primary">"Front has "</span>
+                      <span class="text-white-70">+</span>
+                      <span class="text-danger">front</span><span class="text-white-70">.getDemos()</span>
+                      <span class="text-white-70">+</span>
+                      <span class="text-primary">" demos."</span><span class="text-white-70">);</span>
+                    </div>
+                    <div class="ps-3 mb-1">
+                      <span class="text-white-70">}</span>
+                    </div>
+                    <div class="mb-1">
+                      <span class="text-white-70">}</span>
+                    </div>
+                  </div>
+                  <!-- End Code -->
+                </div>
+
+                <div class="tab-pane fade" id="featuresCodingTwo" role="tabpanel" aria-labelledby="featuresCodingTwo-tab">
+                  Coming soon...
+                </div>
+
+                <div class="tab-pane fade" id="featuresCodingThree" role="tabpanel" aria-labelledby="featuresCodingThree-tab">
+                  Coming soon...
+                </div>
+
+                <div class="tab-pane fade" id="featuresCodingFour" role="tabpanel" aria-labelledby="featuresCodingFour-tab">
+                  Coming soon...
+                </div>
+
+                <div class="tab-pane fade" id="featuresCodingFive" role="tabpanel" aria-labelledby="featuresCodingFive-tab">
+                  Coming soon...
+                </div>
+
+                <div class="tab-pane fade" id="featuresCodingSix" role="tabpanel" aria-labelledby="featuresCodingSix-tab">
+                  Coming soon...
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Features Nav -->
+
+    <!-- Icon Blocks -->
+    <div class="container">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="text-cap">Why Front</span>
+        <h2>Do more with an end-to-end solution</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row mb-5 mb-md-9">
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/abs/abs020.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">Robust libraries</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Use Front thoroughly thought and automated libraries to manage your businesses.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/cod/cod010.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">Simplified Snippets tools</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Quickly Front sample components, copy-paste codes, and start right off.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-7 mb-md-0">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/fil/fil024.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">Comprehensive docs</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Whether you're a startup or a global enterprise, learn how to integrate with Front.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-7 mb-md-0">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/abs/abs027.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">Layout options</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Apart from 100+ HTML-pages, the theme comes with 6 ready-to-use and stand-alone demo options.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-7 mb-md-0">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/gen/gen022.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">Speed up</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Reduce time and effort on building modern look design with Front only.</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Icon Block -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0">
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/gen/gen017.svg")
+              </span>
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+              <h4 class="mb-0">A full solution for start-ups</h4>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <p>Front comes with design layouts from Corporate to Course platform.</p>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="text-center">
+        <div class="d-grid d-sm-flex justify-content-center gap-2 mb-3">
+          <a class="btn btn-primary btn-transition" href="#">Sign up and Start Building</a>
+          <a class="btn btn-link" href="#">Let's Talk <i class="bi-chevron-right small ms-1"></i></a>
+        </div>
+
+        <p class="small">Start free trial. * No credit card required.</p>
+      </div>
+    </div>
+    <!-- End Icon Blocks -->
+
+    <!-- Testimonials -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="text-center mb-5">
+        <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/illustrations/oc-person-1.svg" alt="Illustration">
+      </div>
+      
+      <!-- Blockquote -->
+      <figure class="w-md-75 text-center mx-md-auto">
+        <blockquote class="blockquote">“ I just wanted to say that I'm very happy with my purchase of Front so far. The documentation is outstanding - clear and detailed. ”</blockquote>
+
+        <figcaption class="blockquote-footer text-center">
+          Christina
+          <span class="blockquote-footer-source">Product Manager | Mailchimp</span>
+        </figcaption>
+      </figure>
+      <!-- End Blockquote -->
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Contacts -->
+    <div class="position-relative">
+      <div class="bg-dark" style="background-image: url(@@autopath/assets/svg/components/wave-pattern-light.svg);">
+        <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
+          <!-- Heading -->
+          <div class="w-lg-50 text-center mx-lg-auto mb-7">
+            <span class="text-cap text-white-70">Contact us</span>
+            <h2 class="text-white lh-base">We collaborate with ambitious brands and people. <span class="text-warning">Let's chat.</span></h2>
+          </div>
+          <!-- End Heading -->
+
+          <div class="mx-auto" style="max-width: 35rem;">
+            <!-- Card -->
+            <div class="card zi-2">
+              <div class="card-body">
+                <!-- Form -->
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-4">
+                        <label class="form-label" for="hireUsFormFirstName">First name</label>
+                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-6">
+                      <!-- Form -->
+                      <div class="mb-4">
+                        <label class="form-label" for="hireUsFormLasttName">Last name</label>
+                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name">
+                      </div>
+                      <!-- End Form -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+
+                  <!-- Form -->
+                  <div class="mb-4">
+                    <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+                    <input type="email" class="form-control form-control-lg" name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Form -->
+                  <div class="mb-4">
+                    <label class="form-label" for="hireUsFormCompanyName">Company name <span class="form-label-secondary">(Optional)</span></label>
+                    <input type="text" class="form-control form-control-lg" name="hireUsFormNameCompanyName" id="hireUsFormCompanyName" placeholder="Htmlstream" aria-label="Htmlstream">
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Select -->
+                  <div class="mb-4">
+                    <label class="form-label" for="hireUsFormBudget">Budget</label>
+                    <select id="hireUsFormBudget" class="form-select form-select-lg" name="hireUsFormNameBudget" aria-label="Tell us about your budget">
+                      <option selected>Tell us about your budget</option>
+                      <option value="1">$1,000 - $10,000</option>
+                      <option value="2">$10,000 - $20,000</option>
+                      <option value="3">$20,000 - $30,000</option>
+                      <option value="4">$30,000 - $40,000</option>
+                      <option value="5">$40,000 - $50,000</option>
+                      <option value="6">$50,000 - and more</option>
+                    </select>
+                  </div>
+                  <!-- End Select -->
+
+                  <!-- Form -->
+                  <div class="mb-4">
+                    <label class="form-label" for="hireUsFormDetails">Details</label>
+                    <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your project" aria-label="Tell us about your project" rows="4"></textarea>
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Check -->
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck" name="signupFormPrivacyCheck" required data-msg="Please accept our Privacy Policy.">
+                    <label class="form-check-label" for="signupFormPrivacyCheck"> By submitting this form I have read and acknowledged the <a href=@@autopath/page-privacy.html>Privacy Policy</a></label>
+                  </div>
+                  <!-- End Check -->
+
+                  <div class="d-grid mb-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+                  </div>
+
+                  <div class="text-center">
+                    <span class="form-text">We'll get back to you in 1-2 business days.</span>
+                  </div>
+                </form>
+                <!-- End Form -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Shape -->
+      <div class="shape shape-bottom zi-1">
+        <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 500H3000V0L0 500Z" fill="#fff"/>
+        </svg>
+      </div>
+      <!-- End Shape -->
+    </div>
+    <!-- End Contacts -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-6.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-hero-clients',{
+        slidesPerView: 2,
+        breakpoints: {
+          380: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+        },
+      });
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller')
+    })()
+  </script>
+</body>
+</html>

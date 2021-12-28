@@ -1,0 +1,320 @@
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light">
+  <!-- Topbar -->
+  @@include("../navbar/topbar-demo-with-back-to-main-page-link.html", {
+    "topbarcategory": "@@topbarcategory",
+    "topbarlink": "@@topbarlink"
+  })
+  <!-- End Topbar -->
+
+  <div class="container">
+    <nav class="js-mega-menu navbar-nav-wrap">
+      <!-- Default Logo -->
+      <a class="navbar-brand" href="@@autopath/demo-course/index.html" aria-label="Front">
+        <img class="navbar-brand-logo" src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+      </a>
+      <!-- End Default Logo -->
+
+      <!-- Secondary Content -->
+      <div class="navbar-nav-wrap-secondary-content">
+        <!-- Search -->
+        <div class="dropdown dropdown-course-search d-lg-none d-inline-block">
+          <a class="btn btn-ghost-secondary btn-sm btn-icon" href="#" id="navbarCourseSearchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi-search"></i>
+          </a>
+
+          <div class="dropdown-menu dropdown-card" aria-labelledby="navbarCourseSearchDropdown">
+            <!-- Card -->
+            <div class="card card-sm">
+              <div class="card-body">
+                <form class="input-group input-group-merge">
+                  <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                  <div class="input-group-append input-group-text">
+                    <i class="bi-search"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Search -->
+
+        <!-- Account -->
+        <div class="dropdown">
+          <a href="#" id="navbarShoppingCartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
+            <img class="avatar avatar-xs avatar-circle" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarShoppingCartDropdown" style="min-width: 16rem;">
+            <a class="d-flex align-items-center p-2" href="#">
+              <div class="flex-shrink-0">
+                <img class="avatar" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <span class="d-block fw-semi-bold">Lida Reidy <span class="badge bg-primary ms-1">Pro</span></span>
+                <span class="d-block text-muted small">lidareidy@gmail.com</span>
+              </div>
+            </a>
+
+            <div class="dropdown-divider my-3"></div>
+
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-chat-left-dots"></i>
+              </span> Messages
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-wallet2"></i>
+              </span> Purchase history
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-person"></i>
+              </span> Account
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-credit-card"></i>
+              </span> Payment methods
+            </a>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-question-circle"></i>
+              </span> Help
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon">
+                <i class="bi-box-arrow-right"></i>
+              </span> Log out
+            </a>
+          </div>
+        </div>
+        <!-- End Account -->
+      </div>
+      <!-- End Secondary Content -->
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <i class="bi-list"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-x"></i>
+        </span>
+      </button>
+      <!-- End Toggler -->
+      
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='index.html'){active}" href="@@autopath/demo-course/index.html">Home</a>
+          </li>
+          
+          <!-- Courses -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="coursesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-journals me-2"></i> Courses</a>
+
+            <!-- Mega Menu -->
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="coursesMegaMenu" style="min-width: 17rem;">
+              <!-- Development -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="developmentMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-code-slash dropdown-item-icon"></i> Development</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="developmentMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All Business</a>
+                  <a class="dropdown-item" href="#">Finance</a>
+                  <a class="dropdown-item" href="#">Entrepreneurship</a>
+                  <a class="dropdown-item" href="#">Communications</a>
+                  <a class="dropdown-item" href="#">Management</a>
+                  <a class="dropdown-item" href="#">Sales</a>
+                  <a class="dropdown-item" href="#">Strategy</a>
+                  <a class="dropdown-item" href="#">Operations</a>
+                  <a class="dropdown-item" href="#">Project management</a>
+                  <a class="dropdown-item" href="#">Business law</a>
+                  <a class="dropdown-item" href="#">Data &amp; Analytics</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End Development -->
+
+              <!-- Business -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="businessMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-briefcase dropdown-item-icon"></i> Business</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="businessMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All Finance &amp; Accounting</a>
+                  <a class="dropdown-item" href="#">Accounting &amp; Bookkeeping</a>
+                  <a class="dropdown-item" href="#">Compliance</a>
+                  <a class="dropdown-item" href="#">Economics</a>
+                  <a class="dropdown-item" href="#">Finance</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End Business -->
+
+              <!-- Finance & Accounting -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="financeAccountingMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-graph-up dropdown-item-icon"></i> Finance &amp; Accounting</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="financeAccountingMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All IT &amp; Software</a>
+                  <a class="dropdown-item" href="#">IT Sertification</a>
+                  <a class="dropdown-item" href="#">Network &amp; security</a>
+                  <a class="dropdown-item" href="#">Hardware</a>
+                  <a class="dropdown-item" href="#">Operating systems</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End Finance & Accounting -->
+
+              <!-- IT & Software -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="ITSoftwareMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-laptop dropdown-item-icon"></i> IT &amp; Software</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="ITSoftwareMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All Design</a>
+                  <a class="dropdown-item" href="#">Web design</a>
+                  <a class="dropdown-item" href="#">Graphic design</a>
+                  <a class="dropdown-item" href="#">Design tools</a>
+                  <a class="dropdown-item" href="#">User experience</a>
+                  <a class="dropdown-item" href="#">Game design</a>
+                  <a class="dropdown-item" href="#">Design thinking</a>
+                  <a class="dropdown-item" href="#">3D &amp; animation</a>
+                  <a class="dropdown-item" href="#">Fashion</a>
+                  <a class="dropdown-item" href="#">Architectural design</a>
+                  <a class="dropdown-item" href="#">Interior design</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End IT & Software -->
+
+              <!-- Design -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="designMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-bezier2 dropdown-item-icon"></i> Design</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="designMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All Marketing</a>
+                  <a class="dropdown-item" href="#">Digital marketing</a>
+                  <a class="dropdown-item" href="#">Branding</a>
+                  <a class="dropdown-item" href="#">Advertising</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End Design -->
+
+              <!-- Music -->
+              <div class="hs-has-sub-menu nav-item">
+                <a id="musicMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-music-note-list dropdown-item-icon"></i> Music</a>
+
+                <div class="hs-sub-menu dropdown-menu" aria-labelledby="musicMegaMenu" style="min-width: 14rem;">
+                  <a class="dropdown-item" href="#">All Musics</a>
+                  <a class="dropdown-item" href="#">Instrument</a>
+                  <a class="dropdown-item" href="#">Production</a>
+                  <a class="dropdown-item" href="#">Music fundamentals</a>
+                  <a class="dropdown-item" href="#">Vocal</a>
+                  <a class="dropdown-item" href="#">Music techniques</a>
+                  <a class="dropdown-item" href="#">Music software</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </div>
+              <!-- End Music -->
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End Courses -->
+
+          <!-- Search Form -->
+          <li class="nav-item flex-grow-1 d-none d-lg-inline-block ">
+            <form class="input-group input-group-merge">
+              <div class="input-group-prepend input-group-text">
+                <i class="bi-search"></i>
+              </div>
+              <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+            </form>
+          </li>
+          <!-- End Search Form -->
+
+          <!-- Dropdown -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="listingsDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='pages'){active}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="listingsDropdown" style="min-width: 14rem;">
+              <a class="dropdown-item @@if(link=='courses.html'){active}" href="@@autopath/demo-course/courses.html">Courses</a>
+              <a class="dropdown-item @@if(link=='course-overview.html'){active}" href="@@autopath/demo-course/course-overview.html">Course Overview</a>
+              <a class="dropdown-item @@if(link=='author-profile.html'){active}" href="@@autopath/demo-course/author-profile.html">Author Profile</a>
+            </div>
+          </li>
+          <!-- End Dropdown -->
+
+          <!-- My Courses -->
+          <li class="hs-has-mega-menu nav-item"
+              data-hs-mega-menu-item-options='{
+                "desktop": {
+                  "maxWidth": "20rem"
+                }
+              }'>
+            <a id="myCoursesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Courses</a>
+
+            <!-- Mega Menu -->
+            <div class="hs-mega-menu hs-position-right dropdown-menu" aria-labelledby="myCoursesMegaMenu" style="min-width: 22rem;">
+              <!-- Course -->
+              <a class="navbar-dropdown-menu-media-link" href="#">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img class="avatar" src="@@autopath/assets/svg/components/card-16.svg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="mb-3">
+                      <span class="navbar-dropdown-menu-media-title">Java programming masterclass for software developers</span>
+                      <p class="navbar-dropdown-menu-media-desc">By Emily Milda</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="card-subtitle text-body">Completed</span>
+                      <small class="text-dark fw-semi-bold">25%</small>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- End Course -->
+
+              <!-- Course -->
+              <a class="navbar-dropdown-menu-media-link" href="#">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img class="avatar" src="@@autopath/assets/svg/components/card-5.svg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="mb-3">
+                      <span class="navbar-dropdown-menu-media-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner</span>
+                      <p class="navbar-dropdown-menu-media-desc">By Nataly Gaga and 2 others</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="card-subtitle text-body">Completed</span>
+                      <small class="text-dark fw-semi-bold">100%</small>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- End Course -->
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End My Courses -->
+        </ul>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </div>
+</header>

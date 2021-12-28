@@ -1,0 +1,48 @@
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white">
+  <!-- Topbar -->
+  @@include("../navbar/topbar-demo-with-back-to-main-page-link.html", {
+    "topbarcategory": "@@topbarcategory",
+    "topbarlink": "@@topbarlink"
+  })
+  <!-- End Topbar -->
+
+  <div class="container">
+    <nav class="navbar-nav-wrap">
+      <!-- Default Logo -->
+      <a class="navbar-brand" href="@@autopath/demo-help-desk/index.html" aria-label="Front">
+        <img class="navbar-brand-logo" src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+      </a>
+      <!-- End Default Logo -->
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <i class="bi-list"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-x"></i>
+        </span>
+      </button>
+      <!-- End Toggler -->
+      
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='index.html'){active}" href="@@autopath/demo-help-desk/index.html">Help Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='listing.html'){active}" href="@@autopath/demo-help-desk/listing.html">Listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='article-overview.html'){active}" href="@@autopath/demo-help-desk/article-overview.html">Article Overview</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-primary btn-transition" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+          </li>
+        </ul>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </div>
+</header>

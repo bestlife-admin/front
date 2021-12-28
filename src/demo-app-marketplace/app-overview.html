@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>App Marketplace: App Overview | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-app-marketplace.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "app-marketplace",
+    "category": "",
+    "subcategory": "",
+    "link": "app-overview.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Breadcrumb -->
+    <div class="border-top border-bottom">
+      <div class="container py-3">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="@@autopath/demo-app-marketplace/index.html">Apps</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">App Overview</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Content -->
+    <div class="container content-space-t-2 content-space-b-lg-2">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 mb-9 mb-md-0">
+          <div class="pe-lg-2">
+            <div class="text-center mb-4">
+              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Logo">
+            </div>
+
+            <div class="d-grid mb-7">
+              <a class="btn btn-sm btn-block btn-primary transition-3d-hover" href="#">Install now</a>
+            </div>
+
+            <div class="mb-7">
+              <h1 class="h4">Categories</h1>
+
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Featured</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">File management</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Productivity</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Essential apps</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Free</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Paid</a>
+              <a class="btn btn-soft-secondary btn-xs me-1 mb-2" href="#">Google</a>
+            </div>
+
+            <div class="d-none d-md-block mb-7">
+              <h4>Developer</h4>
+
+              <a class="d-flex align-items-center" href="#">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Logo">
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <span class="link link-secondary">Google Drive</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="d-none d-md-block mb-7">
+              <h4>Website</h4>
+
+              <a class="link" href="#">https://www.google.com/drive/</a>
+            </div>
+
+            <div class="d-none d-md-block mb-7">
+              <h4>Developer links</h4>
+
+              <!-- List Pointer -->
+              <ul class="list-unstyled list-pointer">
+                <li class="list-pointer-item">
+                  <a class="link link-secondary" href="#">Support</a>
+                </li>
+                <li class="list-pointer-item">
+                  <a class="link link-secondary" href="#">Documentation</a>
+                </li>
+                <li class="list-pointer-item">
+                  <a class="link link-secondary" href="#">Privacy Policy</a>
+                </li>
+              </ul>
+              <!-- End List Pointer -->
+            </div>
+
+            <a class="link-sm link-secondary" href="#">
+              <i class="bi-flag me-2"></i> Report abuse
+            </a>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-8 col-lg-9 column-divider-md">
+          <div class="ps-lg-2">
+            <div class="mb-5">
+              <h2>Google Drive <img class="avatar avatar-xs" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor"></h2>
+            </div>
+
+            <!-- Nav Scroller -->
+            <div class="js-nav-scroller hs-nav-scroller-horizontal">
+              <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-left"></i>
+                </a>
+              </span>
+
+              <span class="hs-nav-scroller-arrow-next" style="display: none;">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-right"></i>
+                </a>
+              </span>
+
+              <!-- Nav -->
+              <ul class="nav nav-segment nav-fill mb-7" id="featuresTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true" style="min-width: 7rem;">App info</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false" style="min-width: 7rem;">Review</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false" style="min-width: 7rem;">Pricing</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Nav Scroller -->
+              
+            <!-- Tab Content -->
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="featuresOne" role="tabpanel" aria-labelledby="featuresOne-tab">
+                <p>Use Google Drive within Slack to:</p>
+
+                <ul class="list-unstyled list-pointer mb-5">
+                  <li class="list-pointer-item">Create new Google Docs, Slides, and Sheets files</li>
+                  <li class="list-pointer-item">Import an existing file from Google Drive into a channel or direct message</li>
+                  <li class="list-pointer-item">Search directly within Google Drive files shared within Slack</li>
+                  <li class="list-pointer-item">Automatically grant access to the files you share with the right audience</li>
+                  <li class="list-pointer-item">Get updates in Slack on changes in Drive, like comments, access requests, and new files shared with you</li>
+                  <li class="list-pointer-item">Reply directly to comment notifications from within Slack and have them posted to the file</li>
+                </ul>
+
+                <div class="d-grid gap-4">
+                  <img class="img-fluid rounded-2" src="@@autopath/assets/img/900x450/img5.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-2" src="@@autopath/assets/img/900x450/img4.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-2" src="@@autopath/assets/img/900x450/img3.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="featuresTwo" role="tabpanel" aria-labelledby="featuresTwo-tab">
+                <div class="row justify-content-sm-between align-items-sm-center border-bottom pb-3 mb-4">
+                  <div class="col-sm mb-2 mb-sm-0">
+                    <h4 class="mb-0">Reviews <small class="text-muted ms-1">(156)</small></h4>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-sm-auto">
+                    <!-- Select -->
+                    <select class="form-select form-select-sm">
+                      <option value="showCategoryByFilterSelect1" selected>Newest first</option>
+                      <option value="showCategoryByFilterSelect2">Highest rated</option>
+                      <option value="showCategoryByFilterSelect3">Lowest rated</option>
+                    </select>
+                    <!-- End Select -->
+                  </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+
+                <!-- Comment -->
+                <ul class="list-comment mb-7">
+                  <!-- Item -->
+                  <li class="list-comment-item">
+                    <!-- Media -->
+                    <div class="d-flex mb-3">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-circle" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5>Dave Austin</h5>
+
+                        <p>Just started using Front for Google Drive, and finding it to serve all my needs and it integrates perfectly with Front! Sharing diagrams is now much easier for our team.</p>
+
+                        <!-- Media -->
+                        <div class="d-flex align-items-center">
+                          <span class="small me-2">Was this helpful?</span>
+
+                          <div class="d-flex gap-2">
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(45)</span>
+                            </a>
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-down me-1"></i> No <span>(21)</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Media -->
+
+                        <!-- Comment -->
+                        <ul class="list-comment">
+                          <!-- Item -->
+                          <li class="list-comment-item">
+                            <!-- Media -->
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="flex-shrink-0">
+                                <img class="avatar avatar-sm" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Image Description">
+                              </div>
+
+                              <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Google Drive</h5>
+                              </div>
+                            </div>
+                            <!-- End Media -->
+
+                            <p>Thanks for the review Maria! Let us know if you ever need anything.</p>
+                          </li>
+                          <!-- End Item -->
+                        </ul>
+                        <!-- End Comment -->
+                      </div>
+                    </div>
+                    <!-- End Media -->
+                  </li>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <li class="list-comment-item">
+                    <!-- Media -->
+                    <div class="d-flex mb-3">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-circle" src="@@autopath/assets/img/160x160/img8.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5>Hanna Wolfe</h5>
+
+                        <p>This is a pretty cool integration. It is fun and easy to use. I had to make a few sharing for work and Gliffy helped me get the job done. If I had a tablet or touch screen, I would use this more.</p>
+
+                        <!-- Media -->
+                        <div class="d-flex align-items-center">
+                          <span class="small me-2">Was this helpful?</span>
+
+                          <div class="d-flex gap-2">
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(5)</span>
+                            </a>
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-down me-1"></i> No <span>(0)</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Media -->
+
+                        <!-- Comment -->
+                        <ul class="list-comment">
+                          <!-- Item -->
+                          <li class="list-comment-item">
+                            <!-- Media -->
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="flex-shrink-0">
+                                <img class="avatar avatar-sm" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Image Description">
+                              </div>
+
+                              <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Google Drive</h5>
+                              </div>
+                            </div>
+                            <!-- End Media -->
+
+                            <p>Love it Dave! We're all about keeping it fun and easy.</p>
+                          </li>
+                          <!-- End Item -->
+                        </ul>
+                        <!-- End Comment -->
+                      </div>
+                    </div>
+                    <!-- End Media -->
+                  </li>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <li class="list-comment-item">
+                    <!-- Media -->
+                    <div class="d-flex mb-3">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-circle" src="@@autopath/assets/img/160x160/img7.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5>Nika Mundada</h5>
+
+                        <p>I love Google Drive! It's super easy to get started and works great with Front pages.</p>
+
+                        <!-- Media -->
+                        <div class="d-flex align-items-center">
+                          <span class="small me-2">Was this helpful?</span>
+
+                          <div class="d-flex gap-2">
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(0)</span>
+                            </a>
+                            <a class="btn btn-white btn-xs" href="javascript:;">
+                              <i class="bi-hand-thumbs-down me-1"></i> No <span>(0)</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Media -->
+
+                        <!-- Comment -->
+                        <ul class="list-comment">
+                          <!-- Item -->
+                          <li class="list-comment-item">
+                            <!-- Media -->
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="flex-shrink-0">
+                                <img class="avatar avatar-sm" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Image Description">
+                              </div>
+
+                              <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Google Drive</h5>
+                              </div>
+                            </div>
+                            <!-- End Media -->
+
+                            <p>Thanks for the feedback Nika!</p>
+                          </li>
+                          <!-- End Item -->
+                        </ul>
+                        <!-- End Comment -->
+                      </div>
+                    </div>
+                    <!-- End Media -->
+                  </li>
+                  <!-- End Item -->
+                </ul>
+                <!-- End Comment -->
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">
+                          <i class="bi-chevron-double-left small"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">
+                          <i class="bi-chevron-double-right small"></i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- End Pagination -->
+              </div>
+
+              <div class="tab-pane fade" id="featuresThree" role="tabpanel" aria-labelledby="featuresThree-tab">
+                <h4 class="mb-3">Pricing plans</h4>
+
+                <!-- Form -->
+                <form>
+                  <div class="d-grid gap-2 mb-5">
+                    <!-- Card -->
+                    <div class="card card-sm card-bordered shadow-none">
+                      <div class="card-body">
+                        <div class="row align-items-sm-center">
+                          <div class="col">
+                            <div class="d-flex align-items-center">
+                              <div class="flex-shrink-0">
+                                <span class="svg-icon svg-icon-sm text-center text-primary" style="min-width: 3rem;">
+                                  @@include("@@autopath/assets/svg/illustrations/circle-small.svg")
+                                </span>
+                              </div>
+
+                              <div class="flex-grow-1 ms-4">
+                                <h4 class="card-title mb-0">Launch</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-sm-7 col-md-6">
+                            <p class="card-text small">99GB storage in launch accounts</p>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+                            <div class="d-grid">
+                              <a class="btn btn-outline-primary" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">$49</a>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card card-sm card-bordered shadow-none">
+                      <div class="card-body">
+                        <div class="row align-items-sm-center">
+                          <div class="col">
+                            <div class="d-flex align-items-center">
+                              <div class="flex-shrink-0">
+                                <span class="svg-icon text-center text-primary" style="min-width: 3rem;">
+                                  @@include("@@autopath/assets/svg/illustrations/circle-triple.svg")
+                                </span>
+                              </div>
+
+                              <div class="flex-grow-1 ms-4">
+                                <h4 class="card-title mb-0">Growth</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-sm-7 col-md-6">
+                            <p class="card-text small">500GB storage in growth accounts</p>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+                            <div class="d-grid">
+                              <a class="btn btn-outline-primary" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">$149</a>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card card-sm card-bordered shadow-none">
+                      <div class="card-body">
+                        <div class="row align-items-sm-center">
+                          <div class="col">
+                            <div class="d-flex align-items-center">
+                              <div class="flex-shrink-0">
+                                <span class="svg-icon text-center text-primary" style="min-width: 3rem;">
+                                  @@include("@@autopath/assets/svg/illustrations/circle.svg")
+                                </span>
+                              </div>
+
+                              <div class="flex-grow-1 ms-4">
+                                <h4 class="card-title mb-0">Enterprise</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-sm-7 col-md-6">
+                            <p class="card-text small">100TB storage in enterprise accounts</p>
+                          </div>
+                          <!-- End Col -->
+
+                          <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+                            <div class="d-grid">
+                              <a class="btn btn-outline-primary" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">$599</a>
+                            </div>
+                          </div>
+                          <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+
+                  <!-- Card Info -->
+                  <div class="text-center">
+                    <div class="card card-info-link card-sm">
+                      <div class="card-body">
+                        Need 100TB+ storage? <a class="card-link ms-2" href="#">Contact us <span class="bi-chevron-right small ms-1"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card Info -->
+                </form>
+                <!-- End Form -->
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-2">
+      <!-- Heading -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="mb-0">Related apps</h3>
+        <a class="link" href="#">View all <i class="bi-chevron-right small ms-1"></i></a>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row gx-3 mx-n2">
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/spotify-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">Spotify</h5>
+                    <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                  </div>
+                  <p class="card-text text-body small">Entertainment</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/slack-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">Slack</h5>
+                  </div>
+                  <p class="card-text text-body small">Communication</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">Google Drive</h5>
+                    <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                  </div>
+                  <p class="card-text text-body small">File management</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/atlassian-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">Atlassian</h5>
+                  </div>
+                  <p class="card-text text-body small">Developer tools</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/behance-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">Behance</h5>
+                    <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                  </div>
+                  <p class="card-text text-body small">Design tools</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4 mb-3">
+          <!-- Card -->
+          <div class="card card-bordered card-transition shadow-none h-100">
+            <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/invision-studio-icon.svg" alt="Logo">
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0">InVision Studio</h5>
+                  </div>
+                  <p class="card-text text-body small">Design tools</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Card Grid -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Log In -->
+  @@include("@@autopath/partials/modal/login.html")
+
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller')
+    })()
+  </script>
+</body>
+</html>

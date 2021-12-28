@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Countdown - Snippets | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/snippets.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/snippets-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/snippets-sidebar.html", {
+      "category": "",
+      "link": "countdown.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Countdown</h1>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="component-1" class="hs-docs-heading">
+        Component #1 <a class="anchorjs-link" href="#component-1" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab1" href="#nav-js1" data-bs-toggle="pill" data-bs-target="#nav-js1" role="tab" aria-controls="nav-js1" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Content -->
+            <div class="d-md-flex">
+              <div class="container d-md-flex align-items-md-center vh-md-100 content-space-t-3 content-space-b-1 content-space-b-md-3 content-space-md-0">
+                <div class="row justify-content-md-between align-items-md-center flex-grow-1">
+                  <div class="col-9 col-md-5 mb-5 mb-md-0">
+                    <img class="img-fluid" src="@@autopath/assets/svg/illustrations/oc-yelling.svg" alt="SVG Illustration">
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-md-6">
+                    <!-- Heading -->
+                    <div class="mb-4">
+                      <h1>We're coming soon.</h1>
+                      <p>Our website is under construction. We'll be here soon with our new awesome site, subscribe to be notified.</p>
+                    </div>
+                    <!-- End Heading -->
+
+                    <div class="js-countdown row mb-5">
+                      <div class="col-3">
+                        <h2 class="js-cd-days h1 text-primary mb-0"></h2>
+                        <h5 class="mb-0">Days</h5>
+                      </div>
+                      <!-- End Col -->
+
+                      <div class="col-3">
+                        <h2 class="js-cd-hours h1 text-primary mb-0"></h2>
+                        <h5 class="mb-0">Hours</h5>
+                      </div>
+                      <!-- End Col -->
+
+                      <div class="col-3">
+                        <h2 class="js-cd-minutes h1 text-primary mb-0"></h2>
+                        <h5 class="mb-0">Mins</h5>
+                      </div>
+                      <!-- End Col -->
+
+                      <div class="col-3">
+                        <h2 class="js-cd-seconds h1 text-primary mb-0"></h2>
+                        <h5 class="mb-0">Secs</h5>
+                      </div>
+                      <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+
+                    <form>
+                      <!-- Input Card -->
+                      <div class="input-card input-card-sm border">
+                        <div class="input-card-form">
+                          <label for="subscribeForm" class="form-label visually-hidden">Enter email</label>
+                          <input type="text" class="form-control form-control-lg" id="subscribeForm" placeholder="Enter email" aria-label="Enter email">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg">Subscribe</button>
+                      </div>
+                      <!-- End Input Card -->
+                    </form>
+                  </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+              </div>
+            </div>
+            <!-- End Content -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Content --&gt;
+                &lt;div class="d-md-flex"&gt;
+                  &lt;div class="container d-md-flex align-items-md-center vh-md-100 content-space-t-3 content-space-b-1 content-space-b-md-3 content-space-md-0"&gt;
+                    &lt;div class="row justify-content-md-between align-items-md-center flex-grow-1"&gt;
+                      &lt;div class="col-9 col-md-5 mb-5 mb-md-0"&gt;
+                        &lt;img class="img-fluid" src="@@autopath/assets/svg/illustrations/oc-yelling.svg" alt="SVG Illustration"&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+
+                      &lt;div class="col-md-6"&gt;
+                        &lt;!-- Heading --&gt;
+                        &lt;div class="mb-4"&gt;
+                          &lt;h1&gt;We're coming soon.&lt;/h1&gt;
+                          &lt;p&gt;Our website is under construction. We'll be here soon with our new awesome site, subscribe to be notified.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Heading --&gt;
+
+                        &lt;div class="js-countdown row mb-5"&gt;
+                          &lt;div class="col-3"&gt;
+                            &lt;h2 class="js-cd-days h1 text-primary mb-0"&gt;&lt;/h2&gt;
+                            &lt;h5 class="mb-0"&gt;Days&lt;/h5&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Col --&gt;
+
+                          &lt;div class="col-3"&gt;
+                            &lt;h2 class="js-cd-hours h1 text-primary mb-0"&gt;&lt;/h2&gt;
+                            &lt;h5 class="mb-0"&gt;Hours&lt;/h5&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Col --&gt;
+
+                          &lt;div class="col-3"&gt;
+                            &lt;h2 class="js-cd-minutes h1 text-primary mb-0"&gt;&lt;/h2&gt;
+                            &lt;h5 class="mb-0"&gt;Mins&lt;/h5&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Col --&gt;
+
+                          &lt;div class="col-3"&gt;
+                            &lt;h2 class="js-cd-seconds h1 text-primary mb-0"&gt;&lt;/h2&gt;
+                            &lt;h5 class="mb-0"&gt;Secs&lt;/h5&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Col --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Row --&gt;
+
+                        &lt;form&gt;
+                          &lt;!-- Input Card --&gt;
+                          &lt;div class="input-card input-card-sm border"&gt;
+                            &lt;div class="input-card-form"&gt;
+                              &lt;label for="subscribeForm" class="form-label visually-hidden"&gt;Enter email&lt;/label&gt;
+                              &lt;input type="text" class="form-control form-control-lg" id="subscribeForm" placeholder="Enter email" aria-label="Enter email"&gt;
+                            &lt;/div&gt;
+                            &lt;button type="button" class="btn btn-primary btn-lg"&gt;Subscribe&lt;/button&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Input Card --&gt;
+                        &lt;/form&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Col --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Row --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Content --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js1" role="tabpanel" aria-labelledby="nav-jsTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="@@autopath/node_modules/countdown/countdown.js"&gt;&lt;/script&gt;
+
+                &lt;script&gt;
+                  (function () {
+                    // INITIALIZATION OF COUNTDOWN
+                    // =======================================================
+                    const oneYearFromNow = new Date()
+
+                    document.querySelectorAll('.js-countdown').forEach(item =&gt; {
+                      const days = item.querySelector('.js-cd-days'),
+                        hours = item.querySelector('.js-cd-hours'),
+                        minutes = item.querySelector('.js-cd-minutes'),
+                        seconds = item.querySelector('.js-cd-seconds')
+
+                      countdown(oneYearFromNow.setFullYear(
+                        oneYearFromNow.getFullYear() + 1),
+                        ts =&gt; {
+                          days.innerHTML = ts.days
+                          hours.innerHTML = ts.hours
+                          minutes.innerHTML = ts.minutes
+                          seconds.innerHTML = ts.seconds
+                        },
+                        countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS
+                      )
+                    })
+                  })()
+                &lt;/script>
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/node_modules/countdown/countdown.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      HSCore.components.HSList.init('#snippetsSearch')
+      const snippetsSearch = HSCore.components.HSList.getItem('snippetsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/snippets-search.json')
+      .then(response => response.json())
+      .then(data => {
+        snippetsSearch.add(data)
+      })
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF COUNTDOWN
+      // =======================================================
+      const oneYearFromNow = new Date()
+
+      document.querySelectorAll('.js-countdown').forEach(item => {
+        const days = item.querySelector('.js-cd-days'),
+          hours = item.querySelector('.js-cd-hours'),
+          minutes = item.querySelector('.js-cd-minutes'),
+          seconds = item.querySelector('.js-cd-seconds')
+
+        countdown(oneYearFromNow.setFullYear(
+          oneYearFromNow.getFullYear() + 1),
+          ts => {
+            days.innerHTML = ts.days
+            hours.innerHTML = ts.hours
+            minutes.innerHTML = ts.minutes
+            seconds.innerHTML = ts.seconds
+          },
+          countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS
+        )
+      })
+    })()
+  </script>
+</body>
+</html>

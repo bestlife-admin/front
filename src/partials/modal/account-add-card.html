@@ -1,0 +1,86 @@
+<div class="modal fade" id="accountAddCardModal" tabindex="-1" aria-labelledby="accountAddCardModalLabel" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="accountAddCardModalLabel">Add card</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="modal-body">
+        <!-- Form -->
+        <form>
+          <!-- Radio Button Group -->
+          <div class="btn-group btn-group-segment d-flex mb-4" role="group" aria-label="Account add card radio button group">
+            <input type="radio" class="btn-check" name="accountAddCardBtnRadio" id="accountAddCardBtnRadioOption1" autocomplete="off" checked>
+            <label class="btn btn-sm" for="accountAddCardBtnRadioOption1">Credit or Debit card</label>
+
+            <input type="radio" class="btn-check" name="accountAddCardBtnRadio" id="accountAddCardBtnRadioOption2" autocomplete="off" disabled>
+            <label class="btn btn-sm" for="accountAddCardBtnRadioOption2">PayPal <span class="badge bg-soft-primary text-primary">Coming soon</label>
+          </div>
+          <!-- End Radio Button Group -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <label for="cardNameLabel" class="form-label">Name on card</label>
+            <input type="text" class="form-control" id="cardNameLabel" placeholder="Payoneer" aria-label="Payoneer">
+          </div>
+          <!-- End Form -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <label for="cardNumberLabel" class="form-label">Card number</label>
+            <input type="text" class="js-input-mask form-control" name="cardNumber" id="cardNumberLabel" placeholder="xxxx xxxx xxxx xxxx" aria-label="xxxx xxxx xxxx xxxx"
+                   data-hs-mask-options='{
+                    "mask": "0000 0000 0000 0000"
+                  }'>
+          </div>
+          <!-- End Form -->
+
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label for="expirationDateLabel" class="form-label">Expiration date</label>
+                <input type="text" class="js-input-mask form-control" name="expirationDate" id="expirationDateLabel" placeholder="xx/xxxx" aria-label="xx/xxxx"
+                       data-hs-mask-options='{
+                        "mask": "00/0000"
+                      }'>
+              </div>
+              <!-- End Form -->
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label for="securityCodeLabel" class="form-label">CVV Code <i class="bi-question-circle text-body ml-1" data-toggle="tooltip" data-placement="top" title="A 3 - digit number, typically printed on the back of a card."></i></label>
+                <input type="text" class="js-input-mask form-control" name="securityCode" id="securityCodeLabel" placeholder="xxx" aria-label="xxx"
+                       data-hs-mask-options='{
+                        "mask": "000"
+                      }'>
+              </div>
+              <!-- End Form -->
+            </div>
+          </div>
+          <!-- End Row -->
+
+          <!-- Custom Checkbox -->
+          <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="makePrimaryCheckbox1">
+            <label class="form-check-label" for="makePrimaryCheckbox1">Make this primary card</label>
+          </div>
+          <!-- End Custom Checkbox -->
+
+          <div class="d-flex justify-content-end gap-3">
+            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+        <!-- End Form -->
+      </div>
+      <!-- End Body -->
+    </div>
+  </div>
+</div>

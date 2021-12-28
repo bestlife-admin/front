@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Popover - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "popovers.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Popover</h1>
+            <p class="docs-page-header-text">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/popovers/" target="_blank">Bootstrap Popovers documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="example" class="hs-docs-heading">
+        Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Four options are available: top, right, bottom, and left aligned.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="row">
+              <div class="col-lg-3">
+                <a class="d-block text-center" href="javascript:;" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                  <img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-top.svg" alt="Image Description">
+                  <h4>Popover on top</h4>
+                </a>
+              </div>
+
+              <div class="col-lg-3">
+                <a class="d-block text-center" href="javascript:;" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                  <img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-right.svg" alt="Image Description">
+                  <h4>Popover on right</h4>
+                </a>
+              </div>
+
+              <div class="col-lg-3">
+                <a class="d-block text-center" href="javascript:;" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                  <img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-bottom.svg" alt="Image Description">
+                  <h4>Popover on bottom</h4>
+                </a>
+              </div>
+
+              <div class="col-lg-3">
+                <a class="d-block text-center" href="javascript:;" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                  <img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-left.svg" alt="Image Description">
+                  <h4>Popover on left</h4>
+                </a>
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-lg-3"&gt;
+                    &lt;a class="d-block text-center" href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?"&gt;
+                      &lt;img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-top.svg" alt="Image Description"&gt;
+                      &lt;h4&gt;Popover on top&lt;/h4&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-lg-3"&gt;
+                    &lt;a class="d-block text-center" href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="And here's some amazing content. It's very engaging. Right?"&gt;
+                      &lt;img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-Backward.svg" alt="Image Description"&gt;
+                      &lt;h4&gt;Popover on right&lt;/h4&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-lg-3"&gt;
+                    &lt;a class="d-block text-center" href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="And here's some amazing content. It's very engaging. Right?"&gt;
+                      &lt;img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-bottom.svg" alt="Image Description"&gt;
+                      &lt;h4&gt;Popover on bottom&lt;/h4&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-lg-3"&gt;
+                    &lt;a class="d-block text-center" href="#" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="And here's some amazing content. It's very engaging. Right?"&gt;
+                      &lt;img class="img-fluid mb-3" src="@@autopath/assets/svg/components/popover-left.svg" alt="Image Description"&gt;
+                      &lt;h4&gt;Popover on left&lt;/h4&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

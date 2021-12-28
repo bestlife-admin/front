@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Legend Indicator - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "legend-indicator.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Legend indicator</h1>
+            <p class="docs-page-header-text">A component to indicate properties of elements.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="examples" class="hs-docs-heading">
+        Examples <a class="anchorjs-link" href="#examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <ul class="list-inline">
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator"></span>Default
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-primary"></span>Primary
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-info"></span>Info
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-danger"></span>Danger
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-success"></span>Success
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-warning"></span>Warning
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-dark"></span>Dark
+              </li>
+              <li class="list-inline-item d-inline-flex align-items-center">
+                <span class="legend-indicator bg-light"></span>Light
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;ul class="list-inline"&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator"&gt;&lt;/span&gt;Default
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-primary"&gt;&lt;/span&gt;Primary
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-info"&gt;&lt;/span&gt;Info
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-danger"&gt;&lt;/span&gt;Danger
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-success"&gt;&lt;/span&gt;Success
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-warning"&gt;&lt;/span&gt;Warning
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-dark"&gt;&lt;/span&gt;Dark
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item d-inline-flex align-items-center"&gt;
+                    &lt;span class="legend-indicator bg-light"&gt;&lt;/span&gt;Light
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

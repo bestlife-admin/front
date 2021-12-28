@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Toggle State - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "toggle-state.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Toggle State</h1>
+            <p class="docs-page-header-text">Toggle from one value to another.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./assets/vendor/hs-toggle-state/dist/hs-toggle-state.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF TOGGLE STATE
+              // =======================================================
+              new HSToggleState('.js-toggle-state')
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Card -->
+            <div class="card card-sm mb-3 mb-lg-5">
+              <!-- Header -->
+              <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                <h5 class="card-header-title">My network</h5>
+
+                <a id="toggleAll1" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                   data-hs-toggle-state-options='{
+                     "targetSelector": "#accountNotificationSwitch1, #accountNotificationSwitch2, #accountNotificationSwitch3, #accountNotificationSwitch4"
+                   }'>
+                  <span class="btn-toggle-default">Toggle all</span>
+                  <span class="btn-toggle-toggled">Untoggle all</span>
+                </a>
+              </div>
+              <!-- End Header -->
+
+              <!-- Alert -->
+              <div class="alert alert-soft-danger text-center card-alert" role="alert">
+                We need permission from your browser to show notifications. <a class="alert-link" href="#">Request permission</a>
+              </div>
+              <!-- End Alert -->
+
+              <div class="card-body">
+                <small class="card-subtitle">Send me:</small>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-no-gutters">
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch1">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch1">
+                      <span class="d-block">New for you</span>
+                      <span class="d-block small text-muted">A weekly email featuring shots from designers you follow</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch2">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch2" checked>
+                      <span class="d-block">Account activity <span class="badge bg-success ms-1">New</span></span>
+                      <span class="d-block small text-muted">Get important notifications about you or activity you've missed</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch3">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch3" checked>
+                      <span class="d-block">Meetups near you <span class="badge bg-success ms-1">New</span></span>
+                      <span class="d-block small text-muted">Get an email when a Dribbble Meetup is posted close to my location</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch4">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch4">
+                      <span class="d-block">Opportunities</span>
+                      <span class="d-block small text-muted">Get a daily email when new design jobs are posted in your area</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+                </div>
+                <!-- End List Group -->
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card card-sm mb-3 mb-lg-5">
+              <!-- Header -->
+              <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                <h5 class="card-header-title">Front emails</h5>
+
+                <a id="toggleAll3" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                   data-hs-toggle-state-options='{
+                     "targetSelector": "#accountNotificationSwitch5, #accountNotificationSwitch6, #accountNotificationSwitch7, #accountNotificationSwitch8"
+                   }'>
+                  <span class="btn-toggle-default">Toggle all</span>
+                  <span class="btn-toggle-toggled">Untoggle all</span>
+                </a>
+              </div>
+              <!-- End Header -->
+
+              <div class="card-body">
+                <small class="card-subtitle">Subscribe me to:</small>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-no-gutters">
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch5">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch5" checked>
+                      <span class="d-block">Company news</span>
+                      <span class="d-block small text-muted">Get Front news, announcements, and product updates</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch6">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch6">
+                      <span class="d-block">Replay <span class="badge bg-success ms-1">New</span></span>
+                      <span class="d-block small text-muted">A weekly email featuring popular shots</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch7">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch7">
+                      <span class="d-block">Courtside <span class="badge bg-success ms-1">New</span></span>
+                      <span class="d-block small text-muted">A weekly email featuring the latest stories from our blog</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch8">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch8">
+                      <span class="d-block">Weekly jobs</span>
+                      <span class="d-block small text-muted">Weekly digest of design jobs</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+                </div>
+                <!-- End List Group -->
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card card-sm mb-3 mb-lg-5">
+              <!-- Header -->
+              <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                <h5 class="card-header-title">Usage</h5>
+
+                <a id="toggleAll4" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                   data-hs-toggle-state-options='{
+                     "targetSelector": "#accountNotificationSwitch9, #accountNotificationSwitch10, #accountNotificationSwitch11"
+                   }'>
+                  <span class="btn-toggle-default">Toggle all</span>
+                  <span class="btn-toggle-toggled">Untoggle all</span>
+                </a>
+              </div>
+              <!-- End Header -->
+
+              <div class="card-body">
+                <small class="card-subtitle">Allow others to:</small>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-no-gutters">
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch9">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch9">
+                      <span class="d-block">Encrypt data</span>
+                      <span class="d-block small text-muted">Encrypt all data associated with account</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch10">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch10" checked>
+                      <span class="d-block">Location services</span>
+                      <span class="d-block small text-muted">Allow third-party apps to use current location</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="list-group-item">
+                    <!-- Form Switch -->
+                    <label class="form-check form-switch" for="accountNotificationSwitch11">
+                      <input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch11">
+                      <span class="d-block">Allow private notes</span>
+                      <span class="d-block small text-muted">Members can send you private notes</span>
+                    </label>
+                    <!-- End Form Switch -->
+                  </div>
+                  <!-- End Item -->
+                </div>
+                <!-- End List Group -->
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Toggle Button -->
+            <div class="d-sm-flex justify-content-between align-items-center">
+              <div class="mb-3 mb-sm-0">
+                <small class="card-subtitle">Turn all notifications on or off:</small>
+              </div>
+
+              <a class="js-toggle-state btn btn-primary btn-sm btn-toggle" href="javascript:;"
+                 data-hs-toggle-state-options='{
+                   "targetSelector": "#accountNotificationSwitch1, #accountNotificationSwitch2, #accountNotificationSwitch3, #accountNotificationSwitch4, #accountNotificationSwitch5, #accountNotificationSwitch6, #accountNotificationSwitch7, #accountNotificationSwitch8, #accountNotificationSwitch9, #accountNotificationSwitch10, #accountNotificationSwitch11",
+                   "slaveSelector": "#toggleAll1, #toggleAll2, #toggleAll3, #toggleAll4"
+                 }'>
+                <span class="btn-toggle-default">
+                  <i class="bi-toggle-off me-1"></i> Turn OFF
+                </span>
+                <span class="btn-toggle-toggled">
+                  <i class="bi-toggle-on me-1"></i> Turn ON
+                </span>
+              </a>
+            </div>
+            <!-- End Toggle Button -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Card --&gt;
+                &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                  &lt;!-- Header --&gt;
+                  &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                    &lt;h5 class="card-header-title"&gt;My network&lt;/h5&gt;
+
+                    &lt;a id="toggleAll1" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                       data-hs-toggle-state-options='{
+                         "targetSelector": "#accountNotificationSwitch1, #accountNotificationSwitch2, #accountNotificationSwitch3, #accountNotificationSwitch4"
+                       }'&gt;
+                      &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                      &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Header --&gt;
+
+                  &lt;!-- Alert --&gt;
+                  &lt;div class="alert alert-soft-danger text-center card-alert" role="alert"&gt;
+                    We need permission from your browser to show notifications. &lt;a class="alert-link" href="#"&gt;Request permission&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Alert --&gt;
+
+                  &lt;div class="card-body"&gt;
+                    &lt;small class="card-subtitle"&gt;Send me:&lt;/small&gt;
+
+                    &lt;!-- List Group --&gt;
+                    &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch1"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch1"&gt;
+                          &lt;span class="d-block"&gt;New for you&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;A weekly email featuring shots from designers you follow&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch2"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch2" checked&gt;
+                          &lt;span class="d-block"&gt;Account activity &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Get important notifications about you or activity you've missed&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch3"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch3" checked&gt;
+                          &lt;span class="d-block"&gt;Meetups near you &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Get an email when a Dribbble Meetup is posted close to my location&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch4"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch4"&gt;
+                          &lt;span class="d-block"&gt;Opportunities&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Get a daily email when new design jobs are posted in your area&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End List Group --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Card --&gt;
+
+                &lt;!-- Card --&gt;
+                &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                  &lt;!-- Header --&gt;
+                  &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                    &lt;h5 class="card-header-title"&gt;Front emails&lt;/h5&gt;
+
+                    &lt;a id="toggleAll3" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                       data-hs-toggle-state-options='{
+                         "targetSelector": "#accountNotificationSwitch5, #accountNotificationSwitch6, #accountNotificationSwitch7, #accountNotificationSwitch8"
+                       }'&gt;
+                      &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                      &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Header --&gt;
+
+                  &lt;div class="card-body"&gt;
+                    &lt;small class="card-subtitle"&gt;Subscribe me to:&lt;/small&gt;
+
+                    &lt;!-- List Group --&gt;
+                    &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch5"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch5" checked&gt;
+                          &lt;span class="d-block"&gt;Company news&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Get Front news, announcements, and product updates&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch6"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch6"&gt;
+                          &lt;span class="d-block"&gt;Replay &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;A weekly email featuring popular shots&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch7"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch7"&gt;
+                          &lt;span class="d-block"&gt;Courtside &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;A weekly email featuring the latest stories from our blog&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch8"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch8"&gt;
+                          &lt;span class="d-block"&gt;Weekly jobs&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Weekly digest of design jobs&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End List Group --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Card --&gt;
+
+                &lt;!-- Card --&gt;
+                &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                  &lt;!-- Header --&gt;
+                  &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                    &lt;h5 class="card-header-title"&gt;Usage&lt;/h5&gt;
+
+                    &lt;a id="toggleAll4" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                       data-hs-toggle-state-options='{
+                         "targetSelector": "#accountNotificationSwitch9, #accountNotificationSwitch10, #accountNotificationSwitch11"
+                       }'&gt;
+                      &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                      &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Header --&gt;
+
+                  &lt;div class="card-body"&gt;
+                    &lt;small class="card-subtitle"&gt;Allow others to:&lt;/small&gt;
+
+                    &lt;!-- List Group --&gt;
+                    &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch9"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch9"&gt;
+                          &lt;span class="d-block"&gt;Encrypt data&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Encrypt all data associated with account&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch10"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch10" checked&gt;
+                          &lt;span class="d-block"&gt;Location services&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Allow third-party apps to use current location&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+
+                      &lt;!-- Item --&gt;
+                      &lt;div class="list-group-item"&gt;
+                        &lt;!-- Form Switch --&gt;
+                        &lt;label class="form-check form-switch" for="accountNotificationSwitch11"&gt;
+                          &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationSwitch11"&gt;
+                          &lt;span class="d-block"&gt;Allow private notes&lt;/span&gt;
+                          &lt;span class="d-block small text-muted"&gt;Members can send you private notes&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;!-- End Form Switch --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Item --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End List Group --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Card --&gt;
+
+                &lt;!-- Toggle Button --&gt;
+                &lt;div class="d-sm-flex justify-content-between align-items-center"&gt;
+                  &lt;div class="mb-3 mb-sm-0"&gt;
+                    &lt;small class="card-subtitle"&gt;Turn all notifications on or off:&lt;/small&gt;
+                  &lt;/div&gt;
+
+                  &lt;a class="js-toggle-state btn btn-primary btn-sm btn-toggle" href="javascript:;"
+                     data-hs-toggle-state-options='{
+                       "targetSelector": "#accountNotificationSwitch1, #accountNotificationSwitch2, #accountNotificationSwitch3, #accountNotificationSwitch4, #accountNotificationSwitch5, #accountNotificationSwitch6, #accountNotificationSwitch7, #accountNotificationSwitch8, #accountNotificationSwitch9, #accountNotificationSwitch10, #accountNotificationSwitch11",
+                       "slaveSelector": "#toggleAll1, #toggleAll2, #toggleAll3, #toggleAll4"
+                     }'&gt;
+                    &lt;span class="btn-toggle-default"&gt;
+                      &lt;i class="bi-toggle-off me-1"&gt;&lt;/i&gt; Turn OFF
+                    &lt;/span&gt;
+                    &lt;span class="btn-toggle-toggled"&gt;
+                      &lt;i class="bi-toggle-on me-1"&gt;&lt;/i&gt; Turn ON
+                    &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;!-- End Toggle Button --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="modal-example" class="hs-docs-heading">
+        Modal example <a class="anchorjs-link" href="#modal-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Toggle State</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form>
+                      <!-- Card -->
+                      <div class="card card-sm mb-3 mb-lg-5">
+                        <!-- Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                          <h5 class="card-header-title">My network</h5>
+
+                          <a id="toggleAllModal1" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                             data-hs-toggle-state-options='{
+                               "targetSelector": "#accountNotificationModalSwitch1, #accountNotificationModalSwitch2, #accountNotificationModalSwitch3, #accountNotificationModalSwitch4"
+                             }'>
+                            <span class="btn-toggle-default">Toggle all</span>
+                            <span class="btn-toggle-toggled">Untoggle all</span>
+                          </a>
+                        </div>
+                        <!-- End Header -->
+
+                        <!-- Alert -->
+                        <div class="alert alert-soft-danger text-center card-alert" role="alert">
+                          We need permission from your browser to show notifications. <a class="alert-link" href="#">Request permission</a>
+                        </div>
+                        <!-- End Alert -->
+
+                        <div class="card-body">
+                          <small class="card-subtitle">Send me:</small>
+
+                          <!-- List Group -->
+                          <div class="list-group list-group-flush list-group-no-gutters">
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch1">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch1">
+                                <span class="d-block">New for you</span>
+                                <span class="d-block small text-muted">A weekly email featuring shots from designers you follow</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch2">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch2" checked>
+                                <span class="d-block">Account activity <span class="badge bg-success ms-1">New</span></span>
+                                <span class="d-block small text-muted">Get important notifications about you or activity you've missed</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch3">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch3" checked>
+                                <span class="d-block">Meetups near you <span class="badge bg-success ms-1">New</span></span>
+                                <span class="d-block small text-muted">Get an email when a Dribbble Meetup is posted close to my location</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch4">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch4">
+                                <span class="d-block">Opportunities</span>
+                                <span class="d-block small text-muted">Get a daily email when new design jobs are posted in your area</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+                          </div>
+                          <!-- End List Group -->
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card card-sm mb-3 mb-lg-5">
+                        <!-- Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                          <h5 class="card-header-title">Front emails</h5>
+
+                          <a id="toggleAllModal3" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                             data-hs-toggle-state-options='{
+                               "targetSelector": "#accountNotificationModalSwitch5, #accountNotificationModalSwitch6, #accountNotificationModalSwitch7, #accountNotificationModalSwitch8"
+                             }'>
+                            <span class="btn-toggle-default">Toggle all</span>
+                            <span class="btn-toggle-toggled">Untoggle all</span>
+                          </a>
+                        </div>
+                        <!-- End Header -->
+
+                        <div class="card-body">
+                          <small class="card-subtitle">Subscribe me to:</small>
+
+                          <!-- List Group -->
+                          <div class="list-group list-group-flush list-group-no-gutters">
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch5">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch5" checked>
+                                <span class="d-block">Company news</span>
+                                <span class="d-block small text-muted">Get Front news, announcements, and product updates</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch6">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch6">
+                                <span class="d-block">Replay <span class="badge bg-success ms-1">New</span></span>
+                                <span class="d-block small text-muted">A weekly email featuring popular shots</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch7">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch7">
+                                <span class="d-block">Courtside <span class="badge bg-success ms-1">New</span></span>
+                                <span class="d-block small text-muted">A weekly email featuring the latest stories from our blog</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch8">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch8">
+                                <span class="d-block">Weekly jobs</span>
+                                <span class="d-block small text-muted">Weekly digest of design jobs</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+                          </div>
+                          <!-- End List Group -->
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card card-sm mb-3 mb-lg-5">
+                        <!-- Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center border-bottom">
+                          <h5 class="card-header-title">Usage</h5>
+
+                          <a id="toggleAllModal4" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                             data-hs-toggle-state-options='{
+                               "targetSelector": "#accountNotificationModalSwitch9, #accountNotificationModalSwitch10, #accountNotificationModalSwitch11"
+                             }'>
+                            <span class="btn-toggle-default">Toggle all</span>
+                            <span class="btn-toggle-toggled">Untoggle all</span>
+                          </a>
+                        </div>
+                        <!-- End Header -->
+
+                        <div class="card-body">
+                          <small class="card-subtitle">Allow others to:</small>
+
+                          <!-- List Group -->
+                          <div class="list-group list-group-flush list-group-no-gutters">
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch9">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch9">
+                                <span class="d-block">Encrypt data</span>
+                                <span class="d-block small text-muted">Encrypt all data associated with account</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch10">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch10" checked>
+                                <span class="d-block">Location services</span>
+                                <span class="d-block small text-muted">Allow third-party apps to use current location</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="list-group-item">
+                              <!-- Form Switch -->
+                              <label class="form-check form-switch" for="accountNotificationModalSwitch11">
+                                <input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch11">
+                                <span class="d-block">Allow private notes</span>
+                                <span class="d-block small text-muted">Members can send you private notes</span>
+                              </label>
+                              <!-- End Form Switch -->
+                            </div>
+                            <!-- End Item -->
+                          </div>
+                          <!-- End List Group -->
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Toggle Button -->
+                      <div class="d-sm-flex justify-content-between align-items-center">
+                        <div class="mb-3 mb-sm-0">
+                          <small class="card-subtitle">Turn all notifications on or off:</small>
+                        </div>
+
+                        <a class="js-toggle-state btn btn-primary btn-sm btn-toggle" href="javascript:;"
+                           data-hs-toggle-state-options='{
+                             "targetSelector": "#accountNotificationModalSwitch1, #accountNotificationModalSwitch2, #accountNotificationModalSwitch3, #accountNotificationModalSwitch4, #accountNotificationModalSwitch5, #accountNotificationModalSwitch6, #accountNotificationModalSwitch7, #accountNotificationModalSwitch8, #accountNotificationModalSwitch9, #accountNotificationModalSwitch10, #accountNotificationModalSwitch11",
+                             "slaveSelector": "#toggleAllModal1, #toggleAllModal2, #toggleAllModal3, #toggleAllModal4"
+                           }'>
+                          <span class="btn-toggle-default">
+                            <i class="bi-toggle-off me-1"></i> Turn OFF
+                          </span>
+                          <span class="btn-toggle-toggled">
+                            <i class="bi-toggle-on me-1"></i> Turn ON
+                          </span>
+                        </a>
+                      </div>
+                      <!-- End Toggle Button -->
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;Open modal&lt;/button&gt;
+
+                &lt;!-- Modal --&gt;
+                &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                  &lt;div class="modal-dialog"&gt;
+                    &lt;div class="modal-content"&gt;
+                      &lt;div class="modal-header"&gt;
+                        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Toggle State&lt;/h5&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="modal-body"&gt;
+                        &lt;form&gt;
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                            &lt;!-- Header --&gt;
+                            &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                              &lt;h5 class="card-header-title"&gt;My network&lt;/h5&gt;
+
+                              &lt;a id="toggleAllModal1" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                                 data-hs-toggle-state-options='{
+                                   "targetSelector": "#accountNotificationModalSwitch1, #accountNotificationModalSwitch2, #accountNotificationModalSwitch3, #accountNotificationModalSwitch4"
+                                 }'&gt;
+                                &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                                &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- End Header --&gt;
+
+                            &lt;!-- Alert --&gt;
+                            &lt;div class="alert alert-soft-danger text-center card-alert" role="alert"&gt;
+                              We need permission from your browser to show notifications. &lt;a class="alert-link" href="#"&gt;Request permission&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- End Alert --&gt;
+
+                            &lt;div class="card-body"&gt;
+                              &lt;small class="card-subtitle"&gt;Send me:&lt;/small&gt;
+
+                              &lt;!-- List Group --&gt;
+                              &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch1"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch1"&gt;
+                                    &lt;span class="d-block"&gt;New for you&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;A weekly email featuring shots from designers you follow&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch2"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch2" checked&gt;
+                                    &lt;span class="d-block"&gt;Account activity &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Get important notifications about you or activity you've missed&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch3"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch3" checked&gt;
+                                    &lt;span class="d-block"&gt;Meetups near you &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Get an email when a Dribbble Meetup is posted close to my location&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch4"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch4"&gt;
+                                    &lt;span class="d-block"&gt;Opportunities&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Get a daily email when new design jobs are posted in your area&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End List Group --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                            &lt;!-- Header --&gt;
+                            &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                              &lt;h5 class="card-header-title"&gt;Front emails&lt;/h5&gt;
+
+                              &lt;a id="toggleAllModal3" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                                 data-hs-toggle-state-options='{
+                                   "targetSelector": "#accountNotificationModalSwitch5, #accountNotificationModalSwitch6, #accountNotificationModalSwitch7, #accountNotificationModalSwitch8"
+                                 }'&gt;
+                                &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                                &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- End Header --&gt;
+
+                            &lt;div class="card-body"&gt;
+                              &lt;small class="card-subtitle"&gt;Subscribe me to:&lt;/small&gt;
+
+                              &lt;!-- List Group --&gt;
+                              &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch5"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch5" checked&gt;
+                                    &lt;span class="d-block"&gt;Company news&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Get Front news, announcements, and product updates&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch6"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch6"&gt;
+                                    &lt;span class="d-block"&gt;Replay &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;A weekly email featuring popular shots&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch7"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch7"&gt;
+                                    &lt;span class="d-block"&gt;Courtside &lt;span class="badge bg-success ms-1"&gt;New&lt;/span&gt;&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;A weekly email featuring the latest stories from our blog&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch8"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch8"&gt;
+                                    &lt;span class="d-block"&gt;Weekly jobs&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Weekly digest of design jobs&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End List Group --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card card-sm mb-3 mb-lg-5"&gt;
+                            &lt;!-- Header --&gt;
+                            &lt;div class="card-header d-flex justify-content-between align-items-center border-bottom"&gt;
+                              &lt;h5 class="card-header-title"&gt;Usage&lt;/h5&gt;
+
+                              &lt;a id="toggleAllModal4" class="js-toggle-state btn btn-white btn-sm btn-toggle" href="javascript:;"
+                                 data-hs-toggle-state-options='{
+                                   "targetSelector": "#accountNotificationModalSwitch9, #accountNotificationModalSwitch10, #accountNotificationModalSwitch11"
+                                 }'&gt;
+                                &lt;span class="btn-toggle-default"&gt;Toggle all&lt;/span&gt;
+                                &lt;span class="btn-toggle-toggled"&gt;Untoggle all&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- End Header --&gt;
+
+                            &lt;div class="card-body"&gt;
+                              &lt;small class="card-subtitle"&gt;Allow others to:&lt;/small&gt;
+
+                              &lt;!-- List Group --&gt;
+                              &lt;div class="list-group list-group-flush list-group-no-gutters"&gt;
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch9"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch9"&gt;
+                                    &lt;span class="d-block"&gt;Encrypt data&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Encrypt all data associated with account&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch10"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch10" checked&gt;
+                                    &lt;span class="d-block"&gt;Location services&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Allow third-party apps to use current location&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+
+                                &lt;!-- Item --&gt;
+                                &lt;div class="list-group-item"&gt;
+                                  &lt;!-- Form Switch --&gt;
+                                  &lt;label class="form-check form-switch" for="accountNotificationModalSwitch11"&gt;
+                                    &lt;input class="form-check-input mt-0" type="checkbox" id="accountNotificationModalSwitch11"&gt;
+                                    &lt;span class="d-block"&gt;Allow private notes&lt;/span&gt;
+                                    &lt;span class="d-block small text-muted"&gt;Members can send you private notes&lt;/span&gt;
+                                  &lt;/label&gt;
+                                  &lt;!-- End Form Switch --&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Item --&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End List Group --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Toggle Button --&gt;
+                          &lt;div class="d-sm-flex justify-content-between align-items-center"&gt;
+                            &lt;div class="mb-3 mb-sm-0"&gt;
+                              &lt;small class="card-subtitle"&gt;Turn all notifications on or off:&lt;/small&gt;
+                            &lt;/div&gt;
+
+                            &lt;a class="js-toggle-state btn btn-primary btn-sm btn-toggle" href="javascript:;"
+                               data-hs-toggle-state-options='{
+                                 "targetSelector": "#accountNotificationModalSwitch1, #accountNotificationModalSwitch2, #accountNotificationModalSwitch3, #accountNotificationModalSwitch4, #accountNotificationModalSwitch5, #accountNotificationModalSwitch6, #accountNotificationModalSwitch7, #accountNotificationModalSwitch8, #accountNotificationModalSwitch9, #accountNotificationModalSwitch10, #accountNotificationModalSwitch11",
+                                 "slaveSelector": "#toggleAllModal1, #toggleAllModal2, #toggleAllModal3, #toggleAllModal4"
+                               }'&gt;
+                              &lt;span class="btn-toggle-default"&gt;
+                                &lt;i class="bi-toggle-off me-1"&gt;&lt;/i&gt; Turn OFF
+                              &lt;/span&gt;
+                              &lt;span class="btn-toggle-toggled"&gt;
+                                &lt;i class="bi-toggle-on me-1"&gt;&lt;/i&gt; Turn ON
+                              &lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Toggle Button --&gt;
+                        &lt;/form&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="modal-footer"&gt;
+                        &lt;button type="button" class="btn btn-white" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Modal --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <p><code>targetSelector</code></p>
+                </td>
+                <td>Selectors whose state changes depending on the current state (checked/unchecked)  </td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.toggle</code></p>
+                </td>
+                <td>Toggle class that is given/removed to an invoker</td>
+                <td><code>classMap: { toggle: 'toggled' }</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+  <script src="@@autopath/assets/vendor/hs-toggle-state/dist/hs-toggle-state.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF TOGGLE STATE
+      // =======================================================
+      new HSToggleState('.js-toggle-state')
+    })()
+  </script>
+</body>
+</html>

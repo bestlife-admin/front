@@ -1,0 +1,282 @@
+<div class="container navbar-topbar">
+  <nav class="js-mega-menu navbar-nav-wrap">
+    <!-- Toggler -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="d-flex justify-content-between align-items-center small">
+        <span class="navbar-toggler-text">Topbar</span>
+
+        <span class="navbar-toggler-default">
+          <i class="bi-chevron-down ms-2"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-chevron-up ms-2"></i>
+        </span>
+      </span>
+    </button>
+    <!-- End Toggler -->
+
+    <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
+      <div class="navbar-toggler-wrapper">
+        <div class="navbar-topbar-toggler d-flex justify-content-between align-items-center">
+          <span class="navbar-toggler-text small">Topbar</span>
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi-x"></i>
+          </button>
+          <!-- End Toggler -->
+        </div>
+      </div>
+
+      <ul class="navbar-nav">
+        <!-- Demos -->
+        <li class="hs-has-mega-menu nav-item">
+          <a id="demosMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(topbarcategory=='demos'){active}" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+
+          <!-- Mega Menu -->
+          <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="demosMegaMenu" style="min-width: 40rem;">
+            <!-- Promo -->
+            <div class="navbar-dropdown-menu-promo">
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='main'){active}" href="@@autopath/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/abs/abs028.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">Main</span>
+                      <p class="navbar-dropdown-menu-media-desc">Over 60 corporate, agency, portfolio, account and many more pages.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='real-estate'){active}" href="@@autopath/demo-real-estate/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/hom/hom005.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">Real Estate</span>
+                      <p class="navbar-dropdown-menu-media-desc">Find the latest homes for sale, real estate market data.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='jobs'){active}" href="@@autopath/demo-jobs/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/fin/fin006.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">Jobs <span class="badge bg-success rounded-pill ms-1">Hot</span></span>
+                      <p class="navbar-dropdown-menu-media-desc">Search millions of jobs online to find the next step in your career.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+            </div>
+            <!-- End Promo -->
+
+            <!-- Promo -->
+            <div class="navbar-dropdown-menu-promo">
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='course'){active}" href="@@autopath/demo-course/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/elc/elc011.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">Course <span class="badge bg-success rounded-pill ms-1">Hot</span></span>
+                      <p class="navbar-dropdown-menu-media-desc">Learn on your schedule. An online learning and teaching demo.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='shop'){active}" href="@@autopath/demo-shop/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/ecm/ecm005.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">E-Commerce</span>
+                      <p class="navbar-dropdown-menu-media-desc">Choose an online store &amp; get your business online today!</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='app-marketplace'){active}" href="@@autopath/demo-app-marketplace/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/ecm/ecm004.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">App Marketplace</span>
+                      <p class="navbar-dropdown-menu-media-desc">Find apps and integrates seamlessly with popular apps.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+            </div>
+            <!-- End Promo -->
+
+            <!-- Promo -->
+            <div class="navbar-dropdown-menu-promo">
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link @@if(topbarlink=='help-desk'){active}" href="@@autopath/demo-help-desk/index.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/com/com012.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">Help Desk</span>
+                      <p class="navbar-dropdown-menu-media-desc">A customer service demo that helps you balance customer needs.</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+                <!-- Promo Link -->
+                <a class="navbar-dropdown-menu-promo-link" href="https://htmlstream.com/contact-us" target="_blank">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        @@include("../../assets/vendor/duotone-icons/gen/gen021.svg")
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <span class="navbar-dropdown-menu-media-title">New demo ideas?</span>
+                      <p class="navbar-dropdown-menu-media-desc">
+                        Send us your suggestions <i class="bi-box-arrow-up-right ms-1"></i>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Promo Link -->
+              </div>
+              <!-- End Promo Item -->
+
+              <!-- Promo Item -->
+              <div class="navbar-dropdown-menu-promo-item">
+              </div>
+              <!-- End Promo Item -->
+            </div>
+            <!-- End Promo -->
+          </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Demos -->
+
+        <!-- Docs -->
+        <li class="hs-has-mega-menu nav-item"
+            data-hs-mega-menu-item-options='{
+              "desktop": {
+                "maxWidth": "20rem"
+              }
+            }'>
+          <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Docs</a>
+
+          <!-- Mega Menu -->
+          <div class="hs-mega-menu hs-position-right dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 20rem;">
+            <!-- Link -->
+            <a class="navbar-dropdown-menu-media-link" href="@@autopath/documentation/index.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <span class="svg-icon svg-icon-sm text-primary">
+                    @@include("../../assets/vendor/duotone-icons/fil/fil024.svg")
+                  </span>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <span class="navbar-dropdown-menu-media-title">Documentation <span class="badge bg-primary rounded-pill ms-1">v4.1</span></span>
+                  <p class="navbar-dropdown-menu-media-desc">Development guides for building projects with Space</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Link -->
+
+            <div class="dropdown-divider"></div>
+
+            <!-- Link -->
+            <a class="navbar-dropdown-menu-media-link" href="@@autopath/snippets/index.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <span class="svg-icon svg-icon-sm text-primary">
+                    @@include("../../assets/vendor/duotone-icons/cod/cod010.svg")
+                  </span>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <span class="navbar-dropdown-menu-media-title">Snippets</span>
+                  <p class="navbar-dropdown-menu-media-desc">Move quickly with copy-to-clipboard feature</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Link -->
+          </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Docs -->
+      </ul>
+    </div>
+  </nav>
+</div>

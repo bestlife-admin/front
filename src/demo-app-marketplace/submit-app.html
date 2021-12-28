@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>App Marketplace: Submit App | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/quill/dist/quill.snow.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-app-marketplace.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "app-marketplace",
+    "category": "",
+    "subcategory": "",
+    "link": "submit-app.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Form Card -->
+    <div class="container content-space-2 content-space-b-lg-3">
+      <div class="w-lg-75 mx-lg-auto">
+        <!-- Heading -->
+        <div class="text-center mb-7">
+          <h1 class="card-title">Submit App</h1>
+          <p class="card-text">Submit your products today and get more exposure.</p>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Card -->
+        <div class="card card-bordered shadow-none">
+          <div class="card-body">
+            <!-- Form -->
+            <form>
+              <!-- Form -->
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label form-label">Product logo</label>
+
+                <div class="col-sm-9">
+                  <!-- Media -->
+                  <div class="d-flex align-items-center">
+                    <!-- Avatar -->
+                    <label class="avatar avatar-xl avatar-circle" for="avatarUploader">
+                      <img id="avatarImg" class="avatar-img" src="@@autopath/assets/img/160x160/img2.jpg" alt="Image Description">
+                    </label>
+
+                    <div class="d-grid d-sm-flex gap-2 ms-4">
+                      <div class="btn btn-primary btn-sm form-attachment-btn">Upload Logo
+                        <input type="file" class="js-file-attach form-attachment-btn-label" id="avatarUploader"
+                               data-hs-file-attach-options='{
+                                  "textTarget": "#avatarImg",
+                                  "mode": "image",
+                                  "targetAttr": "src",
+                                  "resetTarget": ".js-file-attach-reset-img",
+                                  "resetImg": "@@autopath/assets/img/160x160/img2.jpg",
+                                  "allowTypes": [".png", ".jpeg", ".jpg"]
+                               }'>
+                      </div>
+                      <!-- End Avatar -->
+
+                      <button type="button" class="js-file-attach-reset-img btn btn-white btn-sm">Delete</button>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="row mb-3">
+                <label for="submitAppProjectName" class="col-sm-3 col-form-label">Project name</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control form-control-lg" id="submitAppProjectName" placeholder="project name" aria-label="project name">
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="row mb-3">
+                <label for="submitAppWebsite" class="col-sm-3 col-form-label form-label">App website</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control form-control-lg" id="submitAppWebsite" placeholder="https://example.com" aria-label="https://example.com">
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label form-label">Preview image</label>
+
+                <div class="col-sm-9">
+                  <!-- File Attachment Input -->
+                  <div id="dropzoneUpload" class="js-dropzone dz-dropzone dz-dropzone-card">
+                    <div class="dz-message">
+                      <img class="avatar mb-3" src="@@autopath/assets/svg/illustrations/add-file.svg" alt="Image Description">
+                      <span class="d-block">Browse your device and upload images</span>
+                      <span class="d-block text-muted small">Maximum file size is 2MB</span>
+                    </div>
+                  </div>
+                  <!-- End File Attachment Input -->
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="row mb-3">
+                <label for="submitAppCategoryLabel" class="col-sm-3 col-form-label form-label">Category</label>
+                
+                <div class="col-sm-9">
+                  <!-- Select -->
+                  <select class="form-select form-select-lg" id="submitAppCategoryLabel">
+                    <option value="Ecommerce">Ecommerce</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketplace">Marketplace</option>
+                    <option value="Social">Social</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <!-- End Select -->
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form-->
+              <div class="row mb-3">
+                <label for="shortDescriptionLabel" class="col-sm-3 col-form-label form-label">Short description</label>
+                
+                <div class="col-sm-9">
+                  <div class="d-flex justify-content-end">
+                    <span id="maxLengthShortDescriptionCountCharacters" class="form-label-secondary"></span>
+                  </div>
+
+                  <textarea class="js-count-characters form-control" id="shortDescriptionLabel" placeholder="This is to provide an idea of what does your product do. A good short summary will entice users to click and visit your page." maxlength="70"
+                          data-hs-count-characters-options='{
+                            "output": "#maxLengthShortDescriptionCountCharacters"
+                          }'></textarea>
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form-->
+              <div class="row mb-3">
+                <label class="col-sm-3 col-form-label form-label">Detailed description</label>
+                
+                <div class="col-sm-9">
+                  <!-- Quill -->
+                  <div class="quill-custom">
+                    <div class="js-quill" style="height: 15rem;"
+                         data-hs-quill-options='{
+                         "placeholder": "A detailed summary will better explain your products to the audiences. Our users will see this in your dedicated product page.",
+                          "modules": {
+                            "toolbar": [
+                              ["bold", "italic", "underline", "strike", "link", "image", "blockquote", "code", {"list": "bullet"}]
+                            ]
+                          }
+                         }'>
+                    </div>
+                  </div>
+                  <!-- End Quill -->
+                </div>
+              </div>
+              <!-- End Form-->
+
+              <div class="text-center mt-5">
+                <button type="submit" class="btn btn-primary btn-lg">Submit your project</button>
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+    </div>
+    <!-- End Form Card -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-file-attach/dist/hs-file-attach.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-count-characters/dist/js/hs-count-characters.js"></script>
+  <script src="@@autopath/node_modules/quill/dist/quill.min.js"></script>
+  <script src="@@autopath/node_modules/dropzone/dist/min/dropzone.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+  <script src="@@autopath/assets/js/hs.quill.js"></script>
+  <script src="@@autopath/assets/js/hs.dropzone.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF FILE ATTACH
+      // =======================================================
+      new HSFileAttach('.js-file-attach')
+
+
+      // INITIALIZATION OF COUNT CHARACTERS
+      // =======================================================
+      new HSCountCharacters('.js-count-characters')
+
+
+      // INITIALIZATION OF QUILLJS EDITOR
+      // =======================================================
+      HSCore.components.HSQuill.init('.js-quill')
+
+
+      // INITIALIZATION OF DROPZONE
+      // =======================================================
+      HSCore.components.HSDropzone.init('.js-dropzone')
+    })()
+  </script>
+</body>
+</html>

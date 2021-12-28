@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Backgrounds - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "backgrounds.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Backgrounds</h1>
+            <p class="docs-page-header-text">Convey meaning through <code>background-color</code> and add decoration with gradients.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/utilities/background/" target="_blank">Bootstrap Background documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="background-color" class="hs-docs-heading">
+        Background color <a class="anchorjs-link" href="#background-color" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities <strong>do not set <code>color</code></strong>, so in some cases you&rsquo;ll want to use <code>.text-*</code> <a class="link" href="@@autopath/documentation/colors.html">color utilities</a>.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-primary-dark text-white">.bg-primary-dark</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="p-3 mb-2 bg-primary text-white"&gt;.bg-primary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-primary-dark text-white"&gt;.bg-primary-dark&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-secondary text-white"&gt;.bg-secondary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-success text-white"&gt;.bg-success&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-danger text-white"&gt;.bg-danger&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-warning text-dark"&gt;.bg-warning&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-info text-white"&gt;.bg-info&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-light text-dark"&gt;.bg-light&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-dark text-white"&gt;.bg-dark&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-body text-dark"&gt;.bg-body&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-white text-dark"&gt;.bg-white&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-transparent text-dark"&gt;.bg-transparent&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="background-soft-color" class="hs-docs-heading">
+        Background soft color <a class="anchorjs-link" href="#background-soft-color" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <div class="p-3 mb-2 bg-soft-primary text-primary">.bg-soft-primary</div>
+            <div class="p-3 mb-2 bg-soft-primary-light text-primary">.bg-soft-primary-light</div>
+            <div class="p-3 mb-2 bg-soft-secondary text-secondary">.bg-soft-secondary</div>
+            <div class="p-3 mb-2 bg-soft-success text-success">.bg-soft-success</div>
+            <div class="p-3 mb-2 bg-soft-danger text-danger">.bg-soft-danger</div>
+            <div class="p-3 mb-2 bg-soft-warning text-warning">.bg-soft-warning</div>
+            <div class="p-3 mb-2 bg-soft-info text-info">.bg-soft-info</div>
+            <div class="p-3 mb-2 bg-soft-light text-light">.bg-soft-light</div>
+            <div class="p-3 mb-2 bg-soft-dark text-dark">.bg-soft-dark</div>
+            <div class="p-3 mb-2 bg-soft-body text-body">.bg-soft-body</div>
+            <div class="p-3 mb-2 bg-soft-white text-white">.bg-soft-white</div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="p-3 mb-2 bg-soft-primary text-primary"&gt;.bg-soft-primary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-primary-light text-primary"&gt;.bg-soft-primary-light&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-secondary text-secondary"&gt;.bg-soft-secondary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-success text-success"&gt;.bg-soft-success&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-danger text-danger"&gt;.bg-soft-danger&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-warning text-warning"&gt;.bg-soft-warning&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-info text-info"&gt;.bg-soft-info&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-light text-light"&gt;.bg-soft-light&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-dark text-dark"&gt;.bg-soft-dark&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-body text-body"&gt;.bg-soft-body&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-soft-white text-white"&gt;.bg-soft-white&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="background-gradient" class="hs-docs-heading">
+        Background gradient <a class="anchorjs-link" href="#background-gradient" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
+      
+      <p>Do you need a gradient in your custom CSS? Just add <code>background-image: var(--bs-gradient);</code>.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary.bg-gradient</div>
+            <div class="p-3 mb-2 bg-primary-dark bg-gradient text-white">.bg-primary-dark.bg-gradient</div>
+            <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary.bg-gradient</div>
+            <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success.bg-gradient</div>
+            <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger.bg-gradient</div>
+            <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning.bg-gradient</div>
+            <div class="p-3 mb-2 bg-info bg-gradient text-white">.bg-info.bg-gradient</div>
+            <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light.bg-gradient</div>
+            <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark.bg-gradient</div>
+            <div class="p-3 mb-2 gradient-y-sm-primary">.gradient-y-sm-primary</div>
+            <div class="p-3 mb-2 gradient-y-gray">.gradient-y-gray</div>
+            <div class="p-3 mb-2 gradient-y-lg-white text-dark">.gradient-y-lg-white</div>
+            <div class="p-3 mb-2 gradient-y-three-sm-primary">.gradient-y-three-sm-primary</div>
+            <div class="p-3 mb-2 gradient-x-three-sm-primary">.gradient-x-three-sm-primary</div>
+            <div class="p-3 mb-2 gradient-x-overlay-lg-dark-video">.gradient-x-overlay-lg-dark-video</div>
+            <div class="p-3 mb-2 gradient-x-overlay-sm-primary">.gradient-x-overlay-sm-primary</div>
+            <div class="p-3 mb-2 gradient-x-overlay-sm-dark">.gradient-x-overlay-sm-dark</div>
+            <div class="p-3 mb-2 gradient-x-overlay-lg-dark">.gradient-x-overlay-lg-dark</div>
+            <div class="p-3 mb-2 gradient-y-overlay-lg-dark">.gradient-y-overlay-lg-dark</div>
+            <div class="p-3 mb-2 gradient-y-overlay-lg-white">.gradient-y-overlay-lg-white</div>
+            <div class="p-3 mb-2 gradient-y-overlay-sm-gray-900">.gradient-y-overlay-sm-gray-900</div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="p-3 mb-2 bg-primary bg-gradient text-white"&gt;.bg-primary.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-primary-dark bg-gradient text-white"&gt;.bg-primary-dark.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-secondary bg-gradient text-white"&gt;.bg-secondary.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-success bg-gradient text-white"&gt;.bg-success.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-danger bg-gradient text-white"&gt;.bg-danger.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-warning bg-gradient text-dark"&gt;.bg-warning.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-info bg-gradient text-white"&gt;.bg-info.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-light bg-gradient text-dark"&gt;.bg-light.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 bg-dark bg-gradient text-white"&gt;.bg-dark.bg-gradient&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-y-sm-primary"&gt;.gradient-y-sm-primary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-y-gray"&gt;.gradient-y-gray&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-y-lg-white text-dark"&gt;.gradient-y-lg-white&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-y-three-sm-primary"&gt;.gradient-y-three-sm-primary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-x-three-sm-primary"&gt;.gradient-x-three-sm-primary&lt;/div&gt;
+                &lt;div class="p-3 mb-2 gradient-x-overlay-lg-dark-video"7gt;.gradient-x-overlay-lg-dark-video&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-x-overlay-sm-primary"7gt;.gradient-x-overlay-sm-primary&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-x-overlay-sm-dark"7gt;.gradient-x-overlay-sm-dark&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-x-overlay-lg-dark"7gt;.gradient-x-overlay-lg-dark&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-y-overlay-lg-dark"7gt;.gradient-y-overlay-lg-dark&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-y-overlay-lg-white"7gt;.gradient-y-overlay-lg-white&lt;/div7gt;
+                &lt;div class="p-3 mb-2 gradient-y-overlay-sm-gray-900"7gt;.gradient-y-overlay-sm-gray-900&lt;/div7gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="background-img-hero" class="hs-docs-heading">
+        Background image hero <a class="anchorjs-link" href="#background-img-hero" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Specify the position of a background image:</p>
+
+      <p>Use <code>.bg-img-start</code> for top-aligned position.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <div class="bg-img-start" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="bg-img-start" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.bg-img-center</code> for center-aligned position.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="bg-img-center" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.bg-img-end</code> for bottom-aligned position.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <div class="bg-img-end" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="bg-img-start" style="background-image: url(@@autopath/assets/img/documentation/img7.jpg); height: 250px;"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

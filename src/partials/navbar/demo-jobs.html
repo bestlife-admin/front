@@ -1,0 +1,68 @@
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light">
+  <!-- Topbar -->
+  @@include("../navbar/topbar-demo-with-back-to-main-page-link.html", {
+    "topbarcategory": "@@topbarcategory",
+    "topbarlink": "@@topbarlink"
+  })
+  <!-- End Topbar -->
+
+  <div class="container">
+    <nav class="js-mega-menu navbar-nav-wrap">
+      <!-- Default Logo -->
+      <a class="navbar-brand" href="@@autopath/demo-jobs/index.html" aria-label="Front">
+        <img class="navbar-brand-logo" src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+      </a>
+      <!-- End Default Logo -->
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <i class="bi-list"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-x"></i>
+        </span>
+      </button>
+      <!-- End Toggler -->
+      
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='index.html'){active}" href="@@autopath/demo-jobs/index.html">Home</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="listingsDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='listings'){active}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Listings</a>
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="listingsDropdown" style="min-width: 14rem;">
+              <a class="dropdown-item @@if(link=='job-list.html'){active}" href="@@autopath/demo-jobs/job-list.html">Listing</a>
+              <a class="dropdown-item @@if(link=='job-grid.html'){active}" href="@@autopath/demo-jobs/job-grid.html">Listing (Grid)</a>
+            </div>
+          </li>
+          <!-- End Dropdown -->
+
+          <!-- Dropdown -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="pagesDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='pages'){active}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="listingsDropdown" style="min-width: 14rem;">
+              <a class="dropdown-item @@if(link=='job-overview.html'){active}" href="@@autopath/demo-jobs/job-overview.html">Job Overview</a>
+              <a class="dropdown-item @@if(link=='apply-for-job.html'){active}" href="@@autopath/demo-jobs/apply-for-job.html">Apply for Job</a>
+              <a class="dropdown-item @@if(link=='employee.html'){active}" href="@@autopath/demo-jobs/employee.html">Employee (Applicant)</a>
+              <a class="dropdown-item @@if(link=='employer.html'){active}" href="@@autopath/demo-jobs/employer.html">Employer (Company)</a>
+            </div>
+          </li>
+          <!-- End Dropdown -->
+          
+          <li class="nav-item">
+            <a class="nav-link @@if(link=='upload-resume.html'){active}" href="@@autopath/demo-jobs/upload-resume.html">Upload resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-transition" href="@@autopath/demo-jobs/post-job.html">Post a job</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </div>
+</header>

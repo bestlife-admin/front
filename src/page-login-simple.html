@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Login Simple | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "main",
+    "category": "account",
+    "subcategory": "authentication",
+    "link": "page-login-simple.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Form -->
+    <div class="container content-space-3 content-space-t-lg-4 content-space-b-lg-3">
+      <div class="flex-grow-1 mx-auto" style="max-width: 28rem;">
+        <!-- Heading -->
+        <div class="text-center mb-5 mb-md-7">
+          <h1 class="h2">Welcome back</h1>
+          <p>Login to manage your account.</p>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Form -->
+        <form class="js-validate needs-validation" novalidate>
+          <!-- Form -->
+          <div class="mb-4">
+            <label class="form-label" for="signupSimpleLoginEmail">Your email</label>
+            <input type="email" class="form-control form-control-lg" name="email" id="signupSimpleLoginEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+            <span class="invalid-feedback">Please enter a valid email address.</span>
+          </div>
+          <!-- End Form -->
+
+          <!-- Form -->
+          <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="form-label" for="signupSimpleLoginPassword">Password</label>
+
+              <a class="form-label-link" href="@@autopath/page-reset-password-simple.html">Forgot Password?</a>
+            </div>
+
+            <div class="input-group input-group-merge" data-hs-validation-validate-class>
+              <input type="password" class="js-toggle-password form-control form-control-lg" name="password" id="signupSimpleLoginPassword" placeholder="8+ characters required" aria-label="8+ characters required" required minlength="8"
+                    data-hs-toggle-password-options='{
+                     "target": "#changePassTarget",
+                     "defaultClass": "bi-eye-slash",
+                     "showClass": "bi-eye",
+                     "classChangeTarget": "#changePassIcon"
+                   }'>
+              <a id="changePassTarget" class="input-group-append input-group-text" href="javascript:;">
+                <i id="changePassIcon" class="bi-eye"></i>
+              </a>
+            </div>
+
+            <span class="invalid-feedback">Please enter a valid password.</span>
+          </div>
+          <!-- End Form -->
+
+          <div class="d-grid mb-3">
+            <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+          </div>
+
+          <div class="text-center">
+            <p>Don't have an account yet? <a class="link" href="@@autopath/page-signup-simple.html">Sign up here</a></p>
+          </div>
+        </form>
+        <!-- End Form -->
+      </div>
+    </div>
+    <!-- End Form -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-toggle-password/dist/js/hs-toggle-password.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF TOGGLE PASSWORD
+      // =======================================================
+      new HSTogglePassword('.js-toggle-password')
+    })()
+  </script>
+</body>
+</html>

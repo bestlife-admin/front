@@ -1,0 +1,82 @@
+<span class="text-cap">Account</span>
+
+<!-- List -->
+<ul class="nav nav-sm nav-tabs nav-vertical mb-4">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-overview.html'){active}" href="@@autopath/account-overview.html">
+      <i class="bi-person-badge nav-icon"></i> Personal info
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-security.html'){active}" href="@@autopath/account-security.html">
+      <i class="bi-shield-shaded nav-icon"></i> Security
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-notifications.html'){active}" href="@@autopath/account-notifications.html">
+      <i class="bi-bell nav-icon"></i> Notifications
+      <span class="badge bg-soft-dark text-dark rounded-pill nav-link-badge">1</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-preferences.html'){active}" href="@@autopath/account-preferences.html">
+      <i class="bi-sliders nav-icon"></i> Preferences
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<span class="text-cap">Shopping</span>
+
+<!-- List -->
+<ul class="nav nav-sm nav-tabs nav-vertical mb-4">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-orders.html'){active}" href="@@autopath/account-orders.html">
+      <i class="bi-basket nav-icon"></i> Your orders
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-wishlist.html'){active}" href="@@autopath/account-wishlist.html">
+      <i class="bi-heart nav-icon"></i> Wishlist
+      <span class="badge bg-soft-dark text-dark rounded-pill nav-link-badge">2</span>
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<span class="text-cap">Billing</span>
+
+<!-- List -->
+<ul class="nav nav-sm nav-tabs nav-vertical">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-payments.html'){active}" href="@@autopath/account-payments.html">
+      <i class="bi-credit-card nav-icon"></i> Payments
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-address.html'){active}" href="@@autopath/account-address.html">
+      <i class="bi-geo-alt nav-icon"></i> Address
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-teams.html'){active}" href="@@autopath/account-teams.html">
+      <i class="bi-people nav-icon"></i> Teams
+      <span class="badge bg-soft-dark text-dark rounded-pill nav-link-badge">+2 new users</span>
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<div class="d-lg-none">
+  <div class="dropdown-divider"></div>
+
+  <!-- List -->
+  <ul class="nav nav-sm nav-tabs nav-vertical">
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <i class="bi-box-arrow-right nav-icon"></i> Log out
+      </a>
+    </li>
+  </ul>
+  <!-- End List -->
+</div>

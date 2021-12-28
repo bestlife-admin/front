@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Page Header - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "page-header.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Page header</h1>
+            <p class="docs-page-header-text">The page header component.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="example" class="hs-docs-heading">
+        Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Page Header -->
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col-sm">
+                  <h2 class="page-header-title">Users</h2>
+                  <p class="page-header-text">This is a description text.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm"&gt;
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                      &lt;p class="page-header-text"&gt;This is a description text.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="reset" class="hs-docs-heading">
+        Reset <a class="anchorjs-link" href="#reset" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.page-header-reset</code> to remove border and padding spaces.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Page Header -->
+            <div class="page-header page-header-reset">
+              <div class="row align-items-center">
+                <div class="col-sm">
+                  <h2 class="page-header-title">Users</h2>
+                  <p class="page-header-text">This is a description text.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header page-header-reset"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm"&gt;
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                      &lt;p class="page-header-text"&gt;This is a description text.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="button" class="hs-docs-heading">
+        Button <a class="anchorjs-link" href="#button" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- Page Header -->
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <h2 class="page-header-title">Users</h2>
+                </div>
+
+                <div class="col-sm-auto">
+                  <a class="btn btn-primary btn-sm" href="javascript:;">
+                    <i class="bi-people me-1"></i> Invite users
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm mb-2 mb-sm-0"&gt;
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-sm-auto"&gt;
+                      &lt;a class="btn btn-primary btn-sm" href="javascript:;"&gt;
+                        &lt;i class="bi-people me-1"&gt;&lt;/i&gt; Invite users
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="breadcrumb" class="hs-docs-heading">
+        Breadcrumb <a class="anchorjs-link" href="#breadcrumb" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- Page Header -->
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-no-gutter">
+                      <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Pages</a></li>
+                      <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Users</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Overview</li>
+                    </ol>
+                  </nav>
+
+                  <h2 class="page-header-title">Users</h2>
+                </div>
+
+                <div class="col-sm-auto">
+                  <a class="btn btn-primary btn-sm" href="javascript:;">
+                    <i class="bi-people me-1"></i> Invite users
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm mb-2 mb-sm-0"&gt;
+                      &lt;nav aria-label="breadcrumb"&gt;
+                        &lt;ol class="breadcrumb breadcrumb-no-gutter"&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a class="breadcrumb-link" href="javascript:;"&gt;Pages&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item"&gt;&lt;a class="breadcrumb-link" href="javascript:;"&gt;Users&lt;/a&gt;&lt;/li&gt;
+                          &lt;li class="breadcrumb-item active" aria-current="page"&gt;Overview&lt;/li&gt;
+                        &lt;/ol&gt;
+                      &lt;/nav&gt;
+
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-sm-auto"&gt;
+                      &lt;a class="btn btn-primary btn-sm" href="javascript:;"&gt;
+                        &lt;i class="bi-people me-1"&gt;&lt;/i&gt; Invite users
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="nav" class="hs-docs-heading">
+        Nav <a class="anchorjs-link" href="#nav" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <!-- Page Header -->
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <h2 class="page-header-title">Users</h2>
+                </div>
+
+                <div class="col-sm-auto">
+                  <!-- Nav -->
+                  <ul class="nav nav-segment">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                  <!-- End Nav -->
+                </div>
+              </div>
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm mb-2 mb-sm-0"&gt;
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-sm-auto"&gt;
+                      &lt;!-- Nav --&gt;
+                      &lt;ul class="nav nav-segment"&gt;
+                        &lt;li class="nav-item"&gt;
+                          &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                          &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                          &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Nav --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="nav-tabs" class="hs-docs-heading">
+        Nav tabs <a class="anchorjs-link" href="#nav-tabs" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.page-header-tabs</code> class with a <code>.nav-tabs</code> class to align the borders in one line.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <!-- Page Header -->
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <h2 class="page-header-title">Users</h2>
+                </div>
+
+                <div class="col-sm-auto">
+                  <a class="btn btn-primary btn-sm" href="javascript:;">
+                    <i class="bi-people me-1"></i> Invite users
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nav -->
+              <ul class="nav nav-tabs page-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Page Header -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Page Header --&gt;
+                &lt;div class="page-header"&gt;
+                  &lt;div class="row align-items-center"&gt;
+                    &lt;div class="col-sm mb-2 mb-sm-0"&gt;
+                      &lt;h2 class="page-header-title"&gt;Users&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-sm-auto"&gt;
+                      &lt;a class="btn btn-primary btn-sm" href="javascript:;"&gt;
+                        &lt;i class="bi-people me-1"&gt;&lt;/i&gt; Invite users
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Nav --&gt;
+                  &lt;ul class="nav nav-tabs page-header-tabs"&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;!-- End Nav --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Page Header --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

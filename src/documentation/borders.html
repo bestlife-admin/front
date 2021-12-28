@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Borders - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/docs/docs-navbar.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    @@include("@@autopath/partials/docs/docs-sidebar.html", {
+      "link": "borders.html"
+    })
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Borders</h1>
+            <p class="docs-page-header-text">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/utilities/borders/" target="_blank">Bootstrap Borders documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="additive" class="hs-docs-heading">
+        Additive <a class="anchorjs-link" href="#additive" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <span class="border d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border-top d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border-right d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border-bottom d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border-left d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="border"&gt;&lt;/span&gt;
+                &lt;span class="border-top"&gt;&lt;/span&gt;
+                &lt;span class="border-right"&gt;&lt;/span&gt;
+                &lt;span class="border-bottom"&gt;&lt;/span&gt;
+                &lt;span class="border-left"&gt;&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="subtractive" class="hs-docs-heading">
+        Subtractive <a class="anchorjs-link" href="#subtractive" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <span class="border-0 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-top-0 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-right-0 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-bottom-0 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-left-0 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="border-0"&gt;&lt;/span&gt;
+                &lt;span class="border border-top-0"&gt;&lt;/span&gt;
+                &lt;span class="border border-right-0"&gt;&lt;/span&gt;
+                &lt;span class="border border-bottom-0"&gt;&lt;/span&gt;
+                &lt;span class="border border-left-0"&gt;&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="border-color" class="hs-docs-heading">
+        Border color <a class="anchorjs-link" href="#border-color" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Change the border color using utilities built on our theme colors.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <span class="border border-primary d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-secondary d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-success d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-danger d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-warning d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-info d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-light d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-dark d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-white d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-white-10 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="border border-primary"&gt;&lt;/span&gt;
+                &lt;span class="border border-secondary"&gt;&lt;/span&gt;
+                &lt;span class="border border-success"&gt;&lt;/span&gt;
+                &lt;span class="border border-danger"&gt;&lt;/span&gt;
+                &lt;span class="border border-warning"&gt;&lt;/span&gt;
+                &lt;span class="border border-info"&gt;&lt;/span&gt;
+                &lt;span class="border border-light"&gt;&lt;/span&gt;
+                &lt;span class="border border-dark"&gt;&lt;/span&gt;
+                &lt;span class="border border-white"&gt;&lt;/span&gt;
+                &lt;span class="border border-white-10"&gt;&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="border-width" class="hs-docs-heading">
+        Border width <a class="anchorjs-link" href="#border-width" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <span class="border border-1 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-2 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-3 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-4 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+            <span class="border border-5 d-inline-block me-1" style="width: 4rem; height: 4rem;"></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;span class="border border-1"&gt;&lt;/span&gt;
+                &lt;span class="border border-2"&gt;&lt;/span&gt;
+                &lt;span class="border border-3"&gt;&lt;/span&gt;
+                &lt;span class="border border-4"&gt;&lt;/span&gt;
+                &lt;span class="border border-5"&gt;&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="border-radius" class="hs-docs-heading">
+        Border radius <a class="anchorjs-link" href="#border-radius" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Add classes to an element to easily round its corners.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example non-rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-top" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example top rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-right" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example right rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-bottom" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example bottom rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-left" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example left rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-circle" src="@@autopath/assets/img/160x160/img1.jpg" alt="Completely round image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-pill" src="@@autopath/assets/img/documentation/img7.jpg" alt="Example pilled image" /></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;img class="img-fluid rounded" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example non-rounded image" /&gt;
+                &lt;img class="img-fluid rounded-top" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example top rounded image" /&gt;
+                &lt;img class="img-fluid rounded-right" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example right rounded image" /&gt;
+                &lt;img class="img-fluid rounded-bottom" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example bottom rounded image" /&gt;
+                &lt;img class="img-fluid rounded-left" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example left rounded image" /&gt;
+                &lt;img class="img-fluid rounded-circle" src="@@autopath/assets/img/160x160/img1.jpg" alt="Completely round image" /&gt;
+                &lt;img class="img-fluid rounded-pill" src="@@autopath/assets/img/documentation/img7.jpg" alt="Example pilled image" /&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="sizes" class="hs-docs-heading">
+        Sizes <a class="anchorjs-link" href="#sizes" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use the scaling classes for larger or smaller rounded corners. Sizes range from 0 to 3, and can be configured by modifying the utilities API.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-0" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example non-rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-1" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example small rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-2" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example default rounded image" /></span>
+            <span class="d-inline-block mb-1" style="width: 4rem; height: 4rem;"><img class="img-fluid rounded-3" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example large rounded image" /></span>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;img class="img-fluid rounded-0" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example non-rounded image" /&gt;
+                &lt;img class="img-fluid rounded-1" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example small rounded image" /&gt;
+                &lt;img class="img-fluid rounded-2" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example default rounded image" /&gt;
+                &lt;img class="img-fluid rounded-3" src="@@autopath/assets/img/160x160/img1.jpg" alt="Example large rounded image" /&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/node_modules/list.js/dist/list.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.list.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('@@autopath/assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

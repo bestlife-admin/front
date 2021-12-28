@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Shop: Product Overview | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/swiper/swiper-bundle.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/demo-shop.html", {
+    "topbarcategory": "demos",
+    "topbarlink": "shop",
+    "category": "",
+    "subcategory": "",
+    "link": "product-overview.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="container content-space-t-1 content-space-t-sm-2">
+      <div class="row">
+        <div class="col-md-7 mb-7 mb-md-0">
+          <div class="pe-md-4">
+            <div class="card-pinned">
+              <!-- Swiper Main Slider -->
+              <div class="js-swiper-shop-product swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card card-bordered shadow-none">
+                      <img class="card-img" src="@@autopath/assets/img/600x600/img1.jpg" alt="Image Description">
+                    </div>
+                  </div>
+                  <!-- End Slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card card-bordered shadow-none">
+                      <img class="card-img" src="@@autopath/assets/img/600x600/img2.jpg" alt="Image Description">
+                    </div>
+                  </div>
+                  <!-- End Slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card card-bordered shadow-none">
+                      <img class="card-img" src="@@autopath/assets/img/600x600/img3.jpg" alt="Image Description">
+                    </div>
+                  </div>
+                  <!-- End Slide -->
+                </div>
+
+                <!-- Arrows -->
+                <div class="js-swiper-shop-product-button-next swiper-button-next"></div>
+                <div class="js-swiper-shop-product-button-prev swiper-button-prev"></div>
+              </div>
+              <!-- End Swiper Main Slider -->
+
+              <!-- Swiper Thumb Slider -->
+              <div class="position-absolute bottom-0 end-0 start-0 zi-1 p-4">
+                <div class="js-swiper-shop-product-thumb swiper" style="max-width: 15rem;">
+                  <div class="swiper-wrapper">
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <a class="avatar avatar-circle" href="javascript:;">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img11.jpg" alt="Image Description">
+                      </a>
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <a class="avatar avatar-circle" href="javascript:;">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img12.jpg" alt="Image Description">
+                      </a>
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <a class="avatar avatar-circle" href="javascript:;">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img13.jpg" alt="Image Description">
+                      </a>
+                    </div>
+                    <!-- End Slide -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Swiper Thumb Slider -->
+            </div>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-5">
+          <!-- Rating -->
+          <a class="d-flex gap-1 mb-4" href="#reviewSection">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+            <span class="ms-1">287 reviews</span>
+          </a>
+          <!-- End Rating -->
+
+          <!-- Heading -->
+          <div class="mb-5">
+            <h1 class="h2">New Era 9Forty LA Dodgers adjustable cap in black</h1>
+            <p>American label New Era manufacturing baseball hats for teams since the 1930s.</p>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Price -->
+          <div class="mb-5">
+            <span class="d-block mb-2">Total price:</span>
+            <div class="d-flex align-items-center">
+              <h3 class="mb-0">$159.99</h3>
+              <span class="ms-2"><del>$179.99</del></span>
+            </div>
+          </div>
+          <!-- End Price -->
+
+          <!-- Quantity -->
+          <div class="quantity-counter mb-3">
+            <div class="js-quantity-counter row align-items-center">
+              <div class="col">
+                <span class="d-block small">Select quantity</span>
+                <input class="js-result form-control form-control-quantity-counter" type="text" value="1">
+              </div>
+              <!-- End Col -->
+
+              <div class="col-auto">
+                <a class="js-minus btn btn-outline-secondary btn-xs btn-icon rounded-circle" href="javascript:;">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1C0 0.723858 0.223858 0.5 0.5 0.5H7.5C7.77614 0.5 8 0.723858 8 1C8 1.27614 7.77614 1.5 7.5 1.5H0.5C0.223858 1.5 0 1.27614 0 1Z" fill="currentColor"/>
+                  </svg>
+                </a>
+                <a class="js-plus btn btn-outline-secondary btn-xs btn-icon rounded-circle" href="javascript:;">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 0C4.27614 0 4.5 0.223858 4.5 0.5V3.5H7.5C7.77614 3.5 8 3.72386 8 4C8 4.27614 7.77614 4.5 7.5 4.5H4.5V7.5C4.5 7.77614 4.27614 8 4 8C3.72386 8 3.5 7.77614 3.5 7.5V4.5H0.5C0.223858 4.5 0 4.27614 0 4C0 3.72386 0.223858 3.5 0.5 3.5H3.5V0.5C3.5 0.223858 3.72386 0 4 0Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Quantity -->
+
+          <!-- Accordion -->
+          <div class="accordion mb-5" id="shopCartAccordion">
+            <!-- Collapse -->
+            <div class="accordion-item">
+              <a class="accordion-button collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCartAccordionCollapseOne" aria-expanded="false" aria-controls="shopCartAccordionCollapseOne">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      @@include("@@autopath/assets/vendor//duotone-icons/ecm/ecm006.svg")
+                    </span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    Free shipping
+                  </div>
+                </div>
+              </a>
+
+              <div id="shopCartAccordionCollapseOne" class="accordion-collapse collapse" data-bs-parent="#shopCartAccordion">
+                <div class="accordion-body">
+                  <p class="mb-0">We offer free shipping anywhere in the U.S. A skilled delivery team will bring the boxes into your office.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Collapse -->
+
+            <!-- Collapse -->
+            <div class="accordion-item">
+              <a class="accordion-button collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCartAccordionCollapseTwo" aria-expanded="false" aria-controls="shopCartAccordionCollapseTwo">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      @@include("@@autopath/assets/vendor/duotone-icons/ecm/ecm012.svg")
+                    </span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    30 Days return
+                  </div>
+                </div>
+              </a>
+
+              <div id="shopCartAccordionCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#shopCartAccordion">
+                <div class="accordion-body">
+                  <p class="mb-0">If you're not satisfied, return it for a full refund. We'll take care of disassembly and return shipping.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Collapse -->
+          </div>
+          <!-- End Accordion -->
+
+          <div class="d-grid mb-4">
+            <button type="button" class="btn btn-primary btntransition">Add to cart</button>
+          </div>
+
+          <!-- Media -->
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <div class="svg-icon svg-icon-sm text-primary">
+                @@include("@@autopath/assets/vendor/duotone-icons/com/com012.svg")
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-2">
+              <span class="small me-1">Need Help?</span>
+              <a class="link small" href="#">Chat now</a>
+            </div>
+          </div>
+          <!-- End Media -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Hero -->
+
+    <!-- Content -->
+    <div class="container content-space-t-2 content-space-md-3">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="pe-lg-4">
+            <h3>Details</h3>
+            <p>As popular off field as they are on, New Era caps are standard issue amongst those with a passion for street culture, blending progressive styles with carefully crafted design. Known for their innovative use of colour, bold designs are added season upon season, referencing everything.</p>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h3>Material and care</h3>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="list-py-2 mb-0">
+                <li>Main: 100% Cotton</li>
+                <li>Soft twill</li>
+                <li>Ribbed, diagonal pattern</li>
+                <li>Slightly structured</li>
+              </ul>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6">
+              <ul class="list-py-2 mb-0">
+                <li>One size fits all</li>
+                <li>Imported</li>
+                <li>Product color: Dark greenish</li>
+                <li>Product code: #1465791</li>
+              </ul>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row justify-content-lg-between align-items-md-center">
+        <div class="col-md-6 col-lg-5 content-space-1 content-space-md-2">
+          <h2 class="mb-4">A casual cap with Front originals style</h2>
+          <p>This men's hat has low-key Trefoil style with an embroidered logo on the front.</p>
+          <p>Made of washed canvas, the hat has a crushable, packable design and an adjustable back strap so you can personalize the fit.</p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="bg-img-center h-100 rounded-2" style="background-image: url(@@autopath/assets/img/750x750/img3.jpg); min-height: 30rem;"></div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-between align-items-md-center content-space-t-1 content-space-t-lg-3">
+        <div class="col-md-6 col-lg-5 order-md-2 content-space-1 content-space-md-2">
+          <h2 class="mb-4">A casual cap with Front originals style</h2>
+          <p>This men's hat has low-key Trefoil style with an embroidered logo on the front.</p>
+          <p>Made of washed canvas, the hat has a crushable, packable design and an adjustable back strap so you can personalize the fit.</p>
+        </div>
+
+        <div class="col-md-6 order-md-1">
+          <div class="bg-img-center h-100 rounded-2" style="background-image: url(@@autopath/assets/img/750x750/img4.jpg); min-height: 30rem;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-2 content-space-lg-3">
+      <!-- Title -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2>Just for you</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col mb-4">
+          <!-- Card -->
+          <div class="card card-bordered shadow-none text-center h-100">
+            <div class="card-pinned">
+              <img class="card-img-top" src="@@autopath/assets/img/300x180/img3.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-start">
+                <span class="badge bg-success rounded-pill">New arrival</span>
+              </div>
+
+              <div class="card-pinned-top-end">
+                <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                  <i class="bi-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="mb-1">
+                <a class="link-sm link-secondary" href="#">Accessories</a>
+              </div>
+              <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Herschel backpack in dark blue</a>
+              <p class="card-text text-dark">$56.99</p>
+            </div>
+
+            <div class="card-footer pt-0">
+              <!-- Rating -->
+              <a class="d-inline-flex align-items-center mb-3" href="#">
+                <div class="d-flex gap-1 me-2">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                </div>
+                <span class="small">0</span>
+              </a>
+              <!-- End Rating -->
+
+              <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Add to cart</button>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-4">
+          <!-- Card -->
+          <div class="card card-bordered shadow-none text-center h-100">
+            <div class="card-pinned">
+              <img class="card-img-top" src="@@autopath/assets/img/300x180/img1.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-end">
+                <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                  <i class="bi-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="mb-1">
+                <a class="link-sm link-secondary" href="#">Clothing</a>
+              </div>
+              <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Front hoodie</a>
+              <p class="card-text text-dark">$91.88</p>
+            </div>
+
+            <div class="card-footer pt-0">
+              <!-- Rating -->
+              <a class="d-inline-flex align-items-center mb-3" href="#">
+                <div class="d-flex gap-1 me-2">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                </div>
+                <span class="small">40</span>
+              </a>
+              <!-- End Rating -->
+
+              <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Add to cart</button>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-4">
+          <!-- Card -->
+          <div class="card card-bordered shadow-none text-center h-100">
+            <div class="card-pinned">
+              <img class="card-img-top" src="@@autopath/assets/img/300x180/img4.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-start">
+                <span class="badge bg-danger rounded-pill">Out of stock</span>
+              </div>
+
+              <div class="card-pinned-top-end">
+                <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                  <i class="bi-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="mb-1">
+                <a class="link-sm link-secondary" href="#">Accessories</a>
+              </div>
+              <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Herschel backpack in gray</a>
+              <p class="card-text text-dark">$29.99 <span class="text-body ms-1"><del>$33.99</del></span></p>
+            </div>
+
+            <div class="card-footer pt-0">
+              <!-- Rating -->
+              <a class="d-inline-flex align-items-center mb-3" href="#">
+                <div class="d-flex gap-1 me-2">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star-muted.svg" alt="Review rating" width="16">
+                </div>
+                <span class="small">125</span>
+              </a>
+              <!-- End Rating -->
+
+              <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Add to cart</button>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-4">
+          <!-- Card -->
+          <div class="card card-bordered shadow-none text-center h-100">
+            <div class="card-pinned">
+              <img class="card-img-top" src="@@autopath/assets/img/300x180/img6.jpg" alt="Image Description">
+
+              <div class="card-pinned-top-end">
+                <button type="button" class="btn btn-outline-secondary btn-xs btn-icon rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Save for later">
+                  <i class="bi-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="mb-1">
+                <a class="link-sm link-secondary" href="#">Clothing</a>
+              </div>
+              <a class="text-body" href="@@autopath/demo-shop/product-overview.html">Front Originals adicolor t-shirt with trefoil logo</a>
+              <p class="card-text text-dark">$38.00</p>
+            </div>
+
+            <div class="card-footer pt-0">
+              <!-- Rating -->
+              <a class="d-inline-flex align-items-center mb-3" href="#">
+                <div class="d-flex gap-1 me-2">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                </div>
+                <span class="small">9</span>
+              </a>
+              <!-- End Rating -->
+
+              <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Add to cart</button>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Card Grid -->
+
+    <!-- Review Section -->
+    <div id="reviewSection" class="container content-space-b-2 content-space-b-lg-3">
+      <div class="row">
+        <div class="col-md-4 mb-7 mb-md-0">
+          <div class="border-bottom pb-4 mb-4">
+            <!-- Card -->
+            <div class="card bg-primary mb-3">
+              <div class="card-body">
+                <!-- Media -->
+                <div class="d-flex justify-content-center">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <span class="display-4 text-white">4.7</span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <!-- Rating -->
+                      <div class="d-flex gap-1 small">
+                        <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                        <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                        <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                        <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                        <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                      </div>
+                      <!-- End Rating -->
+                      <span class="text-white">287 reviews</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <h3>Rating breakdown</h3>
+
+            <!-- Ratings -->
+            <div class="d-grid gap-1">
+              <a class="row align-items-center" href="#" style="max-width: 25rem;">
+                <div class="col-3">
+                  <span class="text-dark">5 stars</span>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-7">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-2 text-end">
+                  <span>205</span>
+                </div>
+                <!-- End Col -->
+              </a>
+              <!-- End Row -->
+
+              <a class="row align-items-center" href="#" style="max-width: 25rem;">
+                <div class="col-3">
+                  <span class="text-dark">4 stars</span>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-7">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 53%;" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-2 text-end">
+                  <span>55</span>
+                </div>
+                <!-- End Col -->
+              </a>
+              <!-- End Row -->
+              
+              <a class="row align-items-center" href="#" style="max-width: 25rem;">
+                <div class="col-3">
+                  <span class="text-dark">3 stars</span>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-7">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-2 text-end">
+                  <span>23</span>
+                </div>
+                <!-- End Col -->
+              </a>
+              <!-- End Row -->
+              
+              <a class="row align-items-center" href="#" style="max-width: 25rem;">
+                <div class="col-3">
+                  <span class="text-dark">2 stars</span>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-7">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-2 text-end">
+                  <span>0</span>
+                </div>
+                <!-- End Col -->
+              </a>
+              <!-- End Row -->
+              
+              <a class="row align-items-center" href="#" style="max-width: 25rem;">
+                <div class="col-3">
+                  <span class="text-dark">1 stars</span>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-7">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-2 text-end">
+                  <span>4</span>
+                </div>
+                <!-- End Col -->
+              </a>
+              <!-- End Row -->
+            </div>
+            <!-- End Ratings -->
+          </div>
+
+          <h4 class="display-4 text-primary">77%</h4>
+          <p class="small">of customers recommend this product</p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-8">
+          <div class="ps-md-4">
+            <!-- Heading -->
+            <div class="border-bottom pb-4 mb-4">
+              <div class="row align-items-center">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <h4 class="mb-0">Sort on</h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-auto">
+                  <!-- Select -->
+                  <select class="form-select form-select-sm">
+                    <option value="mostRecent" selected>Most recent</option>
+                    <option value="relevant">Relevant</option>
+                    <option value="helpful">Helpful</option>
+                    <option value="newest">Newest</option>
+                  </select>
+                  <!-- End Select -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Heading -->
+
+            <!-- Comment -->
+            <ul class="list-comment list-comment-divider mb-5">
+              <!-- Item -->
+              <li class="list-comment-item">
+                <div class="d-flex gap-1 mb-3">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Christina Kray</h5>
+                      <span class="d-block small text-muted">April 3, 2019</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+
+                <div class="mb-5">
+                  <p>I bought this hat for my boyfriend, but then i found out he cheated on me so I kept it and I love it!! I wear it all the time and there is no problem with the fit even though its a “mens” hat.</p>
+                </div>
+
+                <div class="mb-2">
+                  <span class="text-dark fw-semi-bold">Christina</span>
+                  <span>- Verified Purchase</span>
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center">
+                  <span class="small me-2">Was this helpful?</span>
+
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(45)</span>
+                    </a>
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-down me-1"></i> No <span>(21)</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Media -->
+              </li>
+              <!-- End Item -->
+
+              <!-- Item -->
+              <li class="list-comment-item">
+                <div class="d-flex gap-1 mb-3">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img1.jpg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Hailey</h5>
+                      <span class="d-block small text-muted">January 19, 2019</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+
+                <div class="mb-5">
+                  <p>Material is great and the hat is comfortable and stylish.</p>
+                </div>
+
+                <div class="mb-2">
+                  <span class="text-dark fw-semi-bold">Hailey</span>
+                  <span>- Verified Purchase</span>
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center">
+                  <span class="small me-2">Was this helpful?</span>
+
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(2)</span>
+                    </a>
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-down me-1"></i> No <span>(0)</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Media -->
+              </li>
+              <!-- End Item -->
+
+              <!-- Item -->
+              <li class="list-comment-item">
+                <div class="d-flex gap-1 mb-3">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-sm avatar-circle" src="@@autopath/assets/img/160x160/img8.jpg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Chrizelle</h5>
+                      <span class="d-block small text-muted">December 21, 2018</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+
+                <div class="mb-5">
+                  <p>A really well built cap. It looks great and wears just as well. A great staple in ball caps.</p>
+                </div>
+
+                <div class="mb-2">
+                  <span class="text-dark fw-semi-bold">Chrizelle</span>
+                  <span>- Verified Purchase</span>
+                </div>
+
+                <!-- Media -->
+                <div class="d-flex align-items-center">
+                  <span class="small me-2">Was this helpful?</span>
+
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-up me-1"></i> Yes <span>(0)</span>
+                    </a>
+                    <a class="btn btn-white btn-xs" href="javascript:;">
+                      <i class="bi-hand-thumbs-down me-1"></i> No <span>(0)</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Media -->
+              </li>
+              <!-- End Item -->
+            </ul>
+            <!-- End Comment -->
+
+            <div class="d-sm-flex justify-content-sm-end gap-2">
+              <a class="btn btn-link" href="#">Read more <i class="bi-chevron-right small ms-1"></i></a>
+              <button type="button" class="btn btn-primary btn-transition rounded-pill">Write a review</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Review Section -->
+
+    <!-- Subscribe -->
+    <div class="bg-light">
+      <div class="container content-space-2">
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+          <div class="row justify-content-lg-between">
+            <!-- Heading -->
+            <div class="mb-5">
+              <span class="text-cap">Subscribe</span>
+              <h2>Get the latest from Front</h2>
+            </div>
+            <!-- End Heading -->
+
+            <form>
+              <!-- Input Card -->
+              <div class="input-card input-card-pill input-card-sm border mb-3">
+                <div class="input-card-form">
+                  <label for="subscribeForm" class="form-label visually-hidden">Enter email</label>
+                  <input type="text" class="form-control form-control-lg" id="subscribeForm" placeholder="Enter email" aria-label="Enter email">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill">Subscribe</button>
+              </div>
+              <!-- End Input Card -->
+            </form>
+
+            <p class="small">You can unsubscribe at any time. Read our <a href="#">privacy policy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Subscribe -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-3.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-search.html")
+
+  <!-- Offcanvas Search -->
+  @@include("@@autopath/partials/layouts-components/offcanvas-empty-shopping-cart.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-quantity-counter/dist/hs-quantity-counter.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
+
+
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-shop-product',{
+        effect: 'fade',
+        autoplay: true,
+        loop: true,
+        navigation: {
+          nextEl: '.js-swiper-shop-product-button-next',
+          prevEl: '.js-swiper-shop-product-button-prev',
+        },
+        thumbs: {
+          swiper: sliderThumbs
+        }
+      });
+
+      var sliderThumbs = new Swiper('.js-swiper-shop-product-thumb', {
+        slidesPerView: 3,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        history: false,
+      });
+
+
+      // INITIALIZATION OF  QUANTITY COUNTER
+      // =======================================================
+      new HSQuantityCounter('.js-quantity-counter')
+    })()
+  </script>
+</body>
+</html>
